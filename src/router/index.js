@@ -4,6 +4,7 @@ import MediatorView from '@/views/MediatorView.vue'
 import NmvView from '@/views/NmvView.vue'
 import ContactView from '@/views/ContactView.vue'
 import PrivacyStatementView from '@/views/PrivacyStatementView.vue'
+import TermsAndConditionsView from '@/views/TermsAndConditionsView.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/privacystatement',
     name: 'privacystatement',
     component: PrivacyStatementView
+  },
+  {
+    path: '/algemenevoorwaarden',
+    name: 'algemenevoorwaarden',
+    component: TermsAndConditionsView
   },
 
 ]
