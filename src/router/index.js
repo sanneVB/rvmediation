@@ -1,10 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import MediatorView from '@/views/MediatorView.vue'
-import NmvView from '@/views/NmvView.vue'
-import ContactView from '@/views/ContactView.vue'
-import PrivacyStatementView from '@/views/PrivacyStatementView.vue'
-import TermsAndConditionsView from '@/views/TermsAndConditionsView.vue'
 
 const routes = [
   {
@@ -15,27 +10,30 @@ const routes = [
   {
     path: '/mediator',
     name: 'mediator',
-    component: MediatorView
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "mediatorview" */ '@/views/MediatorView.vue')
   },
   {
     path: '/nmv',
     name: 'nmv',
-    component: NmvView
+    component: () => import('@/views/NmvView.vue')
   },
   {
     path: '/contact',
     name: 'contact',
-    component: ContactView
+    component: () => import('@/views/ContactView.vue')
   },
   {
     path: '/privacystatement',
     name: 'privacystatement',
-    component: PrivacyStatementView
+    component: () => import('@/views/PrivacyStatementView.vue')
   },
   {
     path: '/algemenevoorwaarden',
     name: 'algemenevoorwaarden',
-    component: TermsAndConditionsView
+    component: () => import('@/views/TermsAndConditionsView.vue')
   },
 ]
 
