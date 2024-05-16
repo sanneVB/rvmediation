@@ -37,7 +37,6 @@ const routes = [
     name: 'algemenevoorwaarden',
     component: TermsAndConditionsView
   },
-
 ]
 
 const router = createRouter({
