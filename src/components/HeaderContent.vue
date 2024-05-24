@@ -1,9 +1,4 @@
 <template>
-  <button @click="" id="nav-toggle" >
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-  </button>
   <navigation-menu/>
 
 </template>
@@ -21,15 +16,16 @@ export default {
 
 <style scoped>
 
-  #nav-toggle {
+  .button-nav {
     border: 2px solid #FFFF;
     border-radius: 5px;
     background-color: transparent;
     padding: 4px 8px;
     z-index: 2;
+    position: sticky;
   }
 
-  .bar {
+  .button-nav__bar {
     width: 24px;
     height: 2px;
     background-color: #FFFFFF;
@@ -41,3 +37,21 @@ export default {
   
 
 </style>
+
+<!--<template>
+  <header :class="{ sticky: isSticky }">
+    <div class="logo">Mijn Logo</div>
+    <nav-component/>
+  </header>
+</template>
+
+<script>
+export default {
+  props: {
+    isSticky: {
+      type: Boolean,
+      default: false
+    }
+  }
+};
+</script>-->
