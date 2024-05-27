@@ -50,12 +50,37 @@
   
 <style scoped>
 
+    .nav__ul {
+        list-style: none;
+    }
+
+    .nav__item {
+        padding: 12px 0;
+    }
+
     .nav__toggle {
+        position: relative;
         height: 32px;
         width: 32px;
         border-radius: 4px;
+        border: 2px solid #FFF;
         background-color: transparent;
         padding: 2px 3px;
+        z-index: 999;
+    }
+
+    .nav__toggle:hover {
+        background-color: #00AEB8;
+    }
+
+    .nav__list {
+        position: absolute;
+        height: 100vh;
+        background-color: #00AEB8;
+        top: 0;  
+        right: 0;
+        padding: 150px 10% 0 5%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .nav__bar {
@@ -64,7 +89,7 @@
         margin: 4px 0;
         transition: 0.2s;
         border-radius: 4px;
-        background-color: #000;
+        background-color: #FFF;
     }
 
     .nav__toggle--change .nav__bar:nth-child(1) {
@@ -79,24 +104,15 @@
         transform: translateY(-6px) rotate(45deg);
     }
 
-    /* .nav__ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    } */
-
-    .nav__item {
-        margin: 0;
-    }
-
     .nav__link {
         text-decoration: none;
-        color: #000;
+        color: #FFF;
     }
 
     .active-link {
         font-weight: bold;
-        color: #f00;
+        color: orangered;
     }
+
 </style>
   

@@ -1,9 +1,10 @@
 <template>
 
   <header class="header">
+    <img class="header__image" src="../assets/rv-mediation-logo.svg" alt="logo van rvmediation">
     <NavigationMenu />
   </header>
-  
+
 </template>
 
 <script>
@@ -20,10 +21,20 @@ export default {
 <style scoped>
 
   .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 1%;
     position: sticky;
     top: 0;
-    background-color: #ffffff;
+    background-color:  #001526;
     z-index: 1000;
+  }
+
+  .header__image {
+    width: 224px;
+    margin-left: auto;
+    margin-right: auto; 
   }
 
 </style>
