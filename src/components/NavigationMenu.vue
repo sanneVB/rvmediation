@@ -50,6 +50,14 @@
   
 <style scoped>
 
+    .nav {
+        position: sticky;
+        top: 0; /* Plak de header aan de bovenkant van het scherm */
+        background-color: #ffffff; /* achtergrondkleur toevoegen */
+        z-index: 1000; /* Zorg ervoor dat de header boven andere elementen staat */
+        width: 100%; /* Volledige breedte van het scherm */
+    }
+
     .nav__toggle {
         height: 32px;
         width: 32px;
