@@ -17,7 +17,7 @@
   </section>
   <section class="container__snapPoint">
     <testimonials-page />
-g    <footer-content class="footer"/>
+    <footer-content class="footer"/>
   </section>
   
 </template>
