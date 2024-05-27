@@ -1,6 +1,9 @@
 <template>
-    <NavigationMenu />
 
+  <header class="header">
+    <NavigationMenu />
+  </header>
+  
 </template>
 
 <script>
@@ -14,4 +17,13 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+
+  .header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+  }
+
+</style>
