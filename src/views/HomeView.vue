@@ -1,21 +1,21 @@
 <template>
   <header-content />
-  <section class="container__snapPoint">
+  <section class="container__snapPoint" id="landing">
     <landing-page />
   </section>
-  <section class="container__snapPoint">
+  <section class="container__snapPoint" id="introduction">
     <introduction-page />
   </section>
-  <section class="container__snapPoint">
+  <section class="container__snapPoint" id="employee">
     <employee-page />
   </section>
-  <section class="container__snapPoint">
+  <section class="container__snapPoint" id="employer">
     <employer-page />
   </section>
-  <section class="container__snapPoint">
+  <section class="container__snapPoint" id="about-me">
     <about-me-page />
   </section>
-  <section class="container__snapPoint">
+  <section class="container__snapPoint" id="testimonials">
     <testimonials-page />
     <footer-content class="footer"/>
   </section>

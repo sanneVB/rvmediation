@@ -11,19 +11,19 @@
                     <router-link to="/" class="nav__link" active-class="active-link">Home</router-link>
                 </li>
                 <li @click="closeNav" class="nav__item">
-                    <router-link to="/mediator" class="nav__link" active-class="active-link">Mediator</router-link>
+                    <a href="#introduction" class="nav__link">Bemiddelaar voor de logistieke sector</a>
                 </li>
                 <li @click="closeNav" class="nav__item">
-                    <router-link to="/nmv" class="nav__link" active-class="active-link">NMV</router-link>
+                    <a href="#employee" class="nav__link">Voor werknemers</a>
                 </li>
                 <li @click="closeNav" class="nav__item">
-                    <router-link to="/contact" class="nav__link" active-class="active-link">Contact</router-link>
-                </li>
-                    <li @click="closeNav" class="nav__item">
-                <router-link to="/privacystatement" class="nav__link" active-class="active-link">Privacystatement</router-link>
+                    <a href="#employer" class="nav__link">Voor werkgevers</a>
                 </li>
                 <li @click="closeNav" class="nav__item">
-                    <router-link to="/algemenevoorwaarden" class="nav__link" active-class="active-link">Algemene Voorwaarden</router-link>
+                    <a href="#about" class="nav__link">Wie ben ik?</a>
+                </li>
+                <li @click="closeNav" class="nav__item">
+                    <a href="#testimonials" class="nav__link">Wat zeggen anderen?</a>
                 </li>
             </ul>
         </div>
@@ -50,8 +50,8 @@
   
 <style scoped>
 
-    .nav__ul {
-        list-style: none;
+    li::marker {
+        color: #FFF;
     }
 
     .nav__item {
@@ -107,11 +107,6 @@
     .nav__link {
         text-decoration: none;
         color: #FFF;
-    }
-
-    .active-link {
-        font-weight: bold;
-        color: orangered;
     }
 
 </style>
