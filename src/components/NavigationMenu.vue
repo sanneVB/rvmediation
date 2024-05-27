@@ -26,7 +26,7 @@
                     <a href="#testimonials" class="nav__link">Wat zeggen anderen?</a>
                 </li>
             </ul>
-            <v-btn>Hallo</v-btn>
+            <v-btn class="button">NEEM CONTACT OP</v-btn>
         </div>
     </nav>
 </template>
