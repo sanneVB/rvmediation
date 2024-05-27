@@ -23,7 +23,6 @@ export default {
   .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 12px 3%;
     position: sticky;
     top: 0;
