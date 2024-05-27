@@ -17,8 +17,9 @@
   </section>
   <section class="container__snapPoint">
     <testimonials-page />
+    <footer-content class="footer"/>
   </section>
-  <footer-content />
+  
 </template>
 
 <script>
@@ -69,4 +70,5 @@ height: 100vh;
 width: 100vw;
 scroll-snap-align: start;
 }
+
 </style>
