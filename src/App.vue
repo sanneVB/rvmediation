@@ -1,14 +1,21 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/mediator">Mediator</router-link> |
-    <router-link to="/nmv">NMV</router-link> |
-    <router-link to="/contact">Contact</router-link> |
-    <router-link to="/privacystatement">Privacystatement</router-link> |
-    <router-link to="/algemenevoorwaarden">Algemene Voorwaarden</router-link>
-  </nav>
-  <router-view/>
+  <section class="app">
+    <HeaderContent />
+    <router-view/>
+
+  </section>
 </template>
+
+<script>
+  import HeaderContent from './components/HeaderContent.vue';
+
+  export default {
+    name: 'App',
+    components: {
+      HeaderContent
+    }
+  }
+</script>
 
 <style>
 </style>
