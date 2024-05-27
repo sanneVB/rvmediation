@@ -4,7 +4,7 @@
 
 <style>
 
-  html {
+  .text {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -12,15 +12,15 @@
     font-variation-settings: "slnt" 0;
   }
 
-  .inter--bold {
+  .text--bold {
     font-weight: 700;
   }
 
-  .inter--semi-bold {
+  .text--semi-bold {
     font-weight: 600;
   }
 
-  .inter--italic {
+  .texc--italic {
     font-variation-settings: "slnt" -10;
   }
 
