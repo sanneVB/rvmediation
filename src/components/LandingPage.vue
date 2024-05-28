@@ -145,7 +145,7 @@
         }
 
         .grid-container__image--nmv-1 {
-            padding-left: 29px;
+            padding-left: 16px;
         }
 
         h1 {
