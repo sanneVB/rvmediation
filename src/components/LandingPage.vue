@@ -14,7 +14,7 @@
         <div class="grid-container__grid-item"></div>
         <div class="grid-container__grid-item">
             <div>
-                <p>Caroussel</p>
+                <p>"doortastend"</p>
                 <div class="grid-container__grid-text-image">
                     <p class="grid-container__text-1">RVmediation is lid van</p>
                     <img class="grid-container__image--nmv-1" src="../assets/rv-mediation-nmv-logo.png" alt="logo van de nmv">
@@ -38,16 +38,13 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        background-image: url('../assets/hero.jpg');
+        background-image: url('../assets/rvmediation-hero.webp');
+        background-color: rgb(1, 1, 39);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         height: 100vh;
     }
-
-    /* .grid-container__grid-item {
-        border: 1px solid white;
-    } */
 
     .grid-container__grid-item:nth-of-type(1) {
         padding: 0 9%;
@@ -73,6 +70,7 @@
         font-style: italic;
         background-color: rgba(0, 0, 0, 0.6);
         text-align: center;
+        padding: 10px 10px;
     }
 
     .grid-container__grid-item:nth-of-type(9) {
@@ -104,7 +102,6 @@
 
     .grid-container__image--rv {
         height: 55px;
-        margin-top: 130px;
     }
 
     .grid-container__image--nmv-1, .grid-container__image--nmv-2 {
@@ -123,7 +120,7 @@
         display: none;
     }
 
-    @media screen and (max-width: 559px) {
+    @media screen and (max-width: 599px) {
 
         .grid-container {
             display: grid;
@@ -149,6 +146,10 @@
             display: block;
         }
 
+        .grid-container__image--nmv-1 {
+            padding-left: 29px;
+        }
+
         h1 {
             font-size: 4rem;
         }
@@ -171,7 +172,7 @@
         }      
     }
 
-    @media screen and (min-width: 560px) and (max-width: 768px) {
+    @media screen and (min-width: 600px) and (max-width: 768px) {
         h1 {
             font-size: 4rem;
         }
