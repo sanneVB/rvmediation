@@ -33,7 +33,7 @@ export default {
   .header__image {
     width: 224px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
   }
 
 </style>
