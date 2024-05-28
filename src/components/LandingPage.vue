@@ -128,8 +128,6 @@
             grid-template-rows: auto;
         }
 
-        .grid-container__grid-item:nth-of-type(6), 
-        .grid-container__grid-item:nth-of-type(7), 
         .grid-container__grid-item:nth-of-type(9) {
             display: none;
         }
