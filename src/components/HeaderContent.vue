@@ -39,7 +39,6 @@ export default {
 }
 
 .header__image {
-  opacity: 100;
   width: 224px;
   margin-left: auto;
   margin-right: auto;
