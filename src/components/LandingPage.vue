@@ -239,8 +239,8 @@ p {
     height: 36px;
   }
 
-  .grid-container__grid-item:nth-of-type(8) > p {
-    font-size: 1.625rem;
+  .grid-container__grid-item:nth-of-type(8) > div > p {
+    font-size: 1.375rem;
   }
 }
 
@@ -262,7 +262,7 @@ p {
     height: 36px;
   }
 
-  .grid-container__grid-item:nth-of-type(8) > p {
+  .grid-container__grid-item:nth-of-type(8) > div > p {
     font-size: 1.625rem;
   }
 }
