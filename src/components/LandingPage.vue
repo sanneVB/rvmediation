@@ -19,7 +19,7 @@
     <div class="grid-container__grid-item"></div>
     <div class="grid-container__grid-item">
       <div class="carousel">
-        <p class="text__carousel">“open en eerlijk”</p>
+        <p class="text__carousel">{{ currentValue }}</p>
         <div class="grid-container__grid-text-image">
           <p class="grid-container__text-1">RVmediation is lid van</p>
           <img
@@ -147,6 +147,12 @@ export default {
 
 .carousel {
   font-size: 1.75rem;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.text__carousel {
+  width: 250px;
   background-image: linear-gradient(
     90deg,
     rgba(2, 0, 36, 0) 0%,
@@ -154,15 +160,10 @@ export default {
     rgba(1, 1, 1, 0.6) 80%,
     rgba(0, 0, 0, 0) 100%
   );
-  text-align: center;
-  padding: 10px 10px;
-}
-
-.text__carousel {
-  width: 250px;
   color: #fb8c00;
   font-weight: 700;
   font-style: italic;
+  padding: 3px 0;
 }
 
 .grid-container__grid-item:nth-of-type(9) {
