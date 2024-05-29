@@ -12,6 +12,7 @@
         class="grid-container__image--rv"
         src="../assets/rv-mediation-logo.svg"
         alt="logo van rvmediation"
+        ref="observedElement"
       />
     </div>
     <div class="grid-container__grid-item"></div>
@@ -74,6 +75,7 @@ export default {
 
 <style scoped>
 .grid-container {
+  margin-top: -80px; /*Dit haalt de wit ruimte weg boven het de landingpage*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);

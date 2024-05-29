@@ -68,5 +68,6 @@ html {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
+  scroll-margin-top: 80px;
 }
 </style>
