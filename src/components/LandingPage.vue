@@ -87,23 +87,20 @@ export default {
   height: 100vh;
 }
 
-<<<<<<< HEAD
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        background-image: url('../assets/rvmediation-hero.webp');
-        background-color: #001526;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 100vh;
-    }
-=======
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url("../assets/rvmediation-hero.webp");
+  background-color: #001526;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
 .grid-container__grid-item:nth-of-type(1) {
   padding: 0 9%;
 }
->>>>>>> 21c894520df86395124b00eefdc5a133b9bc337e
 
 .grid-container__grid-item:nth-of-type(5) {
   display: flex;
@@ -160,16 +157,13 @@ p {
   height: 55px;
 }
 
-<<<<<<< HEAD
-    .grid-container__image--rv {
-        height: 56px;
-    }
-=======
+.grid-container__image--rv {
+  height: 56px;
+}
 .grid-container__image--nmv-1,
 .grid-container__image--nmv-2 {
   height: 48px;
 }
->>>>>>> 21c894520df86395124b00eefdc5a133b9bc337e
 
 .grid-container__text-1,
 .grid-container__text-2 {
@@ -204,15 +198,14 @@ p {
     margin-top: -50px;
   }
 
-<<<<<<< HEAD
-        .grid-container__grid-text-image {
-            padding-top: 40px;
-        }
-        
-        .grid-container__image--nmv-1, .grid-container__text-1 {
-            display: block;
-        }
-=======
+  .grid-container__grid-text-image {
+    padding-top: 40px;
+  }
+
+  .grid-container__image--nmv-1,
+  .grid-container__text-1 {
+    display: block;
+  }
   .grid-container__image--nmv-1,
   .grid-container__text-1 {
     display: block;
@@ -221,38 +214,26 @@ p {
   .grid-container__image--nmv-1 {
     padding-left: 16px;
   }
->>>>>>> 21c894520df86395124b00eefdc5a133b9bc337e
 
   h1 {
     font-size: 4rem;
   }
 
-<<<<<<< HEAD
-        h1 {
-            font-size: 3rem;
-            margin-bottom: -23px;
-            padding-left: 2px;
-        }
-        
-        h2 {
-            font-size: 1.5rem;
-            letter-spacing: 0.1rem;
-        }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: -23px;
+    padding-left: 2px;
+  }
 
-        .grid-container__image--rv {
-            height: 53px;
-            margin-top: 20px;
-        }
-=======
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
   }
 
   .grid-container__image--rv {
     height: 53px;
+    margin-top: 20px;
   }
->>>>>>> 21c894520df86395124b00eefdc5a133b9bc337e
 
   .grid-container__image--nmv {
     height: 36px;
