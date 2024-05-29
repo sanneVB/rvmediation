@@ -32,34 +32,33 @@
         </div>
     </nav>
 </template>
-  
+
 <script>
-    export default {
-        data() {
-            return {
-            showNav: false,
-            };
-        },
-        methods: {
-            toggleNav() {
-            this.showNav = !this.showNav;
-            },
-            closeNav() {
-            this.showNav = false;
-            },
-        },
+export default {
+  data() {
+    return {
+      showNav: false,
     };
+  },
+  methods: {
+    toggleNav() {
+      this.showNav = !this.showNav;
+    },
+    closeNav() {
+      this.showNav = false;
+    },
+  },
+};
 </script>
-  
+
 <style scoped>
+li::marker {
+  color: #fff;
+}
 
-    li::marker {
-        color: #FFF;
-    }
-
-    .nav__item {
-        padding: 12px 0;
-    }
+.nav__item {
+  padding: 12px 0;
+}
 
     .nav__toggle {
         position: relative;
@@ -74,9 +73,9 @@
         z-index: 999;
     }
 
-    .nav__toggle:hover {
-        background-color: #00AEB8;
-    }
+.nav__toggle:hover {
+  background-color: #00aeb8;
+}
 
     .nav__list {
         position: absolute;
@@ -92,31 +91,29 @@
         margin-bottom: 100px;
     }
 
-    .nav__bar {
-        width: 22px;
-        height: 2px;
-        margin: 4px 0;
-        transition: 0.2s;
-        border-radius: 4px;
-        background-color: #FFF;
-    }
+.nav__bar {
+  width: 22px;
+  height: 2px;
+  margin: 4px 0;
+  transition: 0.2s;
+  border-radius: 4px;
+  background-color: #fff;
+}
 
-    .nav__toggle--change .nav__bar:nth-child(1) {
-        transform: translateY(6px) rotate(-45deg);
-    }
+.nav__toggle--change .nav__bar:nth-child(1) {
+  transform: translateY(6px) rotate(-45deg);
+}
 
-    .nav__toggle--change .nav__bar:nth-child(2) {
-        opacity: 0;
-    }
+.nav__toggle--change .nav__bar:nth-child(2) {
+  opacity: 0;
+}
 
-    .nav__toggle--change .nav__bar:nth-child(3) {
-        transform: translateY(-6px) rotate(45deg);
-    }
+.nav__toggle--change .nav__bar:nth-child(3) {
+  transform: translateY(-6px) rotate(45deg);
+}
 
-    .nav__link {
-        text-decoration: none;
-        color: #FFF;
-    }
-
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+}
 </style>
-  
