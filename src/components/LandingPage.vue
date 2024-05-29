@@ -18,8 +18,8 @@
     <div class="grid-container__grid-item"></div>
     <div class="grid-container__grid-item"></div>
     <div class="grid-container__grid-item">
-      <div>
-        <p>"doortastend"</p>
+      <div class="carousel">
+        <p class="text__carousel">“open en eerlijk”</p>
         <div class="grid-container__grid-text-image">
           <p class="grid-container__text-1">RVmediation is lid van</p>
           <img
@@ -46,21 +46,47 @@
 <script>
 export default {
   name: "LandingPage",
+  data() {
+    return {
+      coreValues: [
+        "“doortastend”",
+        "“bruggenbouwer”",
+        "“professioneel”",
+        "“open en eerlijk”",
+        "“rustig”",
+        "“meedenkend”",
+      ],
+      currentIndex: 0,
+    };
+  },
+  computed: {
+    currentValue() {
+      return this.coreValues[this.currentIndex];
+    },
+  },
   mounted() {
     this.createObserver();
+  },
+  created() {
+    this.startCarousel();
+  },
+  beforeUnmount() {
+    if (this.carouselInterval) {
+      clearInterval(this.carouselInterval);
+    }
   },
   methods: {
     createObserver() {
       const options = {
         root: null,
         rootMargin: "0px",
-        treshold: 0.1,
+        threshold: 0.1,
       };
 
-      const observer = new IntersectionObserver(this.handleInstersect, options);
+      const observer = new IntersectionObserver(this.handleIntersect, options);
       observer.observe(this.$refs.observedElement);
     },
-    handleInstersect(entries) {
+    handleIntersect(entries) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           this.$emit("changeVisibility", true);
@@ -68,6 +94,11 @@ export default {
           this.$emit("changeVisibility", false);
         }
       });
+    },
+    startCarousel() {
+      setInterval(() => {
+        this.currentIndex = (this.currentIndex + 1) % this.coreValues.length;
+      }, 3000);
     },
   },
 };
@@ -104,7 +135,7 @@ export default {
   padding-bottom: 37px;
 }
 
-.grid-container__grid-item:nth-of-type(8) > div > p {
+/* .grid-container__grid-item:nth-of-type(8) > div > p {
   font-size: 1.75rem;
   color: #fb8c00;
   font-weight: 700;
@@ -112,6 +143,26 @@ export default {
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 10px 10px;
+} */
+
+.carousel {
+  font-size: 1.75rem;
+  background-image: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 1, 1, 0.6) 20%,
+    rgba(1, 1, 1, 0.6) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.text__carousel {
+  width: 250px;
+  color: #fb8c00;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .grid-container__grid-item:nth-of-type(9) {
