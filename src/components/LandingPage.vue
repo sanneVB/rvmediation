@@ -39,7 +39,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         background-image: url('../assets/rvmediation-hero.webp');
-        background-color: rgb(1, 1, 39);
+        background-color: #001526;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -101,7 +101,7 @@
     }
 
     .grid-container__image--rv {
-        height: 55px;
+        height: 56px;
     }
 
     .grid-container__image--nmv-1, .grid-container__image--nmv-2 {
@@ -135,10 +135,6 @@
         .grid-container__grid-text-image {
             padding-top: 40px;
         }
-
-        .grid-container__image--rv {
-            margin-top: -50px;
-        }
         
         .grid-container__image--nmv-1, .grid-container__text-1 {
             display: block;
@@ -149,16 +145,19 @@
         }
 
         h1 {
-            font-size: 4rem;
+            font-size: 3rem;
+            margin-bottom: -23px;
+            padding-left: 2px;
         }
         
         h2 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             letter-spacing: 0.1rem;
         }
 
         .grid-container__image--rv {
             height: 53px;
+            margin-top: 20px;
         }
 
         .grid-container__image--nmv {

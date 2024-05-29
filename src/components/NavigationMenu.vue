@@ -27,6 +27,8 @@
                 </li>
             </ul>
             <v-btn class="button">NEEM CONTACT OP</v-btn>
+            <!-- button zou volgens design in het midden gecentreerd moeten zijn, hou rekening met het feit dat je
+            geen margins op een block element mag zetten bij BEM!!! Zorgt voor problemen -->
         </div>
     </nav>
 </template>
@@ -61,6 +63,8 @@
 
     .nav__toggle {
         position: relative;
+        /* mocht je de hoogte/breedte willen aanpassen let op! Dit heeft direct invloed op de positie 
+        van de header__image (headercontent.vue) */
         height: 32px;
         width: 32px;
         border-radius: 4px;
@@ -82,6 +86,10 @@
         right: 0;
         padding: 150px 10% 0 5%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav__ul {
+        margin-bottom: 100px;
     }
 
     .nav__bar {
