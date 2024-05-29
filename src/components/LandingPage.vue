@@ -87,6 +87,17 @@ export default {
   height: 100vh;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url("../assets/rvmediation-hero.webp");
+  background-color: #001526;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
 .grid-container__grid-item:nth-of-type(1) {
   padding: 0 9%;
 }
@@ -146,6 +157,9 @@ p {
   height: 55px;
 }
 
+.grid-container__image--rv {
+  height: 56px;
+}
 .grid-container__image--nmv-1,
 .grid-container__image--nmv-2 {
   height: 48px;
@@ -184,6 +198,14 @@ p {
     margin-top: -50px;
   }
 
+  .grid-container__grid-text-image {
+    padding-top: 40px;
+  }
+
+  .grid-container__image--nmv-1,
+  .grid-container__text-1 {
+    display: block;
+  }
   .grid-container__image--nmv-1,
   .grid-container__text-1 {
     display: block;
@@ -197,21 +219,28 @@ p {
     font-size: 4rem;
   }
 
+  h1 {
+    font-size: 3rem;
+    margin-bottom: -23px;
+    padding-left: 2px;
+  }
+
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
   }
 
   .grid-container__image--rv {
     height: 53px;
+    margin-top: 20px;
   }
 
   .grid-container__image--nmv {
     height: 36px;
   }
 
-  .grid-container__grid-item:nth-of-type(8) > p {
-    font-size: 1.625rem;
+  .grid-container__grid-item:nth-of-type(8) > div > p {
+    font-size: 1.375rem;
   }
 }
 
@@ -233,7 +262,7 @@ p {
     height: 36px;
   }
 
-  .grid-container__grid-item:nth-of-type(8) > p {
+  .grid-container__grid-item:nth-of-type(8) > div > p {
     font-size: 1.625rem;
   }
 }

@@ -38,11 +38,20 @@ export default {
   z-index: 1000;
 }
 
-.header__image {
-  width: 224px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .header__image {
+    height: 56px;
+    width: 224px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding om hem exact hetzelfde uit te lijnen met het logo op de landingpagina */
+    padding-left: 32px;
+  }
+
+  @media screen and (max-width: 599px) {
+    .header__image {
+      height: 53px;
+    }
+  }
 
 .header__image--hidden {
   opacity: 0;
