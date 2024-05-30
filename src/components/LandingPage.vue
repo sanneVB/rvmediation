@@ -14,7 +14,7 @@
     </div>
     <div class="grid-container__grid-item">
       <div class="grid-container__grid-content">
-        <p>"doortastend"</p>
+        <p class="grid-container__p">"doortastend"</p>
         <div class="grid-container__grid-text-image">
           <p class="grid-container__text-1">RVmediation is lid van</p>
           <img
@@ -59,168 +59,168 @@ export default {
 </script>
 
 <style scoped>
-.grid-container {
-  position: relative;
-  margin-top: -80px; /*Dit haalt de wit ruimte weg boven het de landingpage*/
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  background-image: url("../assets/rvmediation-hero.webp");
-  background-color: #001526;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-}
+  .grid-container {
+    position: relative;
+    margin-top: -80px; /*Dit haalt de wit ruimte weg boven het de landingpage*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background-image: url("../assets/rvmediation-hero.webp");
+    background-color: #001526;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+  }
 
-.grid-container__grid-item:nth-of-type(1) {
-  padding: 0 3%;
-}
+  .grid-container__grid-item:nth-of-type(1) {
+    padding: 0 3%;
+  }
 
-.grid-container__grid-item:nth-of-type(2) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .grid-container__grid-item:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.grid-container__grid-item:nth-of-type(3) {
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  padding-bottom: 37px;
-}
+  .grid-container__grid-item:nth-of-type(3) {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 37px;
+  }
 
-.grid-container__grid-item:nth-of-type(3) > div > p {
-  font-size: 1.75rem;
-  color: #fb8c00;
-  font-weight: 700;
-  font-style: italic;
-  background-color: rgba(0, 0, 0, 0.6);
-  text-align: center;
-  padding: 10px 10px;
-}
+  .grid-container__p {
+    font-size: 1.75rem;
+    color: #fb8c00;
+    font-weight: 700;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 10px 10px;
+  }
 
-.grid-container__grid-text-image {
-  position: absolute;
-  right: 3%;
-  bottom: 5%;
-}
-
-h1,
-h2 {
-  color: #fff;
-}
-
-h1 {
-  font-size: 5rem;
-  margin-bottom: -35px;
-}
-
-h2 {
-  font-size: 2.25rem;
-  letter-spacing: 0.3rem;
-  padding-left: 5px;
-}
-
-p {
-  color: white;
-}
-
-.grid-container__image--rv {
-  height: 55px;
-}
-
-.grid-container__image--rv {
-  height: 56px;
-}
-.grid-container__image--nmv-1,
-.grid-container__image--nmv-2 {
-  height: 48px;
-}
-
-.grid-container__text-1,
-.grid-container__text-2 {
-  font-size: 0.75rem;
-  padding-bottom: 12px;
-  text-align: center;
-  font-weight: bold;
-  font-style: italic;
-}
-
-@media screen and (max-width: 599px) {
-  
   .grid-container__grid-text-image {
-    position: static;
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
   }
 
-  .grid-container__image--nmv-1 {
-    padding-left: 22px;
-    height: 32px;
-  }
-
-  .grid-container__text-1 {
-    font-size: 0.563rem;
-  }
-
-  h1 {
-    font-size: 4rem;
+  h1,
+  h2 {
+    color: #fff;
   }
 
   h1 {
-    font-size: 3rem;
-    margin-bottom: -23px;
-    padding-left: 2px;
+    font-size: 5rem;
+    margin-bottom: -35px;
   }
 
   h2 {
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+    font-size: 2.25rem;
+    letter-spacing: 0.3rem;
+    padding-left: 5px;
+  }
+
+  p {
+    color: white;
   }
 
   .grid-container__image--rv {
-    height: 53px;
+    height: 56px;
   }
 
-  .grid-container__image--nmv {
-    height: 36px;
-  }
-
-  .grid-container__grid-item:nth-of-type(3) > div > p {
-    font-size: 1.375rem;
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-    letter-spacing: 0.1rem;
-  }
-
-  .grid-container__image {
-    height: 53px;
-  }
-
-  .grid-container__image--nmv-1 {
-    padding-left: 5px;
-    height: 36px;
-  }
-
-  .grid-container__text-1 {
-    font-size: 0.6250rem;
-  }
-
-
+  .grid-container__image--nmv-1,
   .grid-container__image--nmv-2 {
-    height: 36px;
+    height: 48px;
   }
 
-  .grid-container__grid-item:nth-of-type(2) > div > p {
-    font-size: 1.625rem;
+  .grid-container__text-1,
+  .grid-container__text-2 {
+    font-size: 0.75rem;
+    padding-bottom: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
   }
-}
+
+  @media screen and (max-width: 599px) {
+    
+    .grid-container__grid-text-image {
+      position: static;
+    }
+
+    .grid-container__image--nmv-1 {
+      padding-left: 22px;
+      height: 32px;
+    }
+
+    .grid-container__text-1 {
+      font-size: 0.563rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: -23px;
+      padding-left: 2px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .grid-container__image--rv {
+      height: 53px;
+    }
+
+    .grid-container__image--nmv {
+      height: 36px;
+    }
+
+    .grid-container__p {
+      font-size: 1.375rem;
+      margin-bottom: 24px;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .grid-container__image {
+      height: 53px;
+    }
+
+    .grid-container__image--nmv-1 {
+      padding-left: 5px;
+      height: 36px;
+    }
+
+    .grid-container__text-1 {
+      font-size: 0.6250rem;
+    }
+
+    .grid-container__image--nmv-2 {
+      height: 36px;
+    }
+
+    .grid-container__grid-item:nth-of-type(2) > div > p {
+      font-size: 1.625rem;
+    }
+
+    .grid-container__p {
+      font-size: 1.625rem;
+    }
+  }
 </style>
