@@ -87,7 +87,7 @@ export default {
     display: flex;
     align-items: end;
     justify-content: center;
-    padding-bottom: 37px;
+    padding-bottom: 34px;
   }
 
   .grid-container__p {
@@ -103,7 +103,7 @@ export default {
   .grid-container__grid-text-image {
     position: absolute;
     right: 3%;
-    bottom: 5%;
+    bottom: 4%;
   }
 
   h1,
