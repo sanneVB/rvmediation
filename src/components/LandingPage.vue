@@ -18,8 +18,8 @@
     <div class="grid-container__grid-item"></div>
     <div class="grid-container__grid-item"></div>
     <div class="grid-container__grid-item">
-      <div class="carousel">
-        <p class="text__carousel">{{ currentValue }}</p>
+      <carrousel-content />
+      <div>
         <div class="grid-container__grid-text-image">
           <p class="grid-container__text-1">RVmediation is lid van</p>
           <img
@@ -44,36 +44,15 @@
 </template>
 
 <script>
+import CarrouselContent from "./CarrouselContent.vue";
+
 export default {
   name: "LandingPage",
-  data() {
-    return {
-      coreValues: [
-        "“doortastend”",
-        "“bruggenbouwer”",
-        "“professioneel”",
-        "“open en eerlijk”",
-        "“rustig”",
-        "“meedenkend”",
-      ],
-      currentIndex: 0,
-    };
-  },
-  computed: {
-    currentValue() {
-      return this.coreValues[this.currentIndex];
-    },
+  components: {
+    CarrouselContent,
   },
   mounted() {
     this.createObserver();
-  },
-  created() {
-    this.startCarousel();
-  },
-  beforeUnmount() {
-    if (this.carouselInterval) {
-      clearInterval(this.carouselInterval);
-    }
   },
   methods: {
     createObserver() {
@@ -94,11 +73,6 @@ export default {
           this.$emit("changeVisibility", false);
         }
       });
-    },
-    startCarousel() {
-      setInterval(() => {
-        this.currentIndex = (this.currentIndex + 1) % this.coreValues.length;
-      }, 3000);
     },
   },
 };
@@ -144,27 +118,6 @@ export default {
   text-align: center;
   padding: 10px 10px;
 } */
-
-.carousel {
-  font-size: 1.75rem;
-  text-align: center;
-  padding: 10px 10px;
-}
-
-.text__carousel {
-  width: 250px;
-  background-image: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 0) 0%,
-    rgba(1, 1, 1, 0.6) 20%,
-    rgba(1, 1, 1, 0.6) 80%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  color: #fb8c00;
-  font-weight: 700;
-  font-style: italic;
-  padding: 3px 0;
-}
 
 .grid-container__grid-item:nth-of-type(9) {
   display: flex;

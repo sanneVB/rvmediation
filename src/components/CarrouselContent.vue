@@ -1,3 +1,65 @@
-<template>Hallo</template>
-<script></script>
-<style scoped></style>
+<template>
+  <div class="carousel">
+    <p class="text__carousel">{{ currentValue }}</p>
+  </div>
+</template>
+<script>
+export default {
+  name: "CarrouselContent",
+  data() {
+    return {
+      coreValues: [
+        "“doortastend”",
+        "“bruggenbouwer”",
+        "“professioneel”",
+        "“open en eerlijk”",
+        "“rustig”",
+        "“meedenkend”",
+      ],
+      currentIndex: 0,
+    };
+  },
+  computed: {
+    currentValue() {
+      return this.coreValues[this.currentIndex];
+    },
+  },
+  created() {
+    this.startCarousel();
+  },
+  beforeUnmount() {
+    if (this.carouselInterval) {
+      clearInterval(this.carouselInterval);
+    }
+  },
+  methods: {
+    startCarousel() {
+      setInterval(() => {
+        this.currentIndex = (this.currentIndex + 1) % this.coreValues.length;
+      }, 3000);
+    },
+  },
+};
+</script>
+<style scoped>
+.carousel {
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.text__carousel {
+  width: 367px;
+  background-image: linear-gradient(
+    90deg,
+    #00152600 0%,
+    #00152699 23%,
+    #00152699 78%,
+    #00152600 100%
+  );
+  color: #fb8c00;
+  font-weight: 700;
+  font-style: italic;
+  padding: 3px 0;
+}
+</style>
