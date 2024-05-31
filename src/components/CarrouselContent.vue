@@ -1,6 +1,8 @@
 <template>
   <div class="carousel">
-    <p class="text__carousel">{{ currentValue }}</p>
+    <transition name="fade" mode="out-in">
+      <p class="text__carousel" :key="currentValue">{{ currentValue }}</p>
+    </transition>
   </div>
 </template>
 <script>
@@ -61,5 +63,14 @@ export default {
   font-weight: 700;
   font-style: italic;
   padding: 3px 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
