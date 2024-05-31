@@ -29,8 +29,14 @@
 </template>
 
 <script>
+import CarrouselContent from "./CarrouselContent.vue";
+
 export default {
   name: "LandingPage",
+  components: {
+    // eslint-disable-next-line vue/no-unused-components
+    CarrouselContent,
+  },
   mounted() {
     this.createObserver();
   },
@@ -39,13 +45,13 @@ export default {
       const options = {
         root: null,
         rootMargin: "0px",
-        treshold: 0.1,
+        threshold: 0.1,
       };
 
-      const observer = new IntersectionObserver(this.handleInstersect, options);
+      const observer = new IntersectionObserver(this.handleIntersect, options);
       observer.observe(this.$refs.observedElement);
     },
-    handleInstersect(entries) {
+    handleIntersect(entries) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           this.$emit("changeVisibility", true);
