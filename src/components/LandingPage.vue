@@ -18,8 +18,8 @@
     <div class="grid-container__grid-item"></div>
     <div class="grid-container__grid-item"></div>
     <div class="grid-container__grid-item">
+      <carrousel-content />
       <div>
-        <p>"doortastend"</p>
         <div class="grid-container__grid-text-image">
           <p class="grid-container__text-1">RVmediation is lid van</p>
           <img
@@ -44,8 +44,13 @@
 </template>
 
 <script>
+import CarrouselContent from "./CarrouselContent.vue";
+
 export default {
   name: "LandingPage",
+  components: {
+    CarrouselContent,
+  },
   mounted() {
     this.createObserver();
   },
@@ -54,13 +59,13 @@ export default {
       const options = {
         root: null,
         rootMargin: "0px",
-        treshold: 0.1,
+        threshold: 0.1,
       };
 
-      const observer = new IntersectionObserver(this.handleInstersect, options);
+      const observer = new IntersectionObserver(this.handleIntersect, options);
       observer.observe(this.$refs.observedElement);
     },
-    handleInstersect(entries) {
+    handleIntersect(entries) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           this.$emit("changeVisibility", true);
@@ -115,7 +120,7 @@ export default {
   padding-bottom: 37px;
 }
 
-.grid-container__grid-item:nth-of-type(8) > div > p {
+/* .grid-container__grid-item:nth-of-type(8) > div > p {
   font-size: 1.75rem;
   color: #fb8c00;
   font-weight: 700;
@@ -123,7 +128,7 @@ export default {
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 10px 10px;
-}
+} */
 
 .grid-container__grid-item:nth-of-type(9) {
   display: flex;
