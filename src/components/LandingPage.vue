@@ -35,7 +35,6 @@ import CarrouselContent from "./CarrouselContent.vue";
 export default {
   name: "LandingPage",
   components: {
-    // eslint-disable-next-line vue/no-unused-components
     CarrouselContent,
   },
   mounted() {
