@@ -4,9 +4,6 @@
       <h1>ROB</h1>
       <h2>Verbeek</h2>
     </div>
-    <div class="grid-container__grid-item"></div>
-    <div class="grid-container__grid-item"></div>
-    <div class="grid-container__grid-item"></div>
     <div class="grid-container__grid-item">
       <img
         class="grid-container__image--rv"
@@ -15,11 +12,10 @@
         ref="observedElement"
       />
     </div>
-    <div class="grid-container__grid-item"></div>
-    <div class="grid-container__grid-item"></div>
     <div class="grid-container__grid-item">
-      <carrousel-content />
-      <div>
+      <div class="grid-container__grid-content">
+        <carrousel-content class="grid-container__p" />
+        <!-- <p class="grid-container__p">"doortastend"</p> -->
         <div class="grid-container__grid-text-image">
           <p class="grid-container__text-1">RVmediation is lid van</p>
           <img
@@ -28,16 +24,6 @@
             alt="logo van de nmv"
           />
         </div>
-      </div>
-    </div>
-    <div class="grid-container__grid-item">
-      <div class="grid-container__grid-text-image">
-        <p class="grid-container__text-2">RVmediation is lid van</p>
-        <img
-          class="grid-container__image--nmv-2"
-          src="../assets/rv-mediation-nmv-logo.png"
-          alt="logo van de nmv"
-        />
       </div>
     </div>
   </div>
@@ -79,196 +65,168 @@ export default {
 </script>
 
 <style scoped>
-.grid-container {
-  margin-top: -80px; /*Dit haalt de wit ruimte weg boven het de landingpage*/
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  background-image: url("../assets/rvmediation-hero.webp");
-  background-color: rgb(1, 1, 39);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  background-image: url("../assets/rvmediation-hero.webp");
-  background-color: #001526;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-}
-.grid-container__grid-item:nth-of-type(1) {
-  padding: 0 9%;
-}
-
-.grid-container__grid-item:nth-of-type(5) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.grid-container__grid-item:nth-of-type(8) {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  padding-bottom: 37px;
-}
-
-/* .grid-container__grid-item:nth-of-type(8) > div > p {
-  font-size: 1.75rem;
-  color: #fb8c00;
-  font-weight: 700;
-  font-style: italic;
-  background-color: rgba(0, 0, 0, 0.6);
-  text-align: center;
-  padding: 10px 10px;
-} */
-
-.grid-container__grid-item:nth-of-type(9) {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  padding-bottom: 37px;
-  padding-right: 9%;
-}
-
-h1,
-h2 {
-  color: #fff;
-}
-
-h1 {
-  font-size: 5rem;
-  margin-bottom: -35px;
-}
-
-h2 {
-  font-size: 2.25rem;
-  letter-spacing: 0.3rem;
-  padding-left: 5px;
-}
-
-p {
-  color: white;
-}
-
-.grid-container__image--rv {
-  height: 55px;
-}
-
-.grid-container__image--rv {
-  height: 56px;
-}
-.grid-container__image--nmv-1,
-.grid-container__image--nmv-2 {
-  height: 48px;
-}
-
-.grid-container__text-1,
-.grid-container__text-2 {
-  font-size: 0.75rem;
-  padding-bottom: 12px;
-  text-align: center;
-  font-weight: bold;
-  font-style: italic;
-}
-
-.grid-container__image--nmv-1,
-.grid-container__text-1 {
-  display: none;
-}
-
-@media screen and (max-width: 599px) {
   .grid-container {
+    position: relative;
+    margin-top: -80px; /*Dit haalt de wit ruimte weg boven het de landingpage*/
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background-image: url("../assets/rvmediation-hero.webp");
+    background-color: #001526;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
   }
 
-  .grid-container__grid-item:nth-of-type(9) {
-    display: none;
+  .grid-container__grid-item:nth-of-type(1) {
+    padding: 0 3%;
   }
+
+  .grid-container__grid-item:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-container__grid-item:nth-of-type(3) {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 34px;
+  }
+
+  /* .grid-container__p {
+    font-size: 1.75rem;
+    color: #fb8c00;
+    font-weight: 700;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 10px 10px;
+  } */
 
   .grid-container__grid-text-image {
-    padding-top: 40px;
+    position: absolute;
+    right: 3%;
+    bottom: 4%;
   }
 
-  .grid-container__image--rv {
-    margin-top: -50px;
-  }
-
-  .grid-container__grid-text-image {
-    padding-top: 40px;
-  }
-
-  .grid-container__image--nmv-1,
-  .grid-container__text-1 {
-    display: block;
-  }
-  .grid-container__image--nmv-1,
-  .grid-container__text-1 {
-    display: block;
-  }
-
-  .grid-container__image--nmv-1 {
-    padding-left: 16px;
+  h1,
+  h2 {
+    color: #fff;
   }
 
   h1 {
-    font-size: 4rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-    margin-bottom: -23px;
-    padding-left: 2px;
+    font-size: 5rem;
+    margin-bottom: -35px;
   }
 
   h2 {
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+    font-size: 2.25rem;
+    letter-spacing: 0.3rem;
+    padding-left: 5px;
+  }
+
+  p {
+    color: white;
   }
 
   .grid-container__image--rv {
-    height: 53px;
-    margin-top: 20px;
+    height: 56px;
   }
 
-  .grid-container__image--nmv {
-    height: 36px;
-  }
-
-  .grid-container__grid-item:nth-of-type(8) > div > p {
-    font-size: 1.375rem;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-    letter-spacing: 0.1rem;
-  }
-
-  .grid-container__image {
-    height: 53px;
-  }
-
+  .grid-container__image--nmv-1,
   .grid-container__image--nmv-2 {
-    height: 36px;
+    height: 48px;
   }
 
-  .grid-container__grid-item:nth-of-type(8) > div > p {
-    font-size: 1.625rem;
+  .grid-container__text-1,
+  .grid-container__text-2 {
+    font-size: 0.75rem;
+    padding-bottom: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
   }
-}
+
+  @media screen and (max-width: 599px) {
+    
+    .grid-container__grid-text-image {
+      position: static;
+    }
+
+    .grid-container__image--nmv-1 {
+      padding-left: 22px;
+      height: 32px;
+    }
+
+    .grid-container__text-1 {
+      font-size: 0.563rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: -23px;
+      padding-left: 2px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .grid-container__image--rv {
+      height: 53px;
+    }
+
+    .grid-container__image--nmv {
+      height: 36px;
+    }
+
+    /* .grid-container__p {
+      font-size: 1.375rem;
+      margin-bottom: 24px;
+    } */
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .grid-container__image {
+      height: 53px;
+    }
+
+    .grid-container__image--nmv-1 {
+      padding-left: 5px;
+      height: 36px;
+    }
+
+    .grid-container__text-1 {
+      font-size: 0.6250rem;
+    }
+
+    .grid-container__image--nmv-2 {
+      height: 36px;
+    }
+
+    /* .grid-container__grid-item:nth-of-type(2) > div > p {
+      font-size: 1.625rem;
+    }
+
+    .grid-container__p {
+      font-size: 1.625rem;
+    } */
+  }
 </style>

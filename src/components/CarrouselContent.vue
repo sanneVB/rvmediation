@@ -73,4 +73,25 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
+
+@media screen and (max-width: 599px) {
+
+  .grid-container__p {
+    font-size: 1.375rem;
+    margin-bottom: 24px;
+  }
+
+    .text__carrousel {
+    width: initial;
+    background-image: none;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+  .grid-container__p {
+    font-size: 1.625rem;
+  }
+}
+
 </style>
