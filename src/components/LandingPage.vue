@@ -14,7 +14,8 @@
     </div>
     <div class="grid-container__grid-item">
       <div class="grid-container__grid-content">
-        <p class="grid-container__p">"doortastend"</p>
+        <carrousel-content class="grid-container__p" />
+        <!-- <p class="grid-container__p">"doortastend"</p> -->
         <div class="grid-container__grid-text-image">
           <p class="grid-container__text-1">RVmediation is lid van</p>
           <img
@@ -96,7 +97,7 @@ export default {
     padding-bottom: 34px;
   }
 
-  .grid-container__p {
+  /* .grid-container__p {
     font-size: 1.75rem;
     color: #fb8c00;
     font-weight: 700;
@@ -104,7 +105,7 @@ export default {
     background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
     padding: 10px 10px;
-  }
+  } */
 
   .grid-container__grid-text-image {
     position: absolute;
@@ -188,10 +189,10 @@ export default {
       height: 36px;
     }
 
-    .grid-container__p {
+    /* .grid-container__p {
       font-size: 1.375rem;
       margin-bottom: 24px;
-    }
+    } */
   }
 
   @media screen and (min-width: 600px) and (max-width: 768px) {
@@ -221,12 +222,12 @@ export default {
       height: 36px;
     }
 
-    .grid-container__grid-item:nth-of-type(2) > div > p {
+    /* .grid-container__grid-item:nth-of-type(2) > div > p {
       font-size: 1.625rem;
     }
 
     .grid-container__p {
       font-size: 1.625rem;
-    }
+    } */
   }
 </style>
