@@ -66,9 +66,17 @@ html {
 
 .container__snapPoint {
   height: 100vh;
-  width: 100vw;
   scroll-snap-align: start;
   scroll-margin-top: 80px;
   /* scroll-margin-top: 76px; */
 }
+
+#introduction {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 40px;
+  background-color: #00AEB80D;
+}
+
+
 </style>
