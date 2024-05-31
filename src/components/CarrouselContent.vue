@@ -1,7 +1,7 @@
 <template>
-  <div class="carousel">
+  <div class="carrousel">
     <transition name="fade" mode="out-in">
-      <p class="text__carousel" :key="currentValue">{{ currentValue }}</p>
+      <p class="text__carrousel" :key="currentValue">{{ currentValue }}</p>
     </transition>
   </div>
 </template>
@@ -27,15 +27,15 @@ export default {
     },
   },
   created() {
-    this.startCarousel();
+    this.startcarrousel();
   },
   beforeUnmount() {
-    if (this.carouselInterval) {
-      clearInterval(this.carouselInterval);
+    if (this.carrouselInterval) {
+      clearInterval(this.carrouselInterval);
     }
   },
   methods: {
-    startCarousel() {
+    startcarrousel() {
       setInterval(() => {
         this.currentIndex = (this.currentIndex + 1) % this.coreValues.length;
       }, 3000);
@@ -44,13 +44,13 @@ export default {
 };
 </script>
 <style scoped>
-.carousel {
+.carrousel {
   font-size: 1.75rem;
   text-align: center;
   padding: 10px 10px;
 }
 
-.text__carousel {
+.text__carrousel {
   width: 367px;
   background-image: linear-gradient(
     90deg,
