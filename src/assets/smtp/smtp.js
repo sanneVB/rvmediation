@@ -1,5 +1,5 @@
 ﻿/* SmtpJS.com - v3.0.0 */
-var Email = {
+export const Email = {
   send: function (a) {
     // eslint-disable-next-line no-unused-vars
     return new Promise(function (n, e) {

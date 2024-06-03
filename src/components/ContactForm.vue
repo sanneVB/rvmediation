@@ -4,7 +4,7 @@
       <div class="form__fields">
         <div class="form__field form__field--name">
           <label for="name" class="text__label text text--bold">Naam</label>
-          <input type="text" v-mode="fullName" />
+          <input type="text" v-model="name" />
         </div>
         <div class="form__field form__field--email">
           <label for="email" class="text__label text text--bold"
@@ -51,12 +51,12 @@ export default {
   methods: {
     sendEmail() {
       Email.send({
-        SecureToken: "",
-        To: "",
-        From: "",
+        SecureToken: "c4187a69-5b65-48d4-a339-6dc2adb92a74", //Als rob's hosting het toelaat hebben we een secure token nodig. Zoniet opzetten via https://smtpjs.com/
+        To: "", // Rob's email adress moet hier worden ingevuld
+        From: "", // Kan hetzelde zijn als to, maar kan ook specifiek from email voor worden aangemaakt
         name: this.name,
         Subject: this.subject,
-        Body: this.message,
+        Body: `Name: ${this.name}\nEmail: ${this.email}\nMessage: ${this.message}`,
       }).then((message) => alert(message));
     },
   },
