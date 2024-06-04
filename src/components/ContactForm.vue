@@ -51,7 +51,7 @@ export default {
   methods: {
     sendEmail() {
       Email.send({
-        SecureToken: "c4187a69-5b65-48d4-a339-6dc2adb92a74", //Als rob's hosting het toelaat hebben we een secure token nodig. Zoniet opzetten via https://smtpjs.com/
+        SecureToken: "", //Als rob's hosting het toelaat hebben we een secure token nodig. Zoniet opzetten via https://smtpjs.com/
         To: "", // Rob's email adress moet hier worden ingevuld
         From: "", // Kan hetzelde zijn als to, maar kan ook specifiek from email voor worden aangemaakt
         name: this.name,
