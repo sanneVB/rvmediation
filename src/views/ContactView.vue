@@ -1,16 +1,16 @@
 <template>
   <header-content />
   <section class="contact-message">
-    <h1>Contact</h1>
+    <h1 class="contact-message__text">Contact</h1>
     <p>Heeft u interesse of heeft u vragen? Neem gerust contact op.</p>
   </section>
-  <div class="grid-container">
-    <div class="grid-container__grid-item grid-container__contact-information">
-      <contact-information />
-      <div class="seperator"></div>
-    </div>
-    <div class="grid-container__grid-item grid-container__form">
+  <div class="flex-container">
+    <div class="flex-container__flex-item--form">
       <contact-form />
+    </div>
+    <div class="seperator"></div>
+    <div class="flex-container__flex-item--contact-information">
+      <contact-information />
     </div>
   </div>
 </template>
@@ -29,41 +29,42 @@ export default {
 };
 </script>
 <style>
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
-  margin-top: 40px;
-}
-
 .contact-message {
   text-align: center;
 }
 
-.grid-container__contact-information {
-  padding-left: 17vw;
-  grid-column: span 2;
-  display: flex;
-  justify-content: space-between;
-}
-
-.grid-container__form {
-  padding-right: 15vw;
-  padding-left: 5.57vw;
-  grid-column: span 3;
-}
-
-.contact-message > h1 {
+.contact-message__text {
   margin: 32px 0 40px 0;
 }
 
-.seperator {
-  border-left: 1px solid #7e7e7e;
-  height: 400px;
+.flex-container {
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 75vw;
+  max-width: 1152px;
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+.flex-container__flex-item--contact-information {
+  flex-grow: 1;
+  width: 40vw;
+}
+
+.flex-container__flex-item--form {
+  flex-grow: 1;
+  width: 60vw;
+}
+
+.seperator {
+  margin: 0 70px;
+  flex-grow: 0;
+  border-left: 1px solid #0000006b;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .seperator {
-    display: hidden;
+    display: none;
   }
 }
 </style>

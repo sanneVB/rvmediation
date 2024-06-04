@@ -14,11 +14,14 @@
         >
       </p>
     </div>
-    <img
-      src="../assets/rv-mediation-location-map.png"
-      width="248px"
-      height="186px"
-    />
+    <iframe
+      class="contact-information__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79604.38904309933!2d5.58710948766027!3d51.42809159488991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c725ac943f2a81%3A0x3ef9b112e6b1d89c!2sLierop!5e0!3m2!1sen!2snl!4v1717489916726!5m2!1sen!2snl"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
     <p class="text__contact-information--small">
       <span class="text__contact-information--bold">KVK:</span> 758.267.04 •
       <span class="text__contact-information--bold">BTW:</span>
@@ -32,11 +35,6 @@ export default {
 };
 </script>
 <style scoped>
-img {
-  object-fit: cover;
-  border-radius: 8px;
-}
-
 .contact-information__phone-email {
   padding: 25px 0;
 }
@@ -60,7 +58,9 @@ img {
   font-weight: 700;
 }
 
-img {
+.contact-information__map {
   margin-bottom: 25px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
 }
 </style>
