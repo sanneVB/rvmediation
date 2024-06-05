@@ -1,8 +1,8 @@
 <template>
     <HeaderContent></HeaderContent> 
     <h1>RVmediation is lid van NMv</h1>
-    <div class="grid-container">
-        <div class="grid-container__image">
+    <div class="page-container">
+        <div class="page-container__image">
             <a href="https://www.vindeenmediator.nl/mediator/rvmediation/" target="_blank">
                 <img
                     class="grid-container__image--nmv-1"
@@ -11,7 +11,7 @@
                 />
             </a>
         </div>
-        <div class="grid-container__text">
+        <div class="page-container__text">
             <p>
                 Accumsan felis velit, tempus dui, vestibulum praesent torquent vitae arcu primis. Suscipit faucibus varius, erat inceptos, vulputate luctus hac nisl primis etiam aliquam. Sodales interdum dictum, porttitor ad, amet scelerisque netus pharetra malesuada sociosqu. Habitant donec fusce curabitur, sit hac curabitur, potenti commodo nostra platea varius lorem adipiscing. Mattis laoreet fames, odio himenaeos, class ad vulputate platea scelerisque nisl. Cubilia nulla, blandit elementum aenean nec.
             </p>
@@ -34,36 +34,31 @@
     }
 </script>
 <style scoped>
-    p {
-        color: red;
+
+    h1 {
+        padding-right: 15vw;
+        padding-left: 15vw;
     }
 
     img {
         width: 256px;
     }
 
-    .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
-    margin-top: 40px;
-    gap: 1rem;
+    p {
+        color: red;
     }
 
-    .grid-container__image {
-    padding-top: 1rem;
-    padding-left: 17vw;
-    grid-column: span 2;
-    display: flex;
-    justify-content: space-between;
+    .page-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+        margin-top: 40px;
+        gap: 48px;
+        padding-right: 15vw;
+        padding-left: 15vw;
     }
 
-    .grid-container__text {
-    padding-right: 15vw;
-    padding-left: 5.57vw;
-    grid-column: span 3;
+    .page-container__image {
+        justify-self: center;
     }
 
-    @media screen and (min-width: 600px) and (max-width: 768px) {
-
-    }
 </style>
