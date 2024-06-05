@@ -21,8 +21,13 @@
   font-weight: 600;
 }
 
-.texc--italic {
-  font-variation-settings: "slnt" -10;
+.text--medium-bold {
+  font-weight: 500;
+}
+
+.text--italic {
+  /* font-variation-settings: "slnt" -10; */
+  font-style: italic;
 }
 
 *,
