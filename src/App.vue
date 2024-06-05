@@ -76,8 +76,13 @@ h6 {
 }
 
 h1 {
+  font-size: 1.5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+p {
+  padding-bottom: 0.5rem;
 }
 
 </style>
