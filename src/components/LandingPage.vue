@@ -20,12 +20,14 @@
         <carrousel-content class="grid-container__p" />
         <!-- <p class="grid-container__p">"doortastend"</p> -->
         <div class="grid-container__grid-text-image">
-          <p class="grid-container__text-1">RVmediation is lid van</p>
-          <img
-            class="grid-container__image--nmv-1"
-            src="../assets/rv-mediation-nmv-logo.png"
-            alt="logo van de nmv"
-          />
+          <a href="/nmv">
+            <p class="grid-container__text-1">RVmediation is lid van</p>
+            <img
+              class="grid-container__image--nmv-1"
+              src="../assets/rv-mediation-nmv-logo.png"
+              alt="logo van de nmv"
+            />
+          </a>
         </div>
       </div>
     </div>
