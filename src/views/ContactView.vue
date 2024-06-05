@@ -1,23 +1,29 @@
 <template>
-  <header-content />
-  <section class="contact-message">
-    <h1 class="contact-message__text">Contact</h1>
-    <p>Heeft u interesse of heeft u vragen? Neem gerust contact op.</p>
-  </section>
-  <div class="flex-container">
-    <div class="flex-container__flex-item--form">
-      <contact-form />
+  <div class="page-container">
+    <div class="page-container__content">
+      <header-content />
+      <section class="contact-message">
+        <h1 class="contact-message__text">Contact</h1>
+        <p>Heeft u interesse of heeft u vragen? Neem gerust contact op.</p>
+      </section>
+      <div class="flex-container">
+        <div class="flex-container__flex-item--form">
+          <contact-form />
+        </div>
+        <div class="seperator"></div>
+        <div class="flex-container__flex-item--contact-information">
+          <contact-information />
+        </div>
+      </div>
     </div>
-    <div class="seperator"></div>
-    <div class="flex-container__flex-item--contact-information">
-      <contact-information />
-    </div>
+    <footer-content class="footer" />
   </div>
 </template>
 <script>
 import HeaderContent from "@/components/HeaderContent.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import ContactInformation from "@/components/ContactInformation.vue";
+import FooterContent from "@/components/FooterContent.vue";
 
 export default {
   name: "ContactView",
@@ -25,6 +31,7 @@ export default {
     HeaderContent,
     ContactForm,
     ContactInformation,
+    FooterContent,
   },
 };
 </script>
@@ -60,6 +67,22 @@ export default {
   flex-grow: 0;
   border-left: 1px solid #0000006b;
   height: auto;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-container__content {
+  padding-bottom: 2.5rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
