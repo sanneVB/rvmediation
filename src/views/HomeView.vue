@@ -15,10 +15,10 @@
   <section class="container__snapPoint" id="about-me">
     <about-me-page />
   </section>
-  <section class="container__snapPoint" id="testimonials">
+  <section class="container__snapPoint container--footer" id="testimonials">
     <testimonials-page />
-    <footer-content class="footer" />
   </section>
+  <footer-content class="footer" />
 </template>
 
 <script>
@@ -70,5 +70,8 @@ html {
   scroll-snap-align: start;
   scroll-margin-top: 80px;
   /* scroll-margin-top: 76px; */
+}
+.container--footer {
+  height: calc(100vh - 80px);
 }
 </style>
