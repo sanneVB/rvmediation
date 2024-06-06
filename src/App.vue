@@ -2,9 +2,18 @@
   <router-view />
 </template>
 
-<script></script>
+<script>
+    export default {
+        name: "app",
+        // set default background color
+        created: function () {
+            document.body.style.backgroundColor = "#FDFDFD";
+        },
+    };
+</script>
 
 <style>
+
 .text {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
