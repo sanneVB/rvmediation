@@ -23,7 +23,7 @@
         <div class="container-img-box-1">
           <img class="container-img-whitetruck" src="../assets/whitetruck.jpg">
           <v-card class="container-box-1">
-            <p>
+            <p class="container-quote">
               Wist u dat 70% van het verzuim werkgerelateerd is?
             </p>
           </v-card>
@@ -32,7 +32,7 @@
       <section class="container__rightcontent">
         <div class="container-img-box-2">
           <v-card class="container-box-2">
-            <p container--padding>
+            <p class="container-quote">
               Wist u dat 75% van de werknemers die vrijwillig ontslag nemen, aangeeft dat dit tot stand
               komt door een vervelende werksfeer?
             </p>
@@ -40,7 +40,7 @@
           <img class="container-img-train" src="../assets/train.jpg">
         </div>
         <div>
-          <p class="container--padding">Merkt u op dat er veel verzuim en/of verloop van werknemers binnen uw bedrijf is?</p>
+          <p class="container--padding bold">Merkt u op dat er veel verzuim en/of verloop van werknemers binnen uw bedrijf is?</p>
           <p>
             <span class="bold">RVmediation</span> kan u een passende aanpak voor uw bedrijf opzetten. Door
             met elkaar in gesprek te gaan wordt er ruimte gecreeerd voor een passende oplossing. Dit biedt
@@ -67,6 +67,14 @@
   gap: 5rem;
 }
 
+.container__rightcontent {
+  /* om de foto van de trein en de tekst daaronder horizontaal juist uit te lijnen */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .container-img-box-1, .container-img-box-2 {
   position: relative;
 }
@@ -80,8 +88,14 @@
   position: absolute;
   max-width: 233px;
   color: #00AEB8;
-  padding: 25px 4%;
+  border-radius: 16px;
+  padding: 35px 8%;
   z-index: 99;
+}
+
+.container-quote {
+  font-size: 0.875rem;
+  font-style: italic;
 }
 
 .container-box-1 {
@@ -108,7 +122,7 @@
 
 h2 {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .italic {
