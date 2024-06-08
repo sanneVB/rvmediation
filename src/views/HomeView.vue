@@ -107,6 +107,7 @@ export default {
 
   section {
     height: 100vh;
+    scroll-margin-top: 80px;
   }
 
   /* scroll snap will be activated for tables and smartphones */
