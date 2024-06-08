@@ -20,7 +20,7 @@
                     <a href="#employer" class="nav__link">Voor werkgevers</a>
                 </li>
                 <li @click="closeNav" class="nav__item">
-                    <a href="#about" class="nav__link">Wie ben ik?</a>
+                    <a href="#about-me" class="nav__link">Wie ben ik?</a>
                 </li>
                 <li @click="closeNav" class="nav__item">
                     <a href="#testimonials" class="nav__link">Wat zeggen anderen?</a>
