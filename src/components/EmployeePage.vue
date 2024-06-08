@@ -1,5 +1,5 @@
 <template>
-  <h1>Wat kan ik voor jou betekenen als werknemer?</h1>
+  <h1>Wat kan ik voor u betekenen als werknemer?</h1>
   <div class="page-container">
     <div class="page-container__column">
       <div>
@@ -8,7 +8,7 @@
       <div class="page-container__illustration">
         <img
           class="page-container__image"
-          src="../assets/rvmediation-employee-truck-driver-stepin.jpg"
+          src="../assets/rvmediation-employee-driver-stepin.jpg"
           alt="picture of a truck on the road"
         />
         <p class="text-box__blue-right">“...door de uitvoerige coaching op maat was in vier sessies het grijze gebied opgehelderd en ben ik nu op mijn plaats...”</p>
@@ -19,7 +19,7 @@
         <p class="text-box__blue-left">“Door Rob zijn goede inlevingsvermogen en coaching ben ik weer op de goede weg.”</p>
         <img
           class="page-container__image"
-          src="../assets/rvmediation-employee-truck-cabin.jpg"
+          src="../assets/rvmediation-employee-driver-cabin.jpg"
           alt="picture of a truck in the city at twilight"
         />
       </div>

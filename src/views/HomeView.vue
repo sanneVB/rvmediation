@@ -98,21 +98,31 @@ export default {
 </script>
 
 <style>
-html {
-  overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  overflow-y: scroll;
-}
+  html {
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+  }
 
-.container__snapPoint {
-  height: 100vh;
-  width: 100vw;
-  scroll-snap-align: start;
-  scroll-margin-top: 80px;
-  /* scroll-margin-top: 76px; */
-}
-.container--footer {
-  height: calc(100vh - 80px);
-}
+  section {
+    height: 100vh;
+  }
+
+  /* scroll snap will be activated for tables and smartphones */
+  @media screen and (max-width: 768px) {
+
+    .container__snapPoint {
+      height: 100vh;
+      width: 100vw;
+      scroll-behavior: smooth;
+      scroll-snap-align: start;
+      scroll-margin-top: 80px;
+      /* scroll-margin-top: 76px; */
+    }
+  }
+
+  .container--footer {
+    height: calc(100vh - 80px);
+  }
 </style>
