@@ -53,13 +53,20 @@
 
   .page-container__column-right {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 48px;
+  }
+
+  @media screen and (max-width: 1074px) {
+    .page-container__column-right {
+      flex-direction: column-reverse;
+    }
   }
 
   .page-container__image {
     border-radius: 1rem;
     width: 240px;
+    height: fit-content;
   }
 
   .page-container__illustration {

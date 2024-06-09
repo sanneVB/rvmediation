@@ -25,7 +25,7 @@
         />
       </div>
       <div>
-        <P>Ik ga door middel van een 'conflictanalyse' kijken waar er in de organisatie potentiële conflicten liggen en ga daarmee deze conflicten vroegtijdig naar een passende oplossing zoeken, waardoor het veel werkbaarder wordt en dat de onderlinge frictie verdwijnt.</p>
+        <P>Ik ga door middel van een 'conflictanalyse' kijken waar er in de organisatie potentiële conflicten liggen. Ik ga daarmee deze conflicten vroegtijdig naar een passende oplossing zoeken, waardoor het veel werkbaarder wordt en dat de onderlinge frictie verdwijnt.</p>
       </div>
     </div>
   </div>
@@ -54,13 +54,20 @@
 
   .page-container__column-right {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 48px;
+  }
+
+  @media screen and (max-width: 1074px) {
+    .page-container__column-right {
+      flex-direction: column-reverse;
+    }
   }
 
   .page-container__image {
     border-radius: 1rem;
     width: 240px;
+    height: fit-content;
   }
 
   .page-container__illustration {
