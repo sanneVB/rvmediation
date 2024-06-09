@@ -11,13 +11,13 @@
           src="../assets/rvmediation-employer-truck-white.jpg"
           alt="picture of a truck on the road"
         />
-        <p class="text-box__blue-right">“Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</p>
+        <p class="text-box__white-right">“Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</p>
       </div>
     </div>
     <div class="page-container__column">
       <div class="page-container__illustration">
         <!-- TODO: Replace red text with new unique text -->
-        <p class="text-box__blue-left"><span style="color: red">"Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</span></p>
+        <p class="text-box__white-left"><span style="color: red">"Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</span></p>
         <img
           class="page-container__image"
           src="../assets/rvmediation-employer-truck-black.jpg"
@@ -72,29 +72,28 @@
     color: #00AEB8;
   } 
 
-  .text-box__blue-right {
+  .text-box__white-right {
     align-content: center;
-    background-color: #66ced4;
+    background-color: #fff;
     border-radius: 1rem;
     box-shadow: 2px 4px 6px rgba(0,0,0,.15);
-    color: #fff;
+    color: #00AEB8;
     font-weight: 600;
-    font-style: italic;
     padding: 1.25rem;
     position: relative;
     right: 1.25rem;
     top: 1rem;
     text-align: center;
-    text-shadow: 2px 4px 6px #888888;
+    text-shadow: 2px 4px 6px #d6d6d6;
     width: 232px;
   }
 
-  .text-box__blue-left {
+  .text-box__white-left {
     align-content: center;
-    background-color: #66ced4;
+    background-color: #fff;
     border-radius: 1rem;
     box-shadow: 2px 4px 6px rgba(0,0,0,.15);
-    color: #fff;
+    color: #00AEB8;
     font-weight: 600;
     font-style: italic;
     padding: 1.25rem;
@@ -102,7 +101,7 @@
     left: 1.25rem;
     top: 1rem;
     text-align: center;
-    text-shadow: 2px 4px 6px #888888;
+    text-shadow: 2px 4px 6px #d6d6d6;
     width: 232px;
   }
 </style>
