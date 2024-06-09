@@ -1,7 +1,7 @@
 <template>
   <h1>Wat kan ik voor u betekenen als werknemer?</h1>
   <div class="page-container">
-    <div class="page-container__column">
+    <div class="page-container__column-left">
       <div>
         <P>Voor de werknemers is het vooral van belang dat zij in een prettige omgeving kunnen werken. Maar dit is niet altijd het geval waardoor men zich soms niet gewaardeerd en begrepen voelt. Dit kan een conflict tot gevolg hebben.</p>
       </div>
@@ -14,7 +14,7 @@
         <p class="text-box__blue-right">“...door de uitvoerige coaching op maat was in vier sessies het grijze gebied opgehelderd en ben ik nu op mijn plaats...”</p>
       </div>
     </div>
-    <div class="page-container__column">
+    <div class="page-container__column-right">
       <div class="page-container__illustration">
         <p class="text-box__blue-left">“Door Rob zijn goede inlevingsvermogen en coaching ben ik weer op de goede weg.”</p>
         <img
@@ -45,9 +45,15 @@
     margin-top: 40px;
   }
 
-  .page-container__column {
+  .page-container__column-left {
     display: flex;
     flex-direction: column;
+    gap: 80px;
+  }
+
+  .page-container__column-right {
+    display: flex;
+    flex-direction: column-reverse;
     gap: 80px;
   }
 

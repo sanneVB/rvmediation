@@ -1,7 +1,7 @@
 <template>
   <h1><span class="text__italic">Uw</span> bemiddelaar voor de logistiek sector</h1>
   <div class="page-container">
-    <div class="page-container__column">
+    <div class="page-container__column-left">
       <div>
         <P>De specialisatie van <span class="text__blue-bold">RVmediation</span> ligt in de logistieke sector. Door mijn jarenlange ervaring in deze sector zijn mij diverse dingen opgevallen. Er worden hoge verwachtingen aan de werknemers gesteld. Er is sprake van onderliggende conflicten die de sfeer bepalen op de werkvloer, waardoor er veel sprake is van verzuim. Dit komt voort uit een gebrek aan open communicatie.
         </p>
@@ -23,7 +23,7 @@
         <p class="text-box__white-right">Wist u dat 70% van het verzuim werkgerelateerd is?</p>
       </div>
     </div>
-    <div class="page-container__column">
+    <div class="page-container__column-right">
       <div class="page-container__illustration">
         <p class="text-box__white-left">Wist u dat 75% van de werknemers die vrijwillig ontslag nemen, aangeeft dat dit tot stand komt door een vervelende werksfeer?</p>
         <img
@@ -55,9 +55,15 @@
     margin-top: 40px;
   }
 
-  .page-container__column {
+  .page-container__column-left {
     display: flex;
     flex-direction: column;
+    gap: 80px;
+  }
+
+  .page-container__column-right {
+    display: flex;
+    flex-direction: column-reverse;
     gap: 80px;
   }
 
