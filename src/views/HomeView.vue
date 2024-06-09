@@ -106,7 +106,7 @@ export default {
   }
 
   section {
-    height: 100vh;
+    min-height: 100vh;
     scroll-margin-top: 80px;
   }
 
@@ -118,8 +118,6 @@ export default {
       width: 100vw;
       scroll-behavior: smooth;
       scroll-snap-align: start;
-      scroll-margin-top: 80px;
-      /* scroll-margin-top: 76px; */
     }
   }
 

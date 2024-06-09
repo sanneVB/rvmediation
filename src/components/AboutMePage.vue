@@ -37,6 +37,8 @@
   .page-container__column {
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: center;
     gap: 80px;
   }
 
@@ -45,11 +47,6 @@
     width: 240px;
   }
 
-  .page-container__illustration {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
 
   .text__blue {
     color: #00AEB8;

@@ -48,13 +48,13 @@
   .page-container__column-left {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 48px;
   }
 
   .page-container__column-right {
     display: flex;
     flex-direction: column-reverse;
-    gap: 80px;
+    gap: 48px;
   }
 
   .page-container__image {
@@ -66,6 +66,8 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
   }
 
   .text__blue {
