@@ -30,8 +30,6 @@
   .section-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
-    /* padding-left: 15vw;
-    padding-right: 15vw; */
     gap: 80px;
     margin-top: 40px;
   }

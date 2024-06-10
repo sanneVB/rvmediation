@@ -1,5 +1,6 @@
 <template>
-    <HeaderContent></HeaderContent>
+<HeaderContent></HeaderContent>
+<div class="page-container">
     <h1>Algemene voorwaarden RV&nbsp;Mediation</h1>
     <div class="page-container__content">
         <div>
@@ -103,7 +104,8 @@
             <p class="text--italic">Deze algemene voorwaarden zijn op 18 januari 2022 vastgesteld.</p>
         </div>
     </div>
-    <FooterContent></FooterContent>
+</div>
+<FooterContent></FooterContent>
 </template>
 <script>
     import HeaderContent from '@/components/HeaderContent.vue';
@@ -119,9 +121,9 @@
             document.body.style.backgroundColor = "#001526";
         },
         // change back to default background color at exit
-        unmounted: function () {
-            document.body.style.backgroundColor = "#FDFDFD";
-        },
+        // unmounted: function () {
+        //     document.body.style.backgroundColor = "#FDFDFD";
+        // },
     };
 
 </script>
@@ -135,17 +137,10 @@
         font-size: 0.875rem;
     }
 
-    /* h1 {
-        padding-right: 15vw;
-        padding-left: 15vw;
-    } */
-
     .page-container__content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
         margin-top: 40px;
         gap: 80px;
-        /* padding-right: 15vw;
-        padding-left: 15vw; */
     }
 </style>

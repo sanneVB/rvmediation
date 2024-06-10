@@ -1,5 +1,6 @@
 <template>
-    <HeaderContent></HeaderContent> 
+<HeaderContent></HeaderContent>
+<div class="page-container">
     <h1>RVmediation is lid van NMv</h1>
     <div class="page-container__content">
         <div class="page-container__image">
@@ -20,7 +21,8 @@
             </p>
         </div>
     </div>
-    <FooterContent></FooterContent>
+</div>
+<FooterContent></FooterContent>
 </template>
 <script>
     import HeaderContent from '@/components/HeaderContent.vue';
@@ -29,16 +31,12 @@
     export default {
         name: "NmvView",
         components: {
-        HeaderContent, FooterContent,
+        HeaderContent,
+        FooterContent,
         },
     }
 </script>
 <style scoped>
-
-    /* h1 {
-        padding-right: 15vw;
-        padding-left: 15vw;
-    } */
 
     img {
         width: 256px;
@@ -53,8 +51,6 @@
         grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
         margin-top: 40px;
         gap: 48px;
-        /* padding-right: 15vw;
-        padding-left: 15vw; */
     }
 
     .page-container__image {

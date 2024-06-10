@@ -22,10 +22,9 @@
 }
 
 .page-container {
-  align-self: center;
-  justify-content: center;
-  /* width: 75vw; */
+  margin-inline: auto;
   max-width: 1152px;
+  width: 75vw;
 }
 
 .text--bold {
