@@ -1,34 +1,35 @@
 <template>
-  <h1>Wat kan ik voor u betekenen als werkgever?</h1>
-  <div class="page-container">
-    <div class="page-container__column-left">
-      <div>
-        <P>Mediation is bedoeld om conflicten tussen werkgever en werknemer op te lossen of tussen twee werknemers. Er kan gekozen worden voor een onafhankelijk bemiddelaar die dit traject begeleidt. Maar beter nog is het voorkomen van een conflict. Dit is een van mijn specialiteiten.</p>
+  
+    <h1>Wat kan ik voor u betekenen als werkgever?</h1>
+    <div class="page-container">
+      <div class="page-container__column-left">
+        <div>
+          <P>Mediation is bedoeld om conflicten tussen werkgever en werknemer op te lossen of tussen twee werknemers. Er kan gekozen worden voor een onafhankelijk bemiddelaar die dit traject begeleidt. Maar beter nog is het voorkomen van een conflict. Dit is een van mijn specialiteiten.</p>
+        </div>
+        <div class="page-container__illustration">
+          <img
+            class="page-container__image"
+            src="../assets/rvmediation-employer-truck-white.jpg"
+            alt="picture of a truck on the road"
+          />
+          <p class="text-box__white-right">“Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</p>
+        </div>
       </div>
-      <div class="page-container__illustration">
-        <img
-          class="page-container__image"
-          src="../assets/rvmediation-employer-truck-white.jpg"
-          alt="picture of a truck on the road"
-        />
-        <p class="text-box__white-right">“Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</p>
+      <div class="page-container__column-right">
+        <div class="page-container__illustration">
+          <!-- TODO: Replace red text with new unique text -->
+          <p class="text-box__white-left"><span style="color: red">"Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</span></p>
+          <img
+            class="page-container__image"
+            src="../assets/rvmediation-employer-truck-black.jpg"
+            alt="picture of a truck in the city at twilight"
+          />
+        </div>
+        <div>
+          <P>Ik ga door middel van een 'conflictanalyse' kijken waar er in de organisatie potentiële conflicten liggen. Ik ga daarmee deze conflicten vroegtijdig naar een passende oplossing zoeken, waardoor het veel werkbaarder wordt en dat de onderlinge frictie verdwijnt.</p>
+        </div>
       </div>
     </div>
-    <div class="page-container__column-right">
-      <div class="page-container__illustration">
-        <!-- TODO: Replace red text with new unique text -->
-        <p class="text-box__white-left"><span style="color: red">"Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</span></p>
-        <img
-          class="page-container__image"
-          src="../assets/rvmediation-employer-truck-black.jpg"
-          alt="picture of a truck in the city at twilight"
-        />
-      </div>
-      <div>
-        <P>Ik ga door middel van een 'conflictanalyse' kijken waar er in de organisatie potentiële conflicten liggen. Ik ga daarmee deze conflicten vroegtijdig naar een passende oplossing zoeken, waardoor het veel werkbaarder wordt en dat de onderlinge frictie verdwijnt.</p>
-      </div>
-    </div>
-  </div>
 </template>
 <script></script>
 <style scoped>
@@ -93,6 +94,7 @@
     border-radius: 1rem;
     box-shadow: 2px 4px 6px rgba(0,0,0,.15);
     color: #00AEB8;
+    font-variation-settings: "slnt" -10;
     font-weight: 600;
     padding: 1.25rem;
     position: relative;
@@ -109,8 +111,8 @@
     border-radius: 1rem;
     box-shadow: 2px 4px 6px rgba(0,0,0,.15);
     color: #00AEB8;
+    font-variation-settings: "slnt" -10;
     font-weight: 600;
-    font-style: italic;
     padding: 1.25rem;
     position: relative;
     left: 1.25rem;
