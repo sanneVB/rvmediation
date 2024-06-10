@@ -1,25 +1,26 @@
 <template>
+<div class="page-container">
   <h1>Wat kan ik voor u betekenen als werkgever?</h1>
-  <div class="page-container">
-    <div class="page-container__column-left">
+  <div class="section-container">
+    <div class="section-container__column-left">
       <div>
         <P>Mediation is bedoeld om conflicten tussen werkgever en werknemer op te lossen of tussen twee werknemers. Er kan gekozen worden voor een onafhankelijk bemiddelaar die dit traject begeleidt. Maar beter nog is het voorkomen van een conflict. Dit is een van mijn specialiteiten.</p>
       </div>
-      <div class="page-container__illustration">
+      <div class="section-container__illustration">
         <img
-          class="page-container__image"
+          class="section-container__image"
           src="../assets/rvmediation-employer-truck-white.jpg"
           alt="picture of a truck on the road"
         />
         <p class="text-box__white-right">“Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</p>
       </div>
     </div>
-    <div class="page-container__column-right">
-      <div class="page-container__illustration">
+    <div class="section-container__column-right">
+      <div class="section-container__illustration">
         <!-- TODO: Replace red text with new unique text -->
         <p class="text-box__white-left"><span style="color: red">"Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</span></p>
         <img
-          class="page-container__image"
+          class="section-container__image"
           src="../assets/rvmediation-employer-truck-black.jpg"
           alt="picture of a truck in the city at twilight"
         />
@@ -29,6 +30,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 <script></script>
 <style scoped>
@@ -37,40 +39,40 @@
     padding-left: 1rem;
   }
 
-  .page-container {
+  .section-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
-    padding-left: 15vw;
-    padding-right: 15vw;
+    /* padding-left: 15vw;
+    padding-right: 15vw; */
     gap: 80px;
     margin-top: 40px;
   }
 
-  .page-container__column-left {
+  .section-container__column-left {
     display: flex;
     flex-direction: column;
     gap: 48px;
   }
 
-  .page-container__column-right {
+  .section-container__column-right {
     display: flex;
     flex-direction: column;
     gap: 48px;
   }
 
   @media screen and (max-width: 1074px) {
-    .page-container__column-right {
+    .section-container__column-right {
       flex-direction: column-reverse;
     }
   }
 
-  .page-container__image {
+  .section-container__image {
     border-radius: 1rem;
     width: 240px;
     height: fit-content;
   }
 
-  .page-container__illustration {
+  .section-container__illustration {
     display: flex;
     justify-content: center;
     align-content: center;

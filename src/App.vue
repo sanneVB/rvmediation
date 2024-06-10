@@ -21,6 +21,13 @@
   font-variation-settings: "slnt" 0;
 }
 
+.page-container {
+  align-self: center;
+  justify-content: center;
+  /* width: 75vw; */
+  max-width: 1152px;
+}
+
 .text--bold {
   font-weight: 700;
 }
