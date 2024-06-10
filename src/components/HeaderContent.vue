@@ -3,7 +3,7 @@
     <img
       :class="{ 'header__image--hidden': isVisible }"
       class="header__image"
-      src="../assets/rv-mediation-logo.svg"
+      src="../assets/rvmediation-logo.svg"
       alt="logo van rvmediation"
     />
     <NavigationMenu />
@@ -36,11 +36,11 @@ export default {
   top: 0;
   background-color: #001526;
   z-index: 1000;
+  /* box-shadow: 0px 6px 12px rgba(0,0,0,0.33); */
 }
 
   .header__image {
     height: 56px;
-    width: 224px;
     margin-left: auto;
     margin-right: auto;
     /* padding om hem exact hetzelfde uit te lijnen met het logo op de landingpagina */

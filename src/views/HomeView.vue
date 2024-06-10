@@ -53,25 +53,75 @@ export default {
       this.isVisible = currentVisibility;
     },
   },
+
+  mounted: function() {
+    // ref: https://www.educative.io/answers/how-to-make-a-webpage-that-changes-color-as-you-scroll-down
+    const body = document.querySelector('body');
+    const sections = document.querySelectorAll('section');
+
+    // setting the background color of each of the sections
+    sections.forEach((section, index) => {
+        const bgColors = [
+        '#FDFDFD',
+        '#f2fbfb'  // Same as #00AEB8 with 5% opacity!
+        ];
+
+        section.style.backgroundColor = bgColors[index % bgColors.length];
+    });
+
+    window.addEventListener('scroll', () => {
+    /* calculating the vertical scroll position of the page using 
+        the `window.scrollY` property */
+    const topScroll = window.scrollY;
+    
+    /* calculating the maximum scroll height of the page by subtracting
+        the height of the viewport (innerHeight) from the total height (scrollHeight) */
+    const maximumTopScroll = body.scrollHeight - window.innerHeight;
+    
+    // calculating the scroll fraction
+    const scrollFraction = topScroll / maximumTopScroll;
+    
+    // setting an arbitrary RGB color code as the starting color
+    const [red, green, blue] = [0, 174, 184];  // Same as #00AEB8!
+    
+    // calculating the rgb values based on the scroll fraction
+    const bColor = `rgb(${Math.round(red * scrollFraction)}, 
+    ${Math.round(green * scrollFraction)}, ${Math.round(blue * scrollFraction)})`;
+    
+      /* setting the backgroundColor to bColor for smooth color
+          transition as the user scrolls down the page.*/
+      body.style.backgroundColor = bColor;
+    });
+  }
 };
+
 </script>
 
 <style>
-html {
-  overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  overflow-y: scroll;
-}
+  html {
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+  }
 
-.container__snapPoint {
-  height: 100vh;
-  width: 100vw;
-  scroll-snap-align: start;
-  scroll-margin-top: 80px;
-  /* scroll-margin-top: 76px; */
-}
-.container--footer {
-  height: calc(100vh - 80px);
-}
+  section {
+    min-height: 100vh;
+    scroll-margin-top: 80px;
+  }
+
+  /* scroll snap will be activated for tables and smartphones */
+  @media screen and (max-width: 768px) {
+
+    .container__snapPoint {
+      height: 100vh;
+      width: 100vw;
+      scroll-behavior: smooth;
+      scroll-snap-align: start;
+    }
+  }
+
+  .container--footer {
+    height: calc(100vh - 80px);
+  }
 </style>

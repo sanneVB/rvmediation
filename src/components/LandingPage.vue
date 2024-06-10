@@ -10,7 +10,7 @@
     <div class="grid-container__grid-item">
       <img
         class="grid-container__image--rv"
-        src="../assets/rv-mediation-logo.svg"
+        src="../assets/rvmediation-logo.svg"
         alt="logo van rvmediation"
         ref="observedElement"
       />
