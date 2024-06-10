@@ -2,7 +2,15 @@
   <router-view />
 </template>
 
-<script></script>
+<script>
+    export default {
+        name: "app",
+        // set default background color
+        created: function () {
+            document.body.style.backgroundColor = "#FDFDFD";
+        },
+    };
+</script>
 
 <style>
 
@@ -21,8 +29,13 @@
   font-weight: 600;
 }
 
-.texc--italic {
-  font-variation-settings: "slnt" -10;
+.text--medium-bold {
+  font-weight: 500;
+}
+
+.text--italic {
+  /* font-variation-settings: "slnt" -10; */
+  font-style: italic;
 }
 
 *,
@@ -64,4 +77,25 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+/* header styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  padding-bottom: 0.5rem;
+}
+
 </style>

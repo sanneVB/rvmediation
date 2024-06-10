@@ -3,7 +3,7 @@
     <div class="grid-container__grid-item">
       <h1 class="red-hat-text-rob">
         ROB<br />
-        Verbeek
+        <span class="title-verbeek">Verbeek</span>
       </h1>
       <h2></h2>
     </div>
@@ -20,12 +20,14 @@
         <carrousel-content class="grid-container__p" />
         <!-- <p class="grid-container__p">"doortastend"</p> -->
         <div class="grid-container__grid-text-image">
-          <p class="grid-container__text-1">RVmediation is lid van</p>
-          <img
-            class="grid-container__image--nmv-1"
-            src="../assets/rv-mediation-nmv-logo.png"
-            alt="logo van de nmv"
-          />
+          <a href="/nmv">
+            <p class="grid-container__text-1">RVmediation is lid van</p>
+            <img
+              class="grid-container__image--nmv-1"
+              src="../assets/rv-mediation-nmv-logo.png"
+              alt="logo van de nmv"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -68,12 +70,17 @@ export default {
 </script>
 
 <style scoped>
+
 .red-hat-text-rob {
   font-family: "Red Hat Text", sans-serif;
   font-optical-sizing: auto;
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
-  font-size: 80px;
+}
+
+.title-verbeek {
+  letter-spacing: 0.7rem;
+  font-size: 1.5rem;
 }
 
 .grid-container {
@@ -131,6 +138,8 @@ h2 {
 h1 {
   font-size: 5rem;
   margin-bottom: -35px;
+  text-align: start;
+  line-height: 2rem;
 }
 
 h2 {
@@ -177,10 +186,6 @@ p {
 
   h1 {
     font-size: 4rem;
-  }
-
-  h1 {
-    font-size: 3rem;
     margin-bottom: -23px;
     padding-left: 2px;
   }
@@ -206,7 +211,7 @@ p {
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   h2 {
