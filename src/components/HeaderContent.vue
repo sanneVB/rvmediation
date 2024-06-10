@@ -3,7 +3,7 @@
     <img
       :class="{ 'header__image--hidden': isVisible }"
       class="header__image"
-      src="../assets/rv-mediation-logo.svg"
+      src="../assets/rvmediation-logo.svg"
       alt="logo van rvmediation"
     />
     <NavigationMenu />
@@ -41,7 +41,6 @@ export default {
 
   .header__image {
     height: 56px;
-    width: 224px;
     margin-left: auto;
     margin-right: auto;
     /* padding om hem exact hetzelfde uit te lijnen met het logo op de landingpagina */
