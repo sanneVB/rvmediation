@@ -8,7 +8,7 @@
         <div v-if="showNav" class="nav__list">
             <ul class="nav__ul">
                 <li @click="closeNav" class="nav__item">
-                  <router-link to="/" class="nav__link" active-class="active-link">Home</router-link>
+                  <a href="./#landing" class="nav__link">Home</a>
                 </li>
                 <li @click="closeNav" class="nav__item">
                   <a href="./#introduction" class="nav__link">Bemiddelaar voor de logistieke sector</a>
