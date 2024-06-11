@@ -1,6 +1,6 @@
 <template>
 <div class="page-container">
-  <h1><span class="text__italic">Uw</span> bemiddelaar voor de logistiek sector</h1>
+  <h1><span class="text--italic">Uw</span> bemiddelaar voor de logistiek sector</h1>
   <div class="section-container">
     <div class="section-container__column-left">
       <div>
