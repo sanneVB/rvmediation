@@ -1,4 +1,5 @@
 <template>
+<div class="page-container">
   <div class="grid-container">
     <div class="grid-container__grid-item">
       <h1 class="red-hat-text-rob">
@@ -32,6 +33,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -89,11 +91,6 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  background-image: url("../assets/rvmediation-hero.webp");
-  background-color: #001526;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   height: 100vh;
 }
 
