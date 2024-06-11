@@ -60,18 +60,18 @@ li::marker {
   padding: 12px 0;
 }
 
-    .nav__toggle {
-        position: relative;
-        /* mocht je de hoogte/breedte willen aanpassen let op! Dit heeft direct invloed op de positie 
-        van de header__image (headercontent.vue) */
-        height: 32px;
-        width: 32px;
-        border-radius: 4px;
-        border: 2px solid #FFF;
-        background-color: transparent;
-        padding: 2px 3px;
-        z-index: 999;
-    }
+.nav__toggle {
+  position: relative;
+  /* mocht je de hoogte/breedte willen aanpassen let op! Dit heeft direct invloed op de positie 
+  van de header__image (headercontent.vue) */
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  border: 2px solid #FFF;
+  background-color: transparent;
+  padding: 2px 3px;
+  z-index: 999;
+}
 
 .nav__toggle:hover {
   background-color: #00aeb8;
@@ -84,7 +84,7 @@ li::marker {
         top: 0;  
         right: 0;
         padding: 150px 10% 0 5%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: -8px 0px 12px rgba(0, 0, 0, 0.25);
     }
 
     .nav__ul {
