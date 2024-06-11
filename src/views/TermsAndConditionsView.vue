@@ -1,7 +1,8 @@
 <template>
-    <HeaderContent></HeaderContent>
+<HeaderContent></HeaderContent>
+<div class="page-container">
     <h1>Algemene voorwaarden RV&nbsp;Mediation</h1>
-    <div class="page-container">
+    <div class="page-container__content">
         <div>
             <h2>Definities</h2>
             <p>In deze algemene voorwaarden worden de hierna volgende termen in de navolgende betekenis gebruikt, tenzij uitdrukkelijk anders is aangegeven of uit de context anders blijkt: RV&nbsp;Mediation, de gebruiker van deze algemene voorwaarden, gevestigd aan de Lijestraat 21 te Lierop ingeschreven bij de Kamer van Koophandel onder KvK-nummer 75826704; klant: de wederpartij in opdracht van wie RV&nbsp;Mediation werkzaamheden verricht dan wel met wie RV&nbsp;Mediation een overeenkomst aangaat; overeenkomst: de overeenkomst tussen RV&nbsp;Mediation en de klant.</p>
@@ -103,7 +104,8 @@
             <p class="text--italic">Deze algemene voorwaarden zijn op 18 januari 2022 vastgesteld.</p>
         </div>
     </div>
-    <FooterContent></FooterContent>
+</div>
+<FooterContent></FooterContent>
 </template>
 <script>
     import HeaderContent from '@/components/HeaderContent.vue';
@@ -119,9 +121,9 @@
             document.body.style.backgroundColor = "#001526";
         },
         // change back to default background color at exit
-        unmounted: function () {
-            document.body.style.backgroundColor = "#FDFDFD";
-        },
+        // unmounted: function () {
+        //     document.body.style.backgroundColor = "#FDFDFD";
+        // },
     };
 
 </script>
@@ -135,17 +137,10 @@
         font-size: 0.875rem;
     }
 
-    h1 {
-        padding-right: 15vw;
-        padding-left: 15vw;
-    }
-
-    .page-container {
+    .page-container__content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
         margin-top: 40px;
         gap: 80px;
-        padding-right: 15vw;
-        padding-left: 15vw;
     }
 </style>

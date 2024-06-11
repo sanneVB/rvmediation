@@ -1,7 +1,8 @@
 <template>
+<div class="page-container">
   <h1><span class="text--italic">Uw</span> bemiddelaar voor de logistiek sector</h1>
-  <div class="page-container">
-    <div class="page-container__column-left">
+  <div class="section-container">
+    <div class="section-container__column-left">
       <div>
         <P>De specialisatie van <span class="text__blue-bold">RVmediation</span> ligt in de logistieke sector. Door mijn jarenlange ervaring in deze sector zijn mij diverse dingen opgevallen. Er worden hoge verwachtingen aan de werknemers gesteld. Er is sprake van onderliggende conflicten die de sfeer bepalen op de werkvloer, waardoor er veel sprake is van verzuim. Dit komt voort uit een gebrek aan open communicatie.
         </p>
@@ -14,20 +15,20 @@
           <li>een <span class="text__blue">prettige</span> werksfeer door open communicatie.</li>
         </ul>
       </div>
-      <div class="page-container__illustration">
+      <div class="section-container__illustration">
         <img
-          class="page-container__image"
+          class="section-container__image"
           src="../assets/rvmediation-intro-truck-road.jpg"
           alt="picture of a truck on the road"
         />
         <p class="text-box__white-right">Wist u dat 70% van het verzuim werkgerelateerd is?</p>
       </div>
     </div>
-    <div class="page-container__column-right">
-      <div class="page-container__illustration">
+    <div class="section-container__column-right">
+      <div class="section-container__illustration">
         <p class="text-box__white-left">Wist u dat 75% van de werknemers die vrijwillig ontslag nemen, aangeeft dat dit tot stand komt door een vervelende werksfeer?</p>
         <img
-          class="page-container__image"
+          class="section-container__image"
           src="../assets/rvmediation-intro-truck-city.jpg"
           alt="picture of a truck in the city at twilight"
         />
@@ -38,6 +39,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 <script></script>
 <style scoped>
@@ -46,40 +48,38 @@
     padding-left: 1rem;
   }
 
-  .page-container {
+  .section-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
-    padding-left: 15vw;
-    padding-right: 15vw;
     gap: 80px;
     margin-top: 40px;
   }
 
-  .page-container__column-left {
+  .section-container__column-left {
     display: flex;
     flex-direction: column;
     gap: 48px;
   }
 
-  .page-container__column-right {
+  .section-container__column-right {
     display: flex;
     flex-direction: column;
     gap: 48px;
   }
 
   @media screen and (max-width: 1074px) {
-    .page-container__column-right {
+    .section-container__column-right {
       flex-direction: column-reverse;
     }
   }
 
-  .page-container__image {
+  .section-container__image {
     border-radius: 1rem;
     width: 240px;
     height: fit-content;
   }
 
-  .page-container__illustration {
+  .section-container__illustration {
     display: flex;
     justify-content: center;
     align-content: center;

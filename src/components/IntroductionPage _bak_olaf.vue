@@ -1,32 +1,41 @@
 <template>
 <div class="page-container">
-  <h1>Wat kan ik voor u betekenen als werkgever?</h1>
+  <h1><span class="text__italic">Uw</span> bemiddelaar voor de logistiek sector</h1>
   <div class="section-container">
     <div class="section-container__column-left">
       <div>
-        <P>Mediation is bedoeld om conflicten tussen werkgever en werknemer op te lossen of tussen twee werknemers. Er kan gekozen worden voor een onafhankelijk bemiddelaar die dit traject begeleidt. Maar beter nog is het voorkomen van een conflict. Dit is een van mijn specialiteiten.</p>
+        <P>De specialisatie van <span class="text__blue-bold">RVmediation</span> ligt in de logistieke sector. Door mijn jarenlange ervaring in deze sector zijn mij diverse dingen opgevallen. Er worden hoge verwachtingen aan de werknemers gesteld. Er is sprake van onderliggende conflicten die de sfeer bepalen op de werkvloer, waardoor er veel sprake is van verzuim. Dit komt voort uit een gebrek aan open communicatie.
+        </p>
+        <p>Door mijn persoonlijke kwaliteiten om te zetten in kennis als mediator en gedragsdeskundige kan ik het volgende voor uw bedrijf betekenen:</p>
+        <ul>
+          <li>een <span class="text__blue">stabielere</span> bedrijfscommunicatie</li>
+          <li>een <span class="text__blue">stijgend</span> rendement (omzet/winst)</li>
+          <li><span class="text__blue">behoud van</span> werknemers door tevredenheid</li>
+          <li>een <span class="text__blue">dalend</span> verzuim</li>
+          <li>een <span class="text__blue">prettige</span> werksfeer door open communicatie.</li>
+        </ul>
       </div>
       <div class="section-container__illustration">
         <img
           class="section-container__image"
-          src="../assets/rvmediation-employer-truck-white.jpg"
+          src="../assets/rvmediation-intro-truck-road.jpg"
           alt="picture of a truck on the road"
         />
-        <p class="text-box__white-right">“Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</p>
+        <p class="text-box__white-right">Wist u dat 70% van het verzuim werkgerelateerd is?</p>
       </div>
     </div>
     <div class="section-container__column-right">
       <div class="section-container__illustration">
-        <!-- TODO: Replace red text with new unique text -->
-        <p class="text-box__white-left"><span style="color: red">"Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</span></p>
+        <p class="text-box__white-left">Wist u dat 75% van de werknemers die vrijwillig ontslag nemen, aangeeft dat dit tot stand komt door een vervelende werksfeer?</p>
         <img
           class="section-container__image"
-          src="../assets/rvmediation-employer-truck-black.jpg"
+          src="../assets/rvmediation-intro-truck-city.jpg"
           alt="picture of a truck in the city at twilight"
         />
       </div>
       <div>
-        <P>Ik ga door middel van een 'conflictanalyse' kijken waar er in de organisatie potentiële conflicten liggen. Ik ga daarmee deze conflicten vroegtijdig naar een passende oplossing zoeken, waardoor het veel werkbaarder wordt en dat de onderlinge frictie verdwijnt.</p>
+        <h2>Merkt u op dat er veel verzuim en/of verloop van werknemers binnen uw bedrijf is?</h2>
+        <P><span class="text__blue-bold">RVmediation</span> kan u een passende aanpak voor uw bedrijf opzetten. Door met elkaar in gesprek te gaan wordt er ruimte gecreëerd voor een passende oplossing. Dit biedt de basis voor een stabiele en evenwichtige toekomst van uw bedrijf.</p>
       </div>
     </div>
   </div>
@@ -85,7 +94,7 @@
   .text__blue-bold {
     font-weight: 600;
     color: #00AEB8;
-  } 
+  }
 
   .text-box__white-right {
     align-content: center;

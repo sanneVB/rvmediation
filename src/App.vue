@@ -21,6 +21,12 @@
   font-variation-settings: "slnt" 0;
 }
 
+.page-container {
+  margin-inline: auto;
+  max-width: 1152px;
+  width: 75vw;
+}
+
 .text--bold {
   font-weight: 700;
 }

@@ -1,14 +1,15 @@
 <template>
+<div class="page-container">
   <h1>Wie ben ik?</h1>
-  <div class="page-container">
-    <div class="page-container__column">
+  <div class="section-container">
+    <div class="section-container__column">
       <img
-        class="page-container__image"
+        class="section-container__image"
         src="../assets/rvmediation-rob-verbeek.jpg"
         alt="picture of a truck on the road"
       />
     </div>
-    <div class="page-container__column">
+    <div class="section-container__column">
       <div>
         <P>Ik ben Rob Verbeek, eigenaar van <span class="text__blue-bold">RVmediation.</span></p>
         <p>Na jarenlang gewerkt te hebben in de logistieke sector, heb ik veel ervaring en kennis opgedaan betreft de communicatie in logistieke bedrijven. In een stijgende lijn merkte ik de ongenoegen van zowel de directie, de leidinggevende als van de uitvoerende werknemer(s) en iedereen die daarbij behoort. De oorzaak is de communicatie die vastloopt. Conflicten die uit de weg gegaan worden. Waardoor een goede samenwerking op het spel staat.</p>
@@ -18,6 +19,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 <script></script>
 <style scoped>
@@ -25,16 +27,14 @@
     padding-left: 1rem;
   }
 
-  .page-container {
+  .section-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
-    padding-left: 15vw;
-    padding-right: 15vw;
     gap: 80px;
     margin-top: 40px;
   }
 
-  .page-container__column {
+  .section-container__column {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -42,7 +42,7 @@
     gap: 80px;
   }
 
-  .page-container__image {
+  .section-container__image {
     border-radius: 1rem;
     width: 240px;
   }
