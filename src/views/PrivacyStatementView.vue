@@ -21,13 +21,9 @@
             HeaderContent, FooterContent
         },
         // change page background color to other color
-        created: function () {
+        mounted: function () {
             document.body.style.backgroundColor = "#001526";
         },
-        // // change back to default background color at exit
-        // unmounted: function () {
-        //     document.body.style.backgroundColor = "#FDFDFD";
-        // },
     };
 
 </script>
