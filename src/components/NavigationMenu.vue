@@ -8,22 +8,22 @@
         <div v-if="showNav" class="nav__list">
             <ul class="nav__ul">
                 <li @click="closeNav" class="nav__item">
-                    <router-link to="/" class="nav__link" active-class="active-link">Home</router-link>
+                  <router-link to="/" class="nav__link" active-class="active-link">Home</router-link>
                 </li>
                 <li @click="closeNav" class="nav__item">
-                    <a href="#introduction" class="nav__link">Bemiddelaar voor de logistieke sector</a>
+                  <a href="./#introduction" class="nav__link">Bemiddelaar voor de logistieke sector</a>
                 </li>
                 <li @click="closeNav" class="nav__item">
-                    <a href="#employee" class="nav__link">Voor werknemers</a>
+                  <a href="./#employee" class="nav__link">Voor werknemers</a>
                 </li>
                 <li @click="closeNav" class="nav__item">
-                    <a href="#employer" class="nav__link">Voor werkgevers</a>
+                  <a href="./#employer" class="nav__link">Voor werkgevers</a>
                 </li>
                 <li @click="closeNav" class="nav__item">
-                    <a href="#about-me" class="nav__link">Wie ben ik?</a>
+                  <a href="./#about-me" class="nav__link">Wie ben ik?</a>
                 </li>
                 <li @click="closeNav" class="nav__item">
-                    <a href="#testimonials" class="nav__link">Wat zeggen anderen?</a>
+                  <a href="./#testimonials" class="nav__link">Wat zeggen anderen?</a>
                 </li>
             </ul>
             <v-btn class="button">NEEM CONTACT OP</v-btn>
