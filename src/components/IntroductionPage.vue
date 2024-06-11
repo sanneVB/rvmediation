@@ -1,5 +1,5 @@
 <template>
-  <h1><span class="text__italic">Uw</span> bemiddelaar voor de logistiek sector</h1>
+  <h1><span class="text--italic">Uw</span> bemiddelaar voor de logistiek sector</h1>
   <div class="page-container">
     <div class="page-container__column-left">
       <div>
