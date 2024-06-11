@@ -23,8 +23,12 @@
 
 .page-container {
   margin-inline: auto;
-  max-width: 1152px;
-  width: 75vw;
+  max-width: 1216px;
+}
+
+.section-container {
+  margin-inline: auto;
+  max-width: 950px;
 }
 
 .text--bold {
