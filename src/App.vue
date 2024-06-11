@@ -34,8 +34,7 @@
 }
 
 .text--italic {
-  /* font-variation-settings: "slnt" -10; */
-  font-style: italic;
+  font-variation-settings: "slnt" -10;
 }
 
 *,

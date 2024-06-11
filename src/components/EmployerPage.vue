@@ -93,6 +93,7 @@
     border-radius: 1rem;
     box-shadow: 2px 4px 6px rgba(0,0,0,.15);
     color: #00AEB8;
+    font-variation-settings: "slnt" -10;
     font-weight: 600;
     padding: 1.25rem;
     position: relative;
@@ -109,8 +110,8 @@
     border-radius: 1rem;
     box-shadow: 2px 4px 6px rgba(0,0,0,.15);
     color: #00AEB8;
+    font-variation-settings: "slnt" -10;
     font-weight: 600;
-    font-style: italic;
     padding: 1.25rem;
     position: relative;
     left: 1.25rem;
