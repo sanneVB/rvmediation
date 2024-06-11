@@ -29,6 +29,7 @@
 .section-container {
   margin-inline: auto;
   max-width: 950px;
+  width: 70vw;
 }
 
 .text--bold {
