@@ -1,13 +1,24 @@
 <template>
   <footer>
-    <p>
-      Copyright &copy; {{ currentYear }}, RVmediation |
-      <router-link to="/algemenevoorwaarden">Algemene Voorwaarden</router-link>
-      | <router-link to="/privacystatement">Privacy Statement</router-link>
-    </p>
-    <div class="logoNMV">
-      <p class="inter inter--semi-bold inter--italic">Lid van</p>
-      <img src="../assets/nmv-logo.png" height="32px" />
+    <div class="footer-container">
+      <div></div>
+      <div class="footer__content-center">
+        <p>
+          Copyright &copy; {{ currentYear }}, RVmediation |
+          <router-link to="/algemenevoorwaarden">Algemene Voorwaarden</router-link>
+          | <router-link to="/privacystatement">Privacy Statement</router-link>
+        </p>
+      </div>
+      <div class="footer__content-right">
+        <a href="./nmv">
+          <p class="member-of-nmv text--semi-bold text--italic">Lid van</p>
+          <img
+            src="../assets/nmv-logo.png"
+            alt="logo van NMv"
+            height="32px"
+          />
+        </a>
+      </div>
     </div>
   </footer>
 </template>
@@ -22,75 +33,59 @@ export default {
   },
 };
 </script>
-
 <style scoped>
+
 footer {
-  background-color: #00aeb8;
+  color: #ffffff;
   height: 80px;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 0.875rem;
+  padding-top: 8px;
 }
 
 p {
-  color: #ffffff;
   text-align: center;
 }
 
 a {
   color: #ffffff;
+  text-decoration: none;
 }
 
-.logoNMV {
-  position: absolute;
-  right: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.logoNMV > p {
-  text-align: end;
-  margin: 0;
-  font-size: x-small;
-  margin-bottom: 8px;
-}
-
-/*footer {
-  background-color: #00aeb8;
-  /~ height: 80px;
-    width: 100vw; ~/
-  display: flex;
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
-  /~ justify-content: center; ~/
-  padding: 2px 3%;
 }
 
-p {
-  color: #ffffff;
-  /~ flex: 1; ~/
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  /~ padding-left: 117px; ~/
+.footer__content-center {
+  justify-self: center;
 }
 
-a {
-  color: #ffffff;
+.footer__content-right {
+  justify-self: right;
 }
 
-/~ .logoNMV {
-  position: absolute;
-  right: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-} ~/
+.member-of-nmv {
+  text-align: right;
+}
 
-.logoNMV > p {
-  text-align: end;
-  font-size: x-small;
-  padding-bottom: 8px;
-}*/
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 0.75rem;
+    height: 128px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__content-right {
+    justify-self: center;
+    padding-top: 8px;
+  }
+
+  .member-of-nmv {
+    text-align: center;
+  }
+}
 </style>

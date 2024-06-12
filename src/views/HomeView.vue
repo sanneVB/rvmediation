@@ -18,7 +18,9 @@
   <section class="container__snapPoint section__blue container--footer" id="testimonials">
     <testimonials-page />
   </section>
-  <footer-content class="footer" />
+  <div class="footer__color">
+    <footer-content />
+  </div>
 </template>
 
 <script>
@@ -73,8 +75,8 @@ export default {
   .container--footer {
     height: calc(100vh - 80px);
   }
- 
-  /* Setting different backgrounds for each section */
+
+  /* Setting different backgrounds */
   /* Same as #00AEB8 with 5% opacity! */
   .section__blue {
     background-color: #f2fbfb;
@@ -91,7 +93,6 @@ export default {
     background-repeat: no-repeat;
     background-position: center center;
   }
-
 
   /* Layout settings for sections */
   .section-container {
@@ -220,9 +221,12 @@ export default {
 
     .container__snapPoint {
       height: 100vh;
-      width: 100vw;
       scroll-behavior: smooth;
       scroll-snap-align: start;
+    }
+
+    .container--footer {
+      height: calc(100vh - 128px);
     }
   }
 </style>

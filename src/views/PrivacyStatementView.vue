@@ -9,7 +9,9 @@
         <p>Sodales integer, neque rhoncus nulla. Commodo semper vulputate tincidunt, ipsum mauris aenean, per tempus aptent habitant duis vehicula nibh. Laoreet aliquet hac, et a, mollis conubia maecenas ultrices tellus urna. Vitae hac eros, interdum placerat odio nam. Amet risus pulvinar, aptent inceptos turpis phasellus. Condimentum tempus vulputate, eget vitae, hac accumsan turpis imperdiet blandit varius. Urna lacinia morbi, et auctor, nullam ornare dictumst lacus netus egestas turpis.</p>
     </div>
 </div>
-<FooterContent></FooterContent>
+<div class="footer__color">
+    <FooterContent></FooterContent>
+</div>
 </template>
 <script>
     import HeaderContent from '@/components/HeaderContent.vue';
@@ -42,6 +44,6 @@
         /* display: grid;
         grid-template-columns: repeat(auto-fit, minmax(256px, 1fr)); */
         margin-top: 40px;
-        gap: 80px;
+        /* gap: 80px; */
     }
 </style>

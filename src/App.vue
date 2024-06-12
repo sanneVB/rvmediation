@@ -25,11 +25,14 @@ ul {
     padding-left: 1rem;
 }
 
+footer,
 .page-container {
   margin-inline: auto;
   max-width: 1216px;
 }
 
+.footer-container,
+.page-container__content,
 .section-container {
   margin-inline: auto;
   max-width: 950px;
@@ -59,6 +62,10 @@ ul {
 .text__blue-bold {
   font-weight: 600;
   color: #00AEB8;
+}
+
+.footer__color {
+  background-color: #00aeb8;
 }
 
 *,
