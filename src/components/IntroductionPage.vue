@@ -42,18 +42,4 @@
 </div>
 </template>
 <script></script>
-<style scoped>
-
-  ul {
-    padding-left: 1rem;
-  }
-
-  .text__blue {
-    color: #00AEB8;
-  }
-
-  .text__blue-bold {
-    font-weight: 600;
-    color: #00AEB8;
-  }
-</style>
+<style scoped></style>
