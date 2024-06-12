@@ -35,8 +35,8 @@ export default {
   position: sticky;
   top: 0;
   background-color: #001526;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.33);
   z-index: 1000;
-  /* box-shadow: 0px 6px 12px rgba(0,0,0,0.33); */
 }
 
   .header__image {
@@ -59,5 +59,6 @@ export default {
 
 .header--no-background {
   background-color: #00152600;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0);
 }
 </style>
