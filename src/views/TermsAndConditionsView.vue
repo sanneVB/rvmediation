@@ -105,7 +105,9 @@
         </div>
     </div>
 </div>
-<FooterContent></FooterContent>
+<div class="footer__color">
+    <FooterContent></FooterContent>
+</div>
 </template>
 <script>
     import HeaderContent from '@/components/HeaderContent.vue';

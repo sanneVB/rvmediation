@@ -18,7 +18,9 @@
   <section class="container__snapPoint section__blue container--footer" id="testimonials">
     <testimonials-page />
   </section>
-  <footer-content class="footer" />
+  <div class="footer__color">
+    <footer-content />
+  </div>
 </template>
 
 <script>
@@ -61,7 +63,7 @@ export default {
   html {
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: scroll;
   }
 
@@ -71,10 +73,10 @@ export default {
   }
 
   .container--footer {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
   }
- 
-  /* Setting different backgrounds for each section */
+
+  /* Setting different backgrounds */
   /* Same as #00AEB8 with 5% opacity! */
   .section__blue {
     background-color: #f2fbfb;
@@ -91,7 +93,6 @@ export default {
     background-repeat: no-repeat;
     background-position: center center;
   }
-
 
   /* Layout settings for sections */
   .section-container {
@@ -219,10 +220,13 @@ export default {
   @media screen and (max-width: 768px) {
 
     .container__snapPoint {
-      height: 100vh;
-      width: 100vw;
+      min-height: 100vh;
       scroll-behavior: smooth;
       scroll-snap-align: start;
+    }
+
+    .container--footer {
+      min-height: calc(100vh - 208px);
     }
   }
 </style>
