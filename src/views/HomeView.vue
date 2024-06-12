@@ -63,7 +63,7 @@ export default {
   html {
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: scroll;
   }
 
@@ -73,7 +73,7 @@ export default {
   }
 
   .container--footer {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
   }
 
   /* Setting different backgrounds */
@@ -220,13 +220,13 @@ export default {
   @media screen and (max-width: 768px) {
 
     .container__snapPoint {
-      height: 100vh;
+      min-height: 100vh;
       scroll-behavior: smooth;
       scroll-snap-align: start;
     }
 
     .container--footer {
-      height: calc(100vh - 128px);
+      min-height: calc(100vh - 208px);
     }
   }
 </style>
