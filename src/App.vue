@@ -21,6 +21,10 @@
   font-variation-settings: "slnt" 0;
 }
 
+ul {
+    padding-left: 1rem;
+}
+
 .page-container {
   margin-inline: auto;
   max-width: 1216px;
@@ -46,6 +50,15 @@
 
 .text--italic {
   font-variation-settings: "slnt" -10;
+}
+
+.text__blue {
+  color: #00AEB8;
+}
+
+.text__blue-bold {
+  font-weight: 600;
+  color: #00AEB8;
 }
 
 *,
@@ -100,12 +113,11 @@ h6 {
 
 h1 {
   font-size: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 32px;
 }
 
 p {
-  padding-bottom: 0.5rem;
+  padding-bottom: 8px;
 }
 
 </style>
