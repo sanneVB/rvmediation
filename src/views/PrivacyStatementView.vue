@@ -1,6 +1,6 @@
 <template>
 <HeaderContent></HeaderContent>
-<div class="page-container">
+<div class="page-container page__minus-header-footer">
     <h1>Privacy statement</h1>
     <div class="page-container__content">
         <div>
@@ -53,7 +53,24 @@ P {
 .page-container__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-    margin-top: 40px;
+    margin-top: 32px;
+    margin-bottom: 32px;
     gap: 80px;
+}
+
+.page__minus-header-footer {
+    min-height: calc(100vh - 160px);
+}
+
+/* scroll snap will be activated for tables and smartphones */
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+      padding: 32px 32px 16px 32px;
+    }
+
+    .page__minus-header-footer {
+        min-height: calc(100vh - 208px);
+    }
 }
 </style>

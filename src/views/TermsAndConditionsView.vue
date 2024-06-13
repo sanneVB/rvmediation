@@ -1,7 +1,7 @@
 <template>
 <HeaderContent></HeaderContent>
-<div class="page-container">
-    <h1>Algemene voorwaarden RV&nbsp;Mediation</h1>
+<div class="page-container page__minus-header-footer">
+    <h1>Algemene voorwaarden<br />RV&nbsp;Mediation</h1>
     <div class="page-container__content">
         <div>
             <h2>Definities</h2>
@@ -127,18 +127,35 @@
 </script>
 <style scoped>
     
-    * {
-        color: #ffffff;
+* {
+    color: #ffffff;
+}
+
+P {
+    font-size: 0.875rem;
+}
+
+.page-container__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    margin-top: 32px;
+    margin-bottom: 32px;
+    gap: 80px;
+}
+
+.page__minus-header-footer {
+    min-height: calc(100vh - 160px);
+}
+
+/* scroll snap will be activated for tables and smartphones */
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+      padding: 32px 32px 16px 32px;
     }
 
-    P {
-        font-size: 0.875rem;
+    .page__minus-header-footer {
+        min-height: calc(100vh - 208px);
     }
-
-    .page-container__content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-        margin-top: 40px;
-        gap: 80px;
-    }
+}
 </style>

@@ -111,11 +111,8 @@ h6 {
 /* header styles */
 h1 {
   text-align: center;
-}
-
-h1 {
-  font-size: 1.5rem;
-  padding: 32px;
+  font-size: 1.75rem;
+  padding: 64px 32px 32px 32px;
 }
 
 h2 {

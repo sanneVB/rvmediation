@@ -3,19 +3,19 @@
   <section class="container__snapPoint section__landing" id="landing">
     <landing-page @changeVisibility="handleVisibilityChange" />
   </section>
-  <section class="container__snapPoint section__blue" id="introduction">
+  <section class="container__snapPoint section__blue page__minus-header" id="introduction">
     <introduction-page />
   </section>
-  <section class="container__snapPoint section__white" id="employee">
+  <section class="container__snapPoint section__white page__minus-header" id="employee">
     <employee-page />
   </section>
-  <section class="container__snapPoint section__blue" id="employer">
+  <section class="container__snapPoint section__blue page__minus-header" id="employer">
     <employer-page />
   </section>
-  <section class="container__snapPoint section__white" id="about-me">
+  <section class="container__snapPoint section__white page__minus-header" id="about-me">
     <about-me-page />
   </section>
-  <section class="container__snapPoint section__blue container--footer" id="testimonials">
+  <section class="container__snapPoint section__blue page__minus-header-footer" id="testimonials">
     <testimonials-page />
   </section>
   <div class="footer__color">
@@ -63,12 +63,10 @@ export default {
   html {
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
-    min-height: 100vh;
     overflow-y: scroll;
   }
 
   section {
-    min-height: 100vh;
     scroll-margin-top: 80px;
   }
 
@@ -77,13 +75,18 @@ export default {
     line-height: 1.6;
   }
 
-  .container--footer {
+  .page__minus-header {
     min-height: calc(100vh - 80px);
+  }
+
+  .page__minus-header-footer {
+    min-height: calc(100vh - 160px);
   }
 
   /* Setting different backgrounds */
   /* Same as #00AEB8 with 5% opacity! */
   .section__blue {
+    /* background-color: red; */
     background-color: #f2fbfb;
   }
 
@@ -208,6 +211,7 @@ export default {
 }
 
 @media screen and (max-width: 669px) {
+  
   .section-container__illustration-right {
     flex-wrap: wrap-reverse;
   }
@@ -231,14 +235,18 @@ export default {
 
   /* scroll snap will be activated for tables and smartphones */
   @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+      padding: 32px 32px 16px 32px;
+    }
 
     .container__snapPoint {
-      min-height: 100vh;
+      /* min-height: 100vh; */
       scroll-behavior: smooth;
       scroll-snap-align: start;
     }
 
-    .container--footer {
+    .page__minus-header-footer {
       min-height: calc(100vh - 208px);
     }
   }

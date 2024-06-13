@@ -1,6 +1,6 @@
 <template>
 <HeaderContent></HeaderContent>
-<div class="page-container">
+<div class="page-container page__minus-header-footer">
     <h1>RVmediation is lid van NMv</h1>
     <div class="page-container__content">
         <div class="page-container__image">
@@ -40,23 +40,39 @@
 </script>
 <style scoped>
 
-    img {
-        width: 256px;
+img {
+    width: 256px;
+}
+
+p {
+    color: red;
+}
+
+.page-container__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    margin-top: 32px;
+    margin-bottom: 32px;
+    gap: 48px;
+}
+
+.page-container__image {
+    justify-self: center;
+}
+
+.page__minus-header-footer {
+    min-height: calc(100vh - 160px);
+}
+
+/* scroll snap will be activated for tables and smartphones */
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+      padding: 32px 32px 16px 32px;
     }
 
-    p {
-        color: red;
+    .page__minus-header-footer {
+        min-height: calc(100vh - 208px);
     }
-
-    .page-container__content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-        margin-top: 40px;
-        gap: 48px;
-    }
-
-    .page-container__image {
-        justify-self: center;
-    }
-
+}
 </style>
