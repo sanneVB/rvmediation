@@ -195,7 +195,11 @@ export default {
   }
     
   .text-box__white-right,
-  .text-box__blue-right,
+  .text-box__blue-right {
+    right: -20px;
+    top: -16px;
+  }
+
   .text-box__white-left, 
   .text-box__blue-left {
     left: -20px;
@@ -213,8 +217,12 @@ export default {
   }
 
   .text-box__white-right,
-  .text-box__blue-right,
-  .text-box__white-left,
+  .text-box__blue-right {
+    right: -20px;
+    top: -16px;
+  }
+
+  .text-box__white-left, 
   .text-box__blue-left {
     left: -20px;
     top: -16px;
