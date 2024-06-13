@@ -4,7 +4,7 @@
       <div></div>
       <div class="footer__content-center">
         <p>
-          Copyright &copy; {{ currentYear }}, RVmediation |
+          Copyright &copy; {{ currentYear }}, RVmediation<br />
           <router-link to="/algemenevoorwaarden">Algemene Voorwaarden</router-link>
           | <router-link to="/privacystatement">Privacy Statement</router-link>
         </p>
@@ -39,7 +39,6 @@ footer {
   color: #ffffff;
   height: 80px;
   font-size: 0.875rem;
-  padding-top: 8px;
 }
 
 p {
@@ -60,10 +59,12 @@ a {
 
 .footer__content-center {
   justify-self: center;
+  padding-top: 16px;
 }
 
 .footer__content-right {
   justify-self: right;
+  padding-top: 6px;
 }
 
 .member-of-nmv {

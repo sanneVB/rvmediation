@@ -1,6 +1,6 @@
 <template>
 <HeaderContent></HeaderContent>
-<div class="page-container">
+<div class="page-container page__minus-header-footer">
     <h1>Wat doet een mediator?</h1>
     <div class="page-container__content">
         <div class="page-container__image">
@@ -37,7 +37,8 @@
 .page-container__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-    margin-top: 40px;
+    margin-top: 32px;
+    margin-bottom: 32px;
     gap: 48px;
 }
 
@@ -49,6 +50,22 @@
 .page-image {
     border-radius: 16px;
     width: 360px;
+}
+
+.page__minus-header-footer {
+    min-height: calc(100vh - 160px);
+}
+
+/* scroll snap will be activated for tables and smartphones */
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+      padding: 32px 32px 16px 32px;
+    }
+
+    .page__minus-header-footer {
+        min-height: calc(100vh - 208px);
+    }
 }
 
 </style>
