@@ -72,6 +72,11 @@ export default {
     scroll-margin-top: 80px;
   }
 
+  p, ul {
+    padding-bottom: 16px;
+    line-height: 1.6;
+  }
+
   .container--footer {
     min-height: calc(100vh - 80px);
   }

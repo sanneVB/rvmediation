@@ -22,7 +22,7 @@
 }
 
 ul {
-    padding-left: 1rem;
+    padding-left: 16px;
 }
 
 footer,
@@ -109,12 +109,7 @@ h6 {
 }
 
 /* header styles */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   text-align: center;
 }
 
@@ -123,8 +118,12 @@ h1 {
   padding: 32px;
 }
 
-p {
-  padding-bottom: 8px;
+h2 {
+  font-size: 1.125rem;
+  padding: 16px;
 }
+
+a {color: #00aeb8;}
+a:hover, a:visited {color: #fb8c00};
 
 </style>

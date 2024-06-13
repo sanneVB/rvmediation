@@ -127,6 +127,10 @@ export default {
   bottom: 4%;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2 {
   color: #fff;
@@ -220,17 +224,17 @@ p {
     height: 53px;
   }
 
-  .grid-container__image--nmv-1 {
-    padding-left: 5px;
-    height: 36px;
-  }
-
   .grid-container__text-1 {
     font-size: 0.625rem;
   }
 
+  .grid-container__image--nmv-1,
   .grid-container__image--nmv-2 {
     height: 36px;
+  }
+
+  .grid-container__image--nmv-1 {
+    padding-left: 5px;
   }
 
   /* .grid-container__grid-item:nth-of-type(2) > div > p {

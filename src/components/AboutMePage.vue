@@ -23,10 +23,6 @@
 </template>
 <script></script>
 <style scoped>
-  ul {
-    padding-left: 1rem;
-  }
-
   .section-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
@@ -45,15 +41,5 @@
   .section-container__image {
     border-radius: 1rem;
     width: 240px;
-  }
-
-
-  .text__blue {
-    color: #00AEB8;
-  }
-
-  .text__blue-bold {
-    font-weight: 600;
-    color: #00AEB8;
   }
 </style>

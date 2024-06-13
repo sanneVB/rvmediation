@@ -44,6 +44,7 @@ footer {
 
 p {
   text-align: center;
+  padding-bottom: 6px;
 }
 
 a {
