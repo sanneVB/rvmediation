@@ -6,7 +6,7 @@
       <div>
         <P>De specialisatie van <span class="text__blue-bold">RVmediation</span> ligt in de logistieke sector. Door mijn jarenlange ervaring in deze sector zijn mij diverse dingen opgevallen. Er worden hoge verwachtingen aan de werknemers gesteld. Er is sprake van onderliggende conflicten die de sfeer bepalen op de werkvloer, waardoor er veel sprake is van verzuim. Dit komt voort uit een gebrek aan open communicatie.
         </p>
-        <p>Door mijn persoonlijke kwaliteiten om te zetten in kennis als mediator en gedragsdeskundige kan ik het volgende voor uw bedrijf betekenen:</p>
+        <p>Door mijn persoonlijke kwaliteiten om te zetten in kennis als <a href="./mediator">mediator</a> en gedragsdeskundige kan ik het volgende voor uw bedrijf betekenen:</p>
         <ul>
           <li>een <span class="text__blue">stabielere</span> bedrijfscommunicatie</li>
           <li>een <span class="text__blue">stijgend</span> rendement (omzet/winst)</li>
