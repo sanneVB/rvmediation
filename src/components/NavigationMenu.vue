@@ -26,7 +26,12 @@
                   <a href="./#testimonials" class="nav__link">Wat zeggen anderen?</a>
                 </li>
             </ul>
-            <v-btn class="button">NEEM CONTACT OP</v-btn>
+            <v-btn style="background-color: #fb8c00">
+              <a href="./contact" class="button__goto-form">
+                Neem Contact Op
+              </a>
+            </v-btn>
+
             <!-- button zou volgens design in het midden gecentreerd moeten zijn, hou rekening met het feit dat je
             geen margins op een block element mag zetten bij BEM!!! Zorgt voor problemen -->
         </div>
@@ -55,6 +60,12 @@ export default {
 li::marker {
   color: #fff;
 }
+
+.button__goto-form {
+  color: #fff;
+  text-decoration: none;
+}
+
 
 .nav__item {
   padding: 12px 0;
