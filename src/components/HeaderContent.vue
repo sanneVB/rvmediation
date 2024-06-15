@@ -1,14 +1,16 @@
 <template>
-  <header :class="{ 'header--no-background': isVisible }" class="header">
-    <a href="./#landing">
-      <img
-        :class="{ 'header__image--hidden': isVisible }"
-        class="header__image"
-        src="../assets/rvmediation-logo.svg"
-        alt="logo van rvmediation"
-      />
-    </a>
-    <NavigationMenu />
+  <header :class="{ 'header--no-background': isVisible }">
+    <div class="header-container">
+      <a href="./#landing">
+        <img
+          :class="{ 'header__image--hidden': isVisible }"
+          class="header__image"
+          src="../assets/rvmediation-logo.svg"
+          alt="logo van rvmediation"
+        />
+      </a>
+      <NavigationMenu />
+    </div>
   </header>
 </template>
 
@@ -37,15 +39,19 @@ a {
   padding-left: 32px;
 }
 
-.header {
+header {
+  background-color: #001526;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.33);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
   display: flex;
   align-items: center;
   padding: 12px 3%;
   position: sticky;
-  top: 0;
-  background-color: #001526;
-  box-shadow: 0px 6px 12px rgba(0,0,0,0.33);
-  z-index: 1000;
 }
 
 .header__image {

@@ -39,6 +39,7 @@ footer {
   color: #ffffff;
   height: 80px;
   font-size: 0.875rem;
+  background-color: #00aeb8;
 }
 
 p {
