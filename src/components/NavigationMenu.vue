@@ -148,6 +148,18 @@ a.button__contact:active {
   right: 12px;
   padding: 100px 32px 64px 32px;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+  animation: createBox 300ms;
+}
+
+@keyframes createBox {
+  from {
+    transform-origin: top right;
+    transform: scale(0);
+  }
+  to {
+    transform-origin: top right;
+    transform: scale(1);
+  }
 }
 
 .nav__ul {
