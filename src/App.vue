@@ -33,14 +33,15 @@ ul {
 }
 
 .page-container__content,
-.section-container {
+.section-container,
+.box-container {
   margin-inline: auto;
   max-width: 950px;
   width: 70vw;
 }
 
 .text--bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .text--semi-bold {

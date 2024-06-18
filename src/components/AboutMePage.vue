@@ -19,9 +19,19 @@
       </div>
     </div>
   </div>
+  <ContactBox></ContactBox>
 </div>
 </template>
-<script></script>
+<script>
+import ContactBox from "@/components/ContactBox.vue";
+
+export default {
+  name: "AboutMePage",
+  components: {
+    ContactBox
+  }
+};
+</script>
 <style scoped>
   .section-container {
     display: grid;

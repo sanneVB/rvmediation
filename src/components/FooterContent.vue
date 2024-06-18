@@ -50,6 +50,10 @@ p {
 a {
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .footer-container {

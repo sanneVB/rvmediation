@@ -15,16 +15,19 @@
             <p>Tijdens de mediation denkt en werkt u zelf mee aan een aanvaardbare oplossing. Hierdoor kunt u uiteindelijk zelf een overwogen beslissing nemen. Dit bespaart u een hoop negativiteit, maar ook voorkomt u hiermee een juridisch proces. Dit betekent minder hoge (juridische) kosten en er blijft veel tijd bespaart.</p>
         </div>
     </div>
+    <ContactBox></ContactBox>
 </div>
 <FooterContent></FooterContent>
 </template>
 <script>
     import HeaderContent from '@/components/HeaderContent.vue';
     import FooterContent from '@/components/FooterContent.vue';
-
+    import ContactBox from '@/components/ContactBox.vue';
+    
     export default {
         name: "NmvView",
         components: {
+        ContactBox,
         HeaderContent,
         FooterContent,
         },
