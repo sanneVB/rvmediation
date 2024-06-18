@@ -38,8 +38,6 @@
 .page-container__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-    margin-top: 32px;
-    margin-bottom: 32px;
     gap: 48px;
 }
 

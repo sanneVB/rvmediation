@@ -36,6 +36,8 @@ ul {
 .section-container,
 .box-container {
   margin-inline: auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
   max-width: 950px;
   width: 70vw;
 }

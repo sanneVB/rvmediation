@@ -105,7 +105,6 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
     gap: 80px;
-    margin-top: 40px;
   }
 
   .section-container__column-left,

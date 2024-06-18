@@ -41,7 +41,6 @@ a.button__contact:active {
 .box-container {
   border: 1px solid #bababa;
   border-radius: 10px;
-  margin-top: 48px;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 16px;
