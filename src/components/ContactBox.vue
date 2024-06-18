@@ -44,6 +44,14 @@ a.button__contact:active {
   margin-top: 48px;
   padding-top: 24px;
   padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 0.875rem;
+  }
 }
 </style>
