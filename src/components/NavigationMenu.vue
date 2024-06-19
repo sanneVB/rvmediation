@@ -1,36 +1,48 @@
 <template>
-    <nav class="nav">
-        <button @click="toggleNav" :class="{ 'nav__toggle--change': showNav }" class="nav__toggle">
-            <div class="nav__bar"></div>
-            <div class="nav__bar"></div>
-            <div class="nav__bar"></div>
-        </button>
-        <div v-if="showNav" class="nav__list">
-            <ul class="nav__ul">
-                <li @click="closeNav" class="nav__item">
-                    <router-link to="/" class="nav__link" active-class="active-link">Home</router-link>
-                </li>
-                <li @click="closeNav" class="nav__item">
-                    <a href="#introduction" class="nav__link">Bemiddelaar voor de logistieke sector</a>
-                </li>
-                <li @click="closeNav" class="nav__item">
-                    <a href="#employee" class="nav__link">Voor werknemers</a>
-                </li>
-                <li @click="closeNav" class="nav__item">
-                    <a href="#employer" class="nav__link">Voor werkgevers</a>
-                </li>
-                <li @click="closeNav" class="nav__item">
-                    <a href="#about" class="nav__link">Wie ben ik?</a>
-                </li>
-                <li @click="closeNav" class="nav__item">
-                    <a href="#testimonials" class="nav__link">Wat zeggen anderen?</a>
-                </li>
-            </ul>
-            <v-btn class="button">NEEM CONTACT OP</v-btn>
-            <!-- button zou volgens design in het midden gecentreerd moeten zijn, hou rekening met het feit dat je
-            geen margins op een block element mag zetten bij BEM!!! Zorgt voor problemen -->
-        </div>
-    </nav>
+  <nav class="nav__menu">
+    <div class="nav__button">        
+      <button @click="toggleNav" :class="{ 'nav__toggle--change': showNav }" class="nav__toggle">
+        <div class="nav__bar"></div>
+        <div class="nav__bar"></div>
+        <div class="nav__bar"></div>
+      </button>
+    </div>
+    <div v-if="showNav" class="nav__list">
+      <ul class="nav__ul">          
+          <a href="./#landing">
+            <li @click="closeNav" class="nav__item">Home</li>
+          </a>
+          <a href="./#introduction">
+            <li @click="closeNav" class="nav__item">
+              Bemiddelaar voor de logistieke sector
+            </li>
+          </a>
+          <a href="./#employee">
+            <li @click="closeNav" class="nav__item">
+              Voor werknemers
+            </li>
+          </a>
+          <a href="./#employer">
+            <li @click="closeNav" class="nav__item">
+              Voor werkgevers
+            </li>
+          </a>
+          <a href="./#about-me">
+            <li @click="closeNav" class="nav__item">
+              Wie ben ik?
+            </li>
+          </a>
+          <a href="./#testimonials">
+            <li @click="closeNav" class="nav__item">
+              Wat zeggen anderen?
+            </li>
+          </a>
+      </ul>
+      <div class="button__contact-position">
+        <a href="./contact" class="button__contact">Neem contact op</a>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -52,44 +64,108 @@ export default {
 </script>
 
 <style scoped>
-li::marker {
+
+li {
+  list-style: none;
+}
+li:before {
+  content: "• ";
   color: #fff;
+}
+li {
+  display: block;
+}
+li:before {
+  color: #fff;
+}
+li:hover:before {
+  color: #001526;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+
+  &:hover {
+    color: #001526;
+  }
+}
+
+a.button__contact {
+  background-color: #fb8c00;
+  border: 1px outset buttonborder;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  line-height: 2.5;
+  padding: 8px 16px 8px 16px;
+  text-align: center;
+}
+
+a.button__contact:hover {
+  color: #FFF;
+  background-color: #ff9900;
+}
+
+a.button__contact:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.button__contact-position {
+  text-align: center;
 }
 
 .nav__item {
   padding: 12px 0;
 }
 
-    .nav__toggle {
-        position: relative;
-        /* mocht je de hoogte/breedte willen aanpassen let op! Dit heeft direct invloed op de positie 
-        van de header__image (headercontent.vue) */
-        height: 32px;
-        width: 32px;
-        border-radius: 4px;
-        border: 2px solid #FFF;
-        background-color: transparent;
-        padding: 2px 3px;
-        z-index: 999;
-    }
-
-.nav__toggle:hover {
-  background-color: #00aeb8;
+.nav__button {
+/* button { */
+  position: absolute;
+  top: 24px;
+  right: 56px;
 }
 
-    .nav__list {
-        position: absolute;
-        height: 100vh;
-        background-color: #00AEB8;
-        top: 0;  
-        right: 0;
-        padding: 150px 10% 0 5%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+.nav__toggle {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  border: 2px solid #FFF;
+  background-color: transparent;
+  padding: 2px 3px;
+  z-index: 999;
+}
 
-    .nav__ul {
-        margin-bottom: 100px;
-    }
+.nav__toggle:hover {
+  background-color: #fb8c00;
+}
+
+.nav__list {
+  position: absolute;
+  border-radius: 6px;
+  background-color: #00AEB8;
+  top: 10px;  
+  right: 12px;
+  padding: 100px 32px 64px 32px;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+  animation: createBox 300ms;
+}
+
+@keyframes createBox {
+  from {
+    transform-origin: top right;
+    transform: scale(0);
+  }
+  to {
+    transform-origin: top right;
+    transform: scale(1);
+  }
+}
+
+.nav__ul {
+  margin-bottom: 100px;
+}
 
 .nav__bar {
   width: 22px;
@@ -110,10 +186,5 @@ li::marker {
 
 .nav__toggle--change .nav__bar:nth-child(3) {
   transform: translateY(-6px) rotate(45deg);
-}
-
-.nav__link {
-  text-decoration: none;
-  color: #fff;
 }
 </style>

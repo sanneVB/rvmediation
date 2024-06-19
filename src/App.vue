@@ -2,27 +2,69 @@
   <router-view />
 </template>
 
-<script></script>
+<script>
+    export default {
+        name: "app",
+        // set default background color
+        created: function () {
+            document.body.style.backgroundColor = "#FDFDFD";
+        },
+    };
+</script>
 
 <style>
-.text {
+
+* {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
 
+ul {
+    padding-left: 16px;
+}
+
+.header-container,
+.footer-container,
+.page-container {
+  margin-inline: auto;
+  max-width: 1216px;
+}
+
+.page-container__content,
+.section-container,
+.box-container {
+  margin-inline: auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  max-width: 950px;
+  width: 70vw;
+}
+
 .text--bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .text--semi-bold {
   font-weight: 600;
 }
 
-.texc--italic {
+.text--medium-bold {
+  font-weight: 500;
+}
+
+.text--italic {
   font-variation-settings: "slnt" -10;
+}
+
+.text__blue {
+  color: #00AEB8;
+}
+
+.text__blue-bold {
+  font-weight: 600;
+  color: #00AEB8;
 }
 
 *,
@@ -64,4 +106,20 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+/* header styles */
+h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  padding: 64px 32px 32px 32px;
+}
+
+h2 {
+  font-size: 1.125rem;
+  padding: 16px 0px 24px 0px;
+}
+
+a {color: #00aeb8;}
+a:hover, a:visited {color: #fb8c00};
+
 </style>

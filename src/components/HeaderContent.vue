@@ -1,12 +1,16 @@
 <template>
-  <header :class="{ 'header--no-background': isVisible }" class="header">
-    <img
-      :class="{ 'header__image--hidden': isVisible }"
-      class="header__image"
-      src="../assets/rv-mediation-logo.svg"
-      alt="logo van rvmediation"
-    />
-    <NavigationMenu />
+  <header :class="{ 'header--no-background': isVisible }">
+    <div class="header-container">
+      <a href="./#landing">
+        <img
+          :class="{ 'header__image--hidden': isVisible }"
+          class="header__image"
+          src="../assets/rvmediation-logo.svg"
+          alt="logo van rvmediation"
+        />
+      </a>
+      <NavigationMenu />
+    </div>
   </header>
 </template>
 
@@ -28,30 +32,31 @@ export default {
 </script>
 
 <style scoped>
-.header {
+a {
+  margin-left: auto;
+  margin-right: auto;
+  /* padding om hem exact hetzelfde uit te lijnen met het logo op de landingpagina */
+  padding-left: 32px;
+}
+
+header {
+  background-color: #001526;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.33);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
   display: flex;
   align-items: center;
   padding: 12px 3%;
   position: sticky;
-  top: 0;
-  background-color: #001526;
-  z-index: 1000;
 }
 
-  .header__image {
-    height: 56px;
-    width: 224px;
-    margin-left: auto;
-    margin-right: auto;
-    /* padding om hem exact hetzelfde uit te lijnen met het logo op de landingpagina */
-    padding-left: 32px;
-  }
-
-  @media screen and (max-width: 599px) {
-    .header__image {
-      height: 53px;
-    }
-  }
+.header__image {
+  height: 56px;
+}
 
 .header__image--hidden {
   opacity: 0;
@@ -59,5 +64,12 @@ export default {
 
 .header--no-background {
   background-color: #00152600;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0);
 }
+
+  @media screen and (max-width: 599px) {
+    .header__image {
+      height: 53px;
+    }
+  }
 </style>
