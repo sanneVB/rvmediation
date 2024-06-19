@@ -36,7 +36,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   /* padding om hem exact hetzelfde uit te lijnen met het logo op de landingpagina */
-  padding-left: 32px;
+  /* padding-left: 32px; */
 }
 
 header {
