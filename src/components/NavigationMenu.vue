@@ -103,7 +103,8 @@ a.button__contact {
 }
 
 a.button__contact:hover {
-  background-color: #fb8c00;
+  color: #FFF;
+  background-color: #ff9900;
 }
 
 a.button__contact:active {

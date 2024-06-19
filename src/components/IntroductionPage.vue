@@ -39,7 +39,17 @@
       </div>
     </div>
   </div>
+  <ContactBox></ContactBox>
 </div>
 </template>
-<script></script>
+<script>
+import ContactBox from "@/components/ContactBox.vue";
+
+export default {
+  name: "IntroductionPage",
+  components: {
+    ContactBox
+  }
+};
+</script>
 <style scoped></style>
