@@ -25,13 +25,13 @@ ul {
     padding-left: 16px;
 }
 
-footer,
+.header-container,
+.footer-container,
 .page-container {
   margin-inline: auto;
   max-width: 1216px;
 }
 
-.footer-container,
 .page-container__content,
 .section-container {
   margin-inline: auto;
@@ -62,10 +62,6 @@ footer,
 .text__blue-bold {
   font-weight: 600;
   color: #00AEB8;
-}
-
-.footer__color {
-  background-color: #00aeb8;
 }
 
 *,
@@ -117,7 +113,7 @@ h1 {
 
 h2 {
   font-size: 1.125rem;
-  padding: 16px;
+  padding: 16px 0px 24px 0px;
 }
 
 a {color: #00aeb8;}

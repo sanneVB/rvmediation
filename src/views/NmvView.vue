@@ -22,9 +22,7 @@
         </div>
     </div>
 </div>
-<div class="footer__color">
-    <FooterContent></FooterContent>
-</div>
+<FooterContent></FooterContent>
 </template>
 <script>
     import HeaderContent from '@/components/HeaderContent.vue';

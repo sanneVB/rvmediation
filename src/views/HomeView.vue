@@ -18,9 +18,7 @@
   <section class="container__snapPoint section__blue page__minus-header-footer" id="testimonials">
     <testimonials-page />
   </section>
-  <div class="footer__color">
-    <footer-content />
-  </div>
+  <footer-content />
 </template>
 
 <script>
