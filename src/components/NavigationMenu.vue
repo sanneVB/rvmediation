@@ -26,14 +26,9 @@
                   <a href="./#testimonials" class="nav__link">Wat zeggen anderen?</a>
                 </li>
             </ul>
-            <v-btn style="background-color: #fb8c00">
-              <a href="./contact" class="button__goto-form">
-                Neem Contact Op
-              </a>
-            </v-btn>
-
-            <!-- button zou volgens design in het midden gecentreerd moeten zijn, hou rekening met het feit dat je
-            geen margins op een block element mag zetten bij BEM!!! Zorgt voor problemen -->
+            <div class="button__position">
+              <a href="./contact" class="button__contact">Neem contact op</a>
+            </div>
         </div>
     </nav>
 </template>
@@ -61,11 +56,30 @@ li::marker {
   color: #fff;
 }
 
-.button__goto-form {
+a.button__contact {
+  background-color: #fb8c00;
+  border: 1px outset buttonborder;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   color: #fff;
+  font-size: 1rem;
+  line-height: 2.5;
+  padding: 8px 16px 8px 16px;
+  text-align: center;
   text-decoration: none;
 }
 
+a.button__contact:hover {
+  background-color: #fb8c00;
+}
+
+a.button__contact:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.button__position {
+  text-align: center;
+}
 
 .nav__item {
   padding: 12px 0;
@@ -88,19 +102,19 @@ li::marker {
   background-color: #00aeb8;
 }
 
-    .nav__list {
-        position: absolute;
-        height: 100vh;
-        background-color: #00AEB8;
-        top: 0;  
-        right: 0;
-        padding: 150px 10% 0 5%;
-        box-shadow: -8px 0px 12px rgba(0, 0, 0, 0.25);
-    }
+.nav__list {
+  position: absolute;
+  height: 100vh;
+  background-color: #00AEB8;
+  top: 0;  
+  right: 0;
+  padding: 150px 10% 0 5%;
+  box-shadow: -8px 0px 12px rgba(0, 0, 0, 0.25);
+}
 
-    .nav__ul {
-        margin-bottom: 100px;
-    }
+.nav__ul {
+  margin-bottom: 100px;
+}
 
 .nav__bar {
   width: 22px;
