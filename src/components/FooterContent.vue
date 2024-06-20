@@ -43,6 +43,7 @@ footer {
 }
 
 p {
+  color: #fff;
   text-align: center;
   padding-bottom: 6px;
 }
