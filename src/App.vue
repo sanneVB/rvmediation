@@ -25,6 +25,16 @@ ul {
     padding-left: 16px;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(33, 33, 33);
+}
+
 .header-container,
 .footer-container,
 .page-container {
