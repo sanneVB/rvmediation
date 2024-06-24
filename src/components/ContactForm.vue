@@ -141,7 +141,7 @@ textarea {
   color: #ffffff;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   textarea {
     min-height: 128px;
   }
@@ -151,7 +151,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .form__container {
     margin-right: auto;
   }

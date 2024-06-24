@@ -69,7 +69,7 @@ h3 {
   aspect-ratio: 4 / 3;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .contact-information {
     display: flex;
     width: 60vw;
@@ -87,7 +87,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .contact-information {
     display: flex;
     flex-direction: column;

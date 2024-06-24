@@ -1,9 +1,9 @@
 <template>
   <header-content />
-  <div class="page-container">
+  <div class="page-container page__minus-header-footer">
+    <h1 class="contact-message__text">Contact</h1>
     <div class="page-container__content">
       <section class="contact-message">
-        <h1 class="contact-message__text">Contact</h1>
         <p>
           Heeft u interesse of heeft u vragen?
           Neem&nbsp;gerust&nbsp;contact&nbsp;op.
@@ -43,9 +43,9 @@ export default {
   text-align: center;
 }
 
-.contact-message__text {
+/* .contact-message__text {
   margin: 32px 0 40px 0;
-}
+} */
 
 .flex-container {
   margin: 40px auto 0 auto;
@@ -53,6 +53,10 @@ export default {
   flex-direction: row-reverse;
   width: 75vw;
   max-width: 950px;
+}
+
+.page__minus-header-footer {
+  min-height: calc(100vh - 160px);
 }
 
 .flex-container__flex-item--contact-information {
@@ -70,7 +74,7 @@ export default {
   height: auto;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .flex-container {
     display: flex;
     flex-direction: column;
@@ -84,7 +88,8 @@ export default {
   }
 
   .seperator {
-    margin: 30px 0;
+    margin-top: 72px;
+    margin-bottom: 72px;
     flex-grow: 0;
     border-left: none;
     border-top: 1px solid #0000006b;
@@ -93,7 +98,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .seperator {
     margin: 30px 0;
     flex-grow: 0;
@@ -120,6 +125,15 @@ export default {
 
   .flex-container__flex-item--contact-information {
     width: 66vw;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 32px 32px 16px 32px;
+  }
+
+  .page__minus-header-footer {
+    min-height: calc(100vh - 208px);
   }
 }
 </style>
