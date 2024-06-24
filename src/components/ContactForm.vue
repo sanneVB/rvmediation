@@ -140,4 +140,20 @@ textarea {
 .form__button {
   color: #ffffff;
 }
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  textarea {
+    min-height: 128px;
+  }
+
+  .form__container {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form__container {
+    margin-right: auto;
+  }
+}
 </style>

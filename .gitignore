@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 /dist
-
+IntroductionPage_Anne.vue
 
 # local env files
 .env.local
