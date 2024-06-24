@@ -10,8 +10,8 @@
         </p>
       </div>
       <div class="footer__content-right">
-        <a href="./nmv">
-          <p class="member-of-nmv text--semi-bold text--italic">Lid van</p>
+        <a class="link__page-nmv" href="./nmv">
+          <p class="text__align-right text--semi-bold text--italic">Lid van</p>
           <img
             src="../assets/nmv-logo.png"
             alt="logo van NMv"
@@ -72,9 +72,14 @@ a {
   padding-top: 6px;
 }
 
-.member-of-nmv {
+.text__align-right {
   text-align: right;
 }
+
+a.link__page-nmv:hover {
+  text-decoration: none;
+}
+
 
 @media screen and (max-width: 768px) {
   footer {
