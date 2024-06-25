@@ -250,8 +250,8 @@ export default {
 
 @media screen and (max-width: 375px) {
   .section-container {
-    padding-left: 8px;
-    padding-right: 8px;
+    font-size: 0.9375rem;
+
     margin-left: 8px;
     margin-right: 8px;
   }

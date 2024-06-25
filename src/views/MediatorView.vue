@@ -67,4 +67,13 @@
     }
 }
 
+@media screen and (max-width: 375px) {
+  .page-container__content {
+    font-size: 0.9375rem;
+    
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
 </style>
