@@ -77,6 +77,11 @@ h6 {
   color: #00AEB8;
 }
 
+.text__align-right {
+  text-align: right;
+}
+
+
 *,
 *::before,
 *::after {
@@ -131,5 +136,4 @@ h2 {
 
 a {color: #00aeb8;}
 a:hover, a:visited {color: #fb8c00};
-
 </style>

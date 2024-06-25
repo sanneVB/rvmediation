@@ -230,21 +230,31 @@ export default {
   }
 }
 
-  /* scroll snap will be activated for tables and smartphones */
-  @media screen and (max-width: 768px) {
-    h1 {
-      font-size: 1.5rem;
-      padding: 32px 32px 16px 32px;
-    }
-
-    .container__snapPoint {
-      /* min-height: 100vh; */
-      scroll-behavior: smooth;
-      scroll-snap-align: start;
-    }
-
-    .page__minus-header-footer {
-      min-height: calc(100vh - 208px);
-    }
+/* scroll snap will be activated for tables and smartphones */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+    padding: 32px 32px 16px 32px;
   }
+
+  .container__snapPoint {
+    /* min-height: 100vh; */
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+  }
+
+  .page__minus-header-footer {
+    min-height: calc(100vh - 208px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section-container {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
 </style>
