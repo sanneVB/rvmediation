@@ -19,8 +19,12 @@
           <input type="text" v-model="subject" />
         </div>
       </div>
-      <div class="form__field--message">
-        <label for="message" class="text__label text text--bold">Bericht</label>
+      <div class="form__message">
+        <label
+          for="message"
+          class="text__label text text--bold form__message--label"
+          >Bericht</label
+        >
         <textarea
           type="textarea"
           v-model="message"
@@ -28,9 +32,7 @@
         ></textarea>
       </div>
       <div class="form__container">
-        <button type="submit" class="form__container--button text">
-          VERZENDEN
-        </button>
+        <button type="submit" class="form__button text">VERZENDEN</button>
       </div>
     </form>
   </div>
@@ -51,7 +53,7 @@ export default {
   methods: {
     sendEmail() {
       Email.send({
-        SecureToken: "c4187a69-5b65-48d4-a339-6dc2adb92a74", //Als rob's hosting het toelaat hebben we een secure token nodig. Zoniet opzetten via https://smtpjs.com/
+        SecureToken: "", //Als rob's hosting het toelaat hebben we een secure token nodig. Zoniet opzetten via https://smtpjs.com/
         To: "", // Rob's email adress moet hier worden ingevuld
         From: "", // Kan hetzelde zijn als to, maar kan ook specifiek from email voor worden aangemaakt
         name: this.name,
@@ -63,6 +65,19 @@ export default {
 };
 </script>
 <style scoped>
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .form__fields {
   display: flex;
   flex-direction: column;
@@ -97,26 +112,48 @@ label {
   font-size: 12px;
 }
 
-.form__field--message {
+.form__message {
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+
+.form__message--label {
+  flex-grow: 0;
 }
 
 textarea {
   margin: 16px 0;
+  flex-grow: 1;
 }
 
 .form__container {
   text-align: center;
   padding: 0 10px;
-  float: right;
+  margin-left: auto;
   height: 30px;
   border: 1px solid #fb8c00;
   background-color: #fb8c00;
   line-height: 30px;
 }
 
-.form__container--button {
+.form__button {
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  textarea {
+    min-height: 128px;
+  }
+
+  .form__container {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form__container {
+    margin-right: auto;
+  }
 }
 </style>
