@@ -50,6 +50,7 @@ h6 {
   margin-bottom: 80px;
   max-width: 950px;
   width: 70vw;
+  justify-items: center;
 }
 
 .text--bold {

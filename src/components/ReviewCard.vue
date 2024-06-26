@@ -9,15 +9,24 @@
             alt="Klein logo van RV Mediation"
         />
         <p class="card-content__review text--italic">
-            “Rob is een vriendelijke en geduldige man. De samenwerking die ik met hem gehad heb, was heel fijn. Hij nam de tijd en energie om me nieuwe dingen te leren. Daarbij legde hij alles goed uit zodat ik het begreep. Zijn eerlijkheid en aanmoediging zijn de dingen die ik het meest heb gewaardeerd. Hij geeft je de energie die je nodig hebt en ziet wanneer de rust van toepassing is.”
+            {{ reviewers.reviewText }}
         </p>
         <p class="text__align-right">
-            voornaam, woonplaats
+            {{ reviewers.name }}, {{ reviewers.residence }}
         </p>
     </div>
 </div>
 </template>
-<script></script>
+<script>
+export default {
+    name: 'ReviewCard',
+    props: {
+        'reviewers': {
+            type: Array,
+        },
+    },
+}
+</script>
 <style scoped>
 
 .card-container {
