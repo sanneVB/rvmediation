@@ -2,9 +2,11 @@
   <div class="page-container">
     <h1>Wat zeggen anderen over mij?</h1>
     <div class="section-container">
-      <div class="review-content">
+      <div class="section-container__column-left">
         <ReviewCard></ReviewCard>
         <ReviewCard></ReviewCard>
+      </div>
+      <div class="section-container__column-right">
         <ReviewCard></ReviewCard>
         <ReviewCard></ReviewCard>
       </div>
@@ -24,11 +26,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-.review-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 70px;
-  justify-content: center;
-}
-</style>
+<style scoped></style>

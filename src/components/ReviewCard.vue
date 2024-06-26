@@ -60,4 +60,23 @@
     height: 80px;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 375px) {
+    .card-content {
+        padding: 16px 24px 8px 48px;
+        margin-right: 38px;
+    }
+
+    .card-content__thumbnail,
+    .card-content__thumbnail-background {
+        top: 16px;
+        left: -32px;
+        width: 64px;
+    }
+
+    .card-content__thumbnail-background {
+        left: 8px;
+        height: 64px;
+    }
+}
 </style>

@@ -112,6 +112,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    justify-self: center;
   }
 
   .section-container__image {
