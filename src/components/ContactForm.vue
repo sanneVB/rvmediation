@@ -91,6 +91,10 @@ export default {
   align-items: center;
 }
 
+.form__field > label {
+  min-width: 95px;
+}
+
 input,
 textarea {
   border: 1px solid #0000006b;
