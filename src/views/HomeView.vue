@@ -54,9 +54,7 @@ export default {
     },
   },
 };
-
 </script>
-
 <style>
   html {
     overflow-x: hidden;
@@ -66,6 +64,8 @@ export default {
 
   section {
     scroll-margin-top: 80px;
+    /* Added padding which is a workaround to get a bottom margin at contact box */
+    padding-bottom: 1px;
   }
 
   p, ul {
@@ -73,12 +73,16 @@ export default {
     line-height: 1.6;
   }
 
+  .page-container {
+    min-height: calc(100dvh - 272px);
+  }
+  
   .page__minus-header {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100dvh - 80px);
   }
 
   .page__minus-header-footer {
-    min-height: calc(100vh - 160px);
+    min-height: calc(100dvh - 160px);
   }
 
   /* Setting different backgrounds */
@@ -253,9 +257,9 @@ export default {
   .section-container {
     font-size: 0.9375rem;
 
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: auto;
   }
 }
-
 </style>
