@@ -159,8 +159,9 @@ P {
   .page-container__content {
     font-size: 0.9375rem;
     
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: auto;
   }
 }
 </style>
