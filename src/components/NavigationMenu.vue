@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav__menu">
+  <nav>
     <div class="nav__button">        
       <button @click="toggleNav" :class="{ 'nav__toggle--change': showNav }" class="nav__toggle">
         <div class="nav__bar"></div>
@@ -120,7 +120,6 @@ a.button__contact:active {
 }
 
 .nav__button {
-/* button { */
   position: absolute;
   top: 24px;
   right: 56px;
@@ -143,13 +142,13 @@ a.button__contact:active {
 
 .nav__list {
   position: absolute;
-  border-radius: 6px;
-  background-color: #00AEB8;
   top: 10px;  
   right: 12px;
-  padding: 100px 32px 64px 32px;
+  animation: createBox 250ms;
+  border-radius: 6px;
+  background-color: #00AEB8;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
-  animation: createBox 300ms;
+  padding: 100px 32px 64px 32px;
 }
 
 @keyframes createBox {
@@ -186,5 +185,52 @@ a.button__contact:active {
 
 .nav__toggle--change .nav__bar:nth-child(3) {
   transform: translateY(-6px) rotate(45deg);
+}
+
+@media screen and (max-width: 390px) {
+
+  .nav__list {
+    top: 8px;  
+    right: 8px;
+    padding: 100px 32px 56px 16px;
+  }
+
+  .nav__ul {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav__button {
+    right: 48px;
+  }
+
+  .nav__list {
+    top: 8px;  
+    right: 6px;
+    padding: 100px 32px 56px 16px;
+  }
+
+  .nav__ul {
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .nav__button {
+    right: 48px;
+  }
+
+  .nav__list {
+    top: 0px;  
+    right: 0px;
+    border-radius: 0px;
+    height: 100dvh;
+    padding: 100px 32px 32px 16px;
+  }
+
+  .nav__ul {
+    margin-bottom: 48px;
+  }
 }
 </style>
