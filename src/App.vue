@@ -50,6 +50,7 @@ h6 {
   margin-bottom: 80px;
   max-width: 950px;
   width: 70vw;
+  justify-items: center;
 }
 
 .text--bold {
@@ -76,6 +77,11 @@ h6 {
   font-weight: 600;
   color: #00AEB8;
 }
+
+.text__align-right {
+  text-align: right;
+}
+
 
 *,
 *::before,
@@ -131,5 +137,4 @@ h2 {
 
 a {color: #00aeb8;}
 a:hover, a:visited {color: #fb8c00};
-
 </style>
