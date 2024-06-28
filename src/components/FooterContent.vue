@@ -71,6 +71,7 @@ a {
 .footer__content-right {
   justify-self: right;
   padding-top: 6px;
+  padding-right: 24px;
 }
 
 .text__align-right {
