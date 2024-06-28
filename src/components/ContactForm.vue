@@ -31,8 +31,8 @@
           placeholder="Enter Message "
         ></textarea>
       </div>
-      <div class="form__container">
-        <button type="submit" class="form__button text">VERZENDEN</button>
+      <div class="form__button">
+        <button type="submit" class="form__button--text text">VERZENDEN</button>
       </div>
     </form>
   </div>
@@ -131,17 +131,17 @@ textarea {
   flex-grow: 1;
 }
 
-.form__container {
+.form__button {
   text-align: center;
   padding: 0 10px;
   margin-left: auto;
   height: 30px;
-  border: 1px solid #fb8c00;
+
   background-color: #fb8c00;
   line-height: 30px;
 }
 
-.form__button {
+.form__button--text {
   color: #ffffff;
 }
 
@@ -150,13 +150,13 @@ textarea {
     min-height: 128px;
   }
 
-  .form__container {
+  .form__button {
     margin-right: auto;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .form__container {
+  .form__button {
     margin-right: auto;
   }
 }

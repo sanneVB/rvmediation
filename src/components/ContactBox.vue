@@ -1,7 +1,7 @@
 <template>
   <div class="box-container">
-      <p class="text--bold">Benieuwd geworden? Neem contact met mij op.</p>
-      <a href="./contact" class="button__contact">Neem contact op</a>
+    <p class="text--bold">Benieuwd geworden? Neem contact met mij op.</p>
+    <a href="./contact" class="button__contact">Neem contact op</a>
   </div>
 </template>
 <script></script>
@@ -17,7 +17,6 @@ a {
 
 a.button__contact {
   background-color: #fb8c00;
-  border: 1px outset buttonborder;
   border-radius: 8px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   font-size: 1rem;
