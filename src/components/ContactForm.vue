@@ -92,7 +92,7 @@ export default {
 }
 
 .form__field > label {
-  min-width: 95px;
+  min-width: 90px;
 }
 
 input,
@@ -155,9 +155,16 @@ textarea {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .form__container {
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form__field {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 </style>
