@@ -243,22 +243,42 @@ export default {
   }
 
   .container__snapPoint {
-    /* min-height: 100vh; */
     scroll-behavior: smooth;
     scroll-snap-align: start;
   }
 
   .page__minus-header-footer {
-    min-height: calc(100vh - 208px);
+    min-height: calc(100vh - 402px);
+  }
+}
+
+@media screen and (max-width: 428px) {
+
+  h1 {
+    font-size: 1.375rem;
+  }
+
+  .section-container {
+    grid-template-columns: auto;
+    gap: 40px;
+    
+    margin-left: 24px;
+    margin-right: 24px;
+
+    width: 80vw;
   }
 }
 
 @media screen and (max-width: 375px) {
+
+  h1 {
+    font-size: 1.25rem;
+    padding: 32px 24px 16px 24px;
+  }
+
   .section-container {
     font-size: 0.9375rem;
-
-    margin-left: 16px;
-    margin-right: 16px;
+    gap: 24px;
     width: auto;
   }
 }
