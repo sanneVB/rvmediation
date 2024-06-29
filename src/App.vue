@@ -147,4 +147,8 @@ h2 {
 a {color: #00aeb8;}
 a:hover, a:visited {color: #fb8c00};
 
+p { 
+  hyphens: auto;
+}
+
 </style>
