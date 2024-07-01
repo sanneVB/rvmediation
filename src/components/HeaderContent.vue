@@ -50,6 +50,7 @@ header {
 .header-container {
   display: flex;
   align-items: center;
+  height: 80px;
   padding: 12px 3%;
   position: sticky;
 }
@@ -64,12 +65,24 @@ header {
 
 .header--no-background {
   background-color: #00152600;
-  box-shadow: 0px 6px 12px rgba(0,0,0,0);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0);
 }
 
-  @media screen and (max-width: 599px) {
-    .header__image {
-      height: 53px;
-    }
+@media screen and (max-width: 768px) {
+  .header__image {
+    height: 50px;
   }
+}
+
+@media screen and (max-width: 428px) {
+  .header__image {
+    height: 46px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header__image {
+    height: 42px;
+  }
+}
 </style>
