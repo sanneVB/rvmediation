@@ -5,18 +5,16 @@
       <div class="footer__content-center">
         <p>
           Copyright &copy; {{ currentYear }}, RVmediation<br />
-          <router-link to="/algemenevoorwaarden">Algemene Voorwaarden</router-link>
+          <router-link to="/algemenevoorwaarden"
+            >Algemene Voorwaarden</router-link
+          >
           | <router-link to="/privacystatement">Privacy Statement</router-link>
         </p>
       </div>
       <div class="footer__content-right">
         <a class="link__page-nmv" href="./nmv">
           <p class="text__align-right text--semibold text--italic">Lid van</p>
-          <img
-            src="../assets/nmv-logo.png"
-            alt="logo van NMv"
-            height="32px"
-          />
+          <img src="../assets/nmv-logo.png" alt="logo van NMv" height="32px" />
         </a>
       </div>
     </div>
@@ -34,7 +32,6 @@ export default {
 };
 </script>
 <style scoped>
-
 footer {
   color: #ffffff;
   height: 80px;
@@ -82,7 +79,6 @@ a.link__page-nmv:hover {
   text-decoration: none;
 }
 
-
 @media screen and (max-width: 768px) {
   footer {
     font-size: 0.75rem;
@@ -96,9 +92,15 @@ a.link__page-nmv:hover {
   .footer__content-right {
     justify-self: center;
     padding-top: 8px;
+    order: -1;
+    padding-right: 0;
   }
 
   .member-of-nmv {
+    text-align: center;
+  }
+
+  .text__align-right {
     text-align: center;
   }
 }
