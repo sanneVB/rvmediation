@@ -17,7 +17,7 @@
   <div class="grid-container__grid-item background-overlay__bottom">
     <carrousel-content class="grid-container__p" />
     <a class="grid-container__grid-text-image" href="/nmv">
-      <p class="grid-container__text text--italic text--semibold">RVmediation is lid van</p>
+      <p class="grid-container__text text--italic text--semibold">Lid van</p>
       <img
         class="grid-container__image--nmv"
         src="../assets/rv-mediation-nmv-logo.png"
@@ -116,10 +116,6 @@
     color: white;
   }
 
-.background-overlay__bottom {
-  display: none;
-}
-
   .text__main-title-L1 {
     font-size: 5rem;
     margin-left: -5px;
@@ -141,7 +137,7 @@
   .grid-container__text {
     font-size: 0.75rem;
     padding-bottom: 12px;
-    text-align: center;
+    text-align: right;
   }
   
   
@@ -183,16 +179,6 @@
     padding-bottom: 24px;
   }
 
-  .background-overlay__bottom {
-    background-image: linear-gradient(
-      180deg,
-      #00152600 0%,
-      #00152640 20%,
-      #00152680 80%,
-      #00152699 100%
-    );
-  }
-
   .text__main-title-L1 {
     font-size: 3rem;
     margin-left: -4px;
@@ -213,6 +199,7 @@
   
   .grid-container__text {
     font-size: 0.625rem;
+    text-align: center;
   }
 
   .grid-container__image--rv {

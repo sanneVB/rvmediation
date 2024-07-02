@@ -51,13 +51,6 @@ export default {
 
 .text__carrousel {
   width: 367px;
-  background-image: linear-gradient(
-    90deg,
-    #00152600 0%,
-    #00152699 23%,
-    #00152699 78%,
-    #00152600 100%
-  );
   color: #fb8c00;
   padding: 6px 0;
 }

@@ -97,7 +97,15 @@ export default {
   }
 
   .section__landing {
-    background-image: url("../assets/rvmediation-hero.webp");
+    background-image:
+      linear-gradient(
+        180deg,
+        #00152600 0%,
+        #00152660 80%,
+        #00152690 90%,
+        #00152699 100%
+      ),
+      url("../assets/rvmediation-hero.webp");
     background-color: #001526;
     background-size: cover;
     background-repeat: no-repeat;
