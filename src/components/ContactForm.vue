@@ -170,5 +170,9 @@ textarea {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .form__button {
+    margin-right: auto;
+  }
 }
 </style>
