@@ -3,17 +3,16 @@
 </template>
 
 <script>
-    export default {
-        name: "app",
-        // set default background color
-        created: function () {
-            document.body.style.backgroundColor = "#FDFDFD";
-        },
-    };
+export default {
+  name: "app",
+  // set default background color
+  created: function () {
+    document.body.style.backgroundColor = "#FDFDFD";
+  },
+};
 </script>
 
 <style>
-
 * {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -22,7 +21,7 @@
 }
 
 ul {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 
 p,
@@ -40,6 +39,16 @@ h6 {
 .page-container {
   margin-inline: auto;
   max-width: 1216px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper__content {
+  flex: 1;
 }
 
 .page-container__content,
@@ -79,18 +88,17 @@ h6 {
 }
 
 .text__blue {
-  color: #00AEB8;
+  color: #00aeb8;
 }
 
 .text__blue-bold {
   font-weight: 600;
-  color: #00AEB8;
+  color: #00aeb8;
 }
 
 .text__align-right {
   text-align: right;
 }
-
 
 *,
 *::before,
@@ -144,11 +152,15 @@ h2 {
   padding: 16px 0px 24px 0px;
 }
 
-a {color: #00aeb8;}
-a:hover, a:visited {color: #fb8c00};
-
-p { 
-  hyphens: auto;
+a {
+  color: #00aeb8;
+}
+a:hover,
+a:visited {
+  color: #fb8c00;
 }
 
+p {
+  hyphens: auto;
+}
 </style>

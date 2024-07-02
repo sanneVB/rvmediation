@@ -1,26 +1,28 @@
 <template>
-  <header-content />
-  <div class="page-container page__minus-header-footer">
-    <h1 class="contact-message__text">Contact</h1>
-    <div class="page-container__content">
-      <section class="contact-message">
-        <p>
-          Heeft u interesse of heeft u vragen?
-          Neem&nbsp;gerust&nbsp;contact&nbsp;op.
-        </p>
-      </section>
-      <div class="flex-container">
-        <div class="flex-container__flex-item--form">
-          <contact-form />
-        </div>
-        <div class="seperator"></div>
-        <div class="flex-container__flex-item--contact-information">
-          <contact-information />
+  <div class="wrapper">
+    <header-content />
+    <div class="page-container page__minus-header-footer wrapper__content">
+      <h1 class="contact-message__text">Contact</h1>
+      <div class="page-container__content">
+        <section class="contact-message">
+          <p>
+            Heeft u interesse of heeft u vragen?
+            Neem&nbsp;gerust&nbsp;contact&nbsp;op.
+          </p>
+        </section>
+        <div class="flex-container">
+          <div class="flex-container__flex-item--form">
+            <contact-form />
+          </div>
+          <div class="seperator"></div>
+          <div class="flex-container__flex-item--contact-information">
+            <contact-information />
+          </div>
         </div>
       </div>
     </div>
+    <footer-content class="footer" />
   </div>
-  <footer-content class="footer" />
 </template>
 <script>
 import HeaderContent from "@/components/HeaderContent.vue";
