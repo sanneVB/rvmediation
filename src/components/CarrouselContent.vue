@@ -1,7 +1,7 @@
 <template>
   <div class="carrousel">
     <transition name="fade" mode="out-in">
-      <p class="text__carrousel" :key="currentValue">{{ currentValue }}</p>
+      <p class="text__carrousel text--italic text--bold" :key="currentValue">{{ currentValue }}</p>
     </transition>
   </div>
 </template>
@@ -47,7 +47,6 @@ export default {
 .carrousel {
   font-size: 1.75rem;
   text-align: center;
-  /* padding: 10px 10px; */
 }
 
 .text__carrousel {
@@ -60,9 +59,7 @@ export default {
     #00152600 100%
   );
   color: #fb8c00;
-  font-weight: 700;
-  font-style: italic;
-  padding: 3px 0;
+  padding: 6px 0;
 }
 
 .fade-enter-active,
@@ -72,6 +69,13 @@ export default {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  .grid-container__p {
+    font-size: 1.625rem;
+  }
 }
 
 @media screen and (max-width: 599px) {
@@ -86,12 +90,4 @@ export default {
     background-image: none;
   }
 }
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-
-  .grid-container__p {
-    font-size: 1.625rem;
-  }
-}
-
 </style>

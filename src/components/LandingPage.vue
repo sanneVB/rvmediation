@@ -1,34 +1,32 @@
 <template>
-  <div class="page-container">
-    <div class="grid-container">
-      <div class="grid-container__grid-item">
-        <h1>
-          <span class="text__main-title-L1">ROB<br /></span>
-          <span class="text__main-title-L2">Verbeek</span>
-        </h1>
-      </div>
-      <div class="grid-container__grid-item">
-        <img
-          class="grid-container__image--rv"
-          src="../assets/rvmediation-logo.svg"
-          alt="logo van rvmediation"
-          ref="observedElement"
-        />
-      </div>
-      <div class="grid-container__grid-item">
-        <carrousel-content class="grid-container__p" />
-        <a class="grid-container__grid-text-image" href="/nmv">
-          <p class="grid-container__text text--italic text--semibold">RVmediation is lid van</p>
-          <img
-            class="grid-container__image--nmv"
-            src="../assets/rv-mediation-nmv-logo.png"
-            alt="logo van de nmv"
-          />
-        </a>
-      </div>
-    </div>
+<div class="page-container grid-container">
+  <div class="grid-container__grid-item">
+    <h1>
+      <span class="text__main-title-L1">ROB<br /></span>
+      <span class="text__main-title-L2">Verbeek</span>
+    </h1>
   </div>
-  </template>
+  <div class="grid-container__grid-item">
+    <img
+      class="grid-container__image--rv"
+      src="../assets/rvmediation-logo.svg"
+      alt="logo van rvmediation"
+      ref="observedElement"
+    />
+  </div>
+  <div class="grid-container__grid-item background-overlay__bottom">
+    <carrousel-content class="grid-container__p" />
+    <a class="grid-container__grid-text-image" href="/nmv">
+      <p class="grid-container__text text--italic text--semibold">RVmediation is lid van</p>
+      <img
+        class="grid-container__image--nmv"
+        src="../assets/rv-mediation-nmv-logo.png"
+        alt="logo van de nmv"
+      />
+    </a>
+  </div>
+</div>
+</template>
   
   <script>
   import CarrouselContent from "./CarrouselContent.vue";
@@ -117,7 +115,11 @@
   p {
     color: white;
   }
-  
+
+.background-overlay__bottom {
+  display: none;
+}
+
   .text__main-title-L1 {
     font-size: 5rem;
     margin-left: -5px;
@@ -179,6 +181,16 @@
     align-items: center;
     justify-content: end;
     padding-bottom: 24px;
+  }
+
+  .background-overlay__bottom {
+    background-image: linear-gradient(
+      180deg,
+      #00152600 0%,
+      #00152640 20%,
+      #00152680 80%,
+      #00152699 100%
+    );
   }
 
   .text__main-title-L1 {
