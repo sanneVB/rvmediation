@@ -6,7 +6,7 @@
         <div class="page-container__image">
             <a href="https://www.vindeenmediator.nl/mediator/rvmediation/" target="_blank">
                 <img
-                    class="grid-container__image--nmv-1"
+                    class="grid-container__image--nmv"
                     src="../assets/rv-mediation-nmv-logo.png"
                     alt="logo van de nmv"
                 />

@@ -16,20 +16,15 @@
         />
       </div>
       <div class="grid-container__grid-item">
-        <div class="grid-container__grid-content">
-          <carrousel-content class="grid-container__p" />
-          <!-- <p class="grid-container__p">"doortastend"</p> -->
-          <div class="grid-container__grid-text-image">
-            <a href="/nmv">
-              <p class="grid-container__text-1">RVmediation is lid van</p>
-              <img
-                class="grid-container__image--nmv-1"
-                src="../assets/rv-mediation-nmv-logo.png"
-                alt="logo van de nmv"
-              />
-            </a>
-          </div>
-        </div>
+        <carrousel-content class="grid-container__p" />
+        <a class="grid-container__grid-text-image" href="/nmv">
+          <p class="grid-container__text text--italic text--semibold">RVmediation is lid van</p>
+          <img
+            class="grid-container__image--nmv"
+            src="../assets/rv-mediation-nmv-logo.png"
+            alt="logo van de nmv"
+          />
+        </a>
       </div>
     </div>
   </div>
@@ -95,7 +90,7 @@
     display: flex;
     align-items: end;
     justify-content: center;
-    padding-bottom: 34px;
+    padding-bottom: 54px;
   }
   
   .grid-container__grid-text-image {
@@ -137,52 +132,54 @@
     height: 56px;
   }
   
-  .grid-container__image--nmv-1,
-  .grid-container__image--nmv-2 {
+  .grid-container__image--nmv {
     height: 48px;
   }
   
-  .grid-container__text-1,
-  .grid-container__text-2 {
+  .grid-container__text {
     font-size: 0.75rem;
     padding-bottom: 12px;
     text-align: center;
-    font-weight: bold;
-    font-style: italic;
   }
   
   
-  @media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   
-    .text__main-title-L1 {
-      font-size: 4rem;
-      margin-left: -5px;
-    }
-  
-    .text__main-title-L2 {
-      font-size: 1.875rem;
-      letter-spacing: 0.06rem;
-    }
-  
-    .grid-container__image {
-      height: 53px;
-    }
-  
-    .grid-container__text-1 {
-      font-size: 0.625rem;
-    }
-  
-    .grid-container__image--nmv-1,
-    .grid-container__image--nmv-2 {
-      height: 36px;
-    }
-  
-    .grid-container__image--nmv-1 {
-      padding-left: 5px;
-    }
+  .grid-container__grid-item:nth-of-type(3) {
+    padding-bottom: 50px;
   }
+
+  .text__main-title-L1 {
+    font-size: 4rem;
+    margin-left: -5px;
+  }
+
+  .text__main-title-L2 {
+    font-size: 1.875rem;
+    letter-spacing: 0.06rem;
+  }
+
+  .grid-container__image {
+    height: 53px;
+  }
+
+  .grid-container__text {
+    font-size: 0.625rem;
+  }
+
+  .grid-container__image--nmv {
+    height: 40px;
+  }
+}
   
-  @media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) {
+
+  .grid-container__grid-item:nth-of-type(3) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 24px;
+  }
 
   .text__main-title-L1 {
     font-size: 3rem;
@@ -198,22 +195,16 @@
     position: static;
   }
   
-  .grid-container__image--nmv-1 {
-    padding-left: 22px;
+  .grid-container__image--nmv {
     height: 32px;
   }
   
-  .grid-container__text-1 {
-    font-size: 0.563rem;
+  .grid-container__text {
+    font-size: 0.625rem;
   }
-  
+
   .grid-container__image--rv {
     height: 53px;
   }
-  
-  .grid-container__image--nmv {
-    height: 36px;
-  }
-  }
-  </style>
-  
+}
+</style>

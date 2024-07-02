@@ -63,14 +63,14 @@ h6 {
 }
 
 .text--bold {
+  font-weight: 700;
+}
+
+.text--semibold {
   font-weight: 600;
 }
 
-.text--semi-bold {
-  font-weight: 600;
-}
-
-.text--medium-bold {
+.text--medium {
   font-weight: 500;
 }
 
