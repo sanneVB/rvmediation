@@ -54,9 +54,7 @@ export default {
     },
   },
 };
-
 </script>
-
 <style>
   html {
     overflow-x: hidden;
@@ -66,6 +64,8 @@ export default {
 
   section {
     scroll-margin-top: 80px;
+    /* Added padding which is a workaround to get a bottom margin at contact box */
+    padding-bottom: 1px;
   }
 
   p, ul {
@@ -73,12 +73,16 @@ export default {
     line-height: 1.6;
   }
 
+  .page-container {
+    min-height: calc(100dvh - 272px);
+  }
+  
   .page__minus-header {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100dvh - 80px);
   }
 
   .page__minus-header-footer {
-    min-height: calc(100vh - 160px);
+    min-height: calc(100dvh - 160px);
   }
 
   /* Setting different backgrounds */
@@ -239,23 +243,43 @@ export default {
   }
 
   .container__snapPoint {
-    /* min-height: 100vh; */
     scroll-behavior: smooth;
     scroll-snap-align: start;
   }
 
   .page__minus-header-footer {
-    min-height: calc(100vh - 208px);
+    min-height: calc(100vh - 402px);
+  }
+}
+
+@media screen and (max-width: 428px) {
+
+  h1 {
+    font-size: 1.375rem;
+  }
+
+  .section-container {
+    grid-template-columns: auto;
+    gap: 40px;
+    
+    margin-left: 24px;
+    margin-right: 24px;
+
+    width: 80vw;
   }
 }
 
 @media screen and (max-width: 375px) {
+
+  h1 {
+    font-size: 1.25rem;
+    padding: 32px 24px 16px 24px;
+  }
+
   .section-container {
     font-size: 0.9375rem;
-
-    margin-left: 8px;
-    margin-right: 8px;
+    gap: 24px;
+    width: auto;
   }
 }
-
 </style>

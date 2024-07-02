@@ -11,7 +11,7 @@
       </div>
       <div class="footer__content-right">
         <a class="link__page-nmv" href="./nmv">
-          <p class="text__align-right text--semi-bold text--italic">Lid van</p>
+          <p class="text__align-right text--semibold text--italic">Lid van</p>
           <img
             src="../assets/nmv-logo.png"
             alt="logo van NMv"
@@ -71,6 +71,7 @@ a {
 .footer__content-right {
   justify-self: right;
   padding-top: 6px;
+  padding-right: 24px;
 }
 
 .text__align-right {

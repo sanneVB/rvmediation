@@ -151,16 +151,38 @@ P {
     }
 
     .page__minus-header-footer {
-        min-height: calc(100vh - 208px);
+        min-height: calc(100vh - 402px);
+    }
+}
+
+@media screen and (max-width: 428px) {
+
+    h1 {
+        font-size: 1.375rem;
+    }
+
+    .page-container__content {
+        grid-template-columns: auto;
+        gap: 40px;
+        
+        margin-left: 24px;
+        margin-right: 24px;
+
+        width: 80vw;
     }
 }
 
 @media screen and (max-width: 375px) {
-  .page-container__content {
-    font-size: 0.9375rem;
-    
-    margin-left: 8px;
-    margin-right: 8px;
-  }
+
+    h1 {
+        font-size: 1.25rem;
+        padding: 32px 24px 16px 24px;
+    }
+
+    .page-container__content {
+        font-size: 0.9375rem;    
+        gap: 24px;
+        width: auto;
+    }
 }
 </style>

@@ -47,7 +47,7 @@ export default {
 .carrousel {
   font-size: 1.75rem;
   text-align: center;
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
 }
 
 .text__carrousel {

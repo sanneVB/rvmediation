@@ -1,13 +1,13 @@
 <template>
-  <div class="page-container">
-    <h1>Wat zeggen anderen over mij?</h1>
-    <div class="section-container">
-      <ReviewCard v-for="(reviewers, x) in reviewers" :key="x"
-        v-bind:reviewers="reviewers"
-      />
-    </div>
-    <ContactBox></ContactBox>
+<div class="page-container">
+  <h1>Wat zeggen anderen over mij?</h1>
+  <div class="section-container">
+    <ReviewCard v-for="(reviewers, x) in reviewers" :key="x"
+      v-bind:reviewers="reviewers"
+    />
   </div>
+</div>
+<ContactBox></ContactBox>
 </template>
 <script>
 import ContactBox from "@/components/ContactBox.vue";
@@ -35,4 +35,8 @@ export default {
   }
 };
 </script>
-<style scoped></style>
+<style scoped>
+.page-container {
+    min-height: calc(100dvh - 277px - 80px);
+}
+</style>

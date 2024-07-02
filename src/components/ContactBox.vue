@@ -52,4 +52,16 @@ a.button__contact:active {
     font-size: 0.875rem;
   }
 }
+
+@media screen and (max-width: 375px) {
+  * {
+    font-size: 0.875rem;
+  }
+
+  .box-container {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: auto;
+  }
+}
 </style>

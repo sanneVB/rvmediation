@@ -46,22 +46,31 @@ h6 {
 .section-container,
 .box-container {
   margin-inline: auto;
-  margin-top: 40px;
-  margin-bottom: 80px;
   max-width: 950px;
   width: 70vw;
   justify-items: center;
 }
 
+.page-container__content,
+.section-container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.box-container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
 .text--bold {
+  font-weight: 700;
+}
+
+.text--semibold {
   font-weight: 600;
 }
 
-.text--semi-bold {
-  font-weight: 600;
-}
-
-.text--medium-bold {
+.text--medium {
   font-weight: 500;
 }
 
@@ -126,8 +135,8 @@ h6 {
 /* header styles */
 h1 {
   text-align: center;
-  font-size: 1.75rem;
-  padding: 64px 32px 32px 32px;
+  font-size: 1.5rem;
+  padding: 32px 32px 32px 32px;
 }
 
 h2 {
@@ -137,4 +146,9 @@ h2 {
 
 a {color: #00aeb8;}
 a:hover, a:visited {color: #fb8c00};
+
+p { 
+  hyphens: auto;
+}
+
 </style>

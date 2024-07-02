@@ -30,8 +30,8 @@
       </div>
     </div>
   </div>
-  <ContactBox></ContactBox>
 </div>
+<ContactBox></ContactBox>
 </template>
 <script>
 import ContactBox from "@/components/ContactBox.vue";
