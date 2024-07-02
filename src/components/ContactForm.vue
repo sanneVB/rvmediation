@@ -32,7 +32,7 @@
         ></textarea>
       </div>
       <div class="form__button">
-        <button type="submit" class="form__button--text text">VERZENDEN</button>
+        <button type="submit" class="form__button--text text">Verzenden</button>
       </div>
     </form>
   </div>
@@ -129,16 +129,20 @@ label {
 textarea {
   margin: 16px 0;
   flex-grow: 1;
+  min-height: 98px;
 }
 
 .form__button {
-  text-align: center;
-  padding: 0 10px;
   margin-left: auto;
-  height: 30px;
+}
 
+.form__button--text {
   background-color: #fb8c00;
-  line-height: 30px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  padding: 6px 16px;
+  text-align: center;
 }
 
 .form__button--text {
