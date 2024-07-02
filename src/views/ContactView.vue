@@ -81,8 +81,8 @@ export default {
     margin-top: 0;
   }
 
-  .flex-container__flex-item--contact-information {
-    width: auto;
+  .flex-container__flex-item--form {
+    width: 66vw;
   }
 
   .seperator {
@@ -111,14 +111,6 @@ export default {
     margin: 0;
     align-items: center;
   }
-
-  /* .page-container__content {
-    width: 85vw;
-  }*/
-
-  /* .flex-container__flex-item--form {
-    width: auto;
-  } */
 
   .flex-container__flex-item--contact-information {
     width: 66vw;
