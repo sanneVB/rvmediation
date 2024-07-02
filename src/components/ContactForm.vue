@@ -31,8 +31,8 @@
           placeholder="Enter Message "
         ></textarea>
       </div>
-      <div class="form__container">
-        <button type="submit" class="form__button text">VERZENDEN</button>
+      <div class="form__button">
+        <button type="submit" class="form__button--text text">Verzenden</button>
       </div>
     </form>
   </div>
@@ -92,7 +92,7 @@ export default {
 }
 
 .form__field > label {
-  min-width: 95px;
+  min-width: 90px;
 }
 
 input,
@@ -129,19 +129,23 @@ label {
 textarea {
   margin: 16px 0;
   flex-grow: 1;
-}
-
-.form__container {
-  text-align: center;
-  padding: 0 10px;
-  margin-left: auto;
-  height: 30px;
-  border: 1px solid #fb8c00;
-  background-color: #fb8c00;
-  line-height: 30px;
+  min-height: 98px;
 }
 
 .form__button {
+  margin-left: auto;
+}
+
+.form__button--text {
+  background-color: #fb8c00;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  padding: 6px 16px;
+  text-align: center;
+}
+
+.form__button--text {
   color: #ffffff;
 }
 
@@ -150,13 +154,24 @@ textarea {
     min-height: 128px;
   }
 
-  .form__container {
+  .form__button {
     margin-right: auto;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .form__container {
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .form__button {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form__field {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__button {
     margin-right: auto;
   }
 }

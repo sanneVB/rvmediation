@@ -69,6 +69,10 @@ h3 {
   aspect-ratio: 4 / 3;
 }
 
+iframe {
+  border-radius: 8px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .contact-information {
     display: flex;
