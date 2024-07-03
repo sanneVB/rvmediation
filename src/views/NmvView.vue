@@ -74,19 +74,11 @@ p {
   justify-self: center;
 }
 
-.page__minus-header-footer {
-  min-height: calc(100vh - 160px);
-}
-
 /* scroll snap will be activated for tables and smartphones */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 1.5rem;
     padding: 32px 32px 16px 32px;
-  }
-
-  .page__minus-header-footer {
-    min-height: calc(100vh - 402px);
   }
 }
 
@@ -98,10 +90,8 @@ p {
   .page-container__content {
     grid-template-columns: auto;
     gap: 40px;
-
     margin-left: 24px;
     margin-right: 24px;
-
     width: 80vw;
   }
 }
