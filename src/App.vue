@@ -83,6 +83,10 @@ h6 {
   font-weight: 500;
 }
 
+.text--light {
+  font-weight: 300;
+}
+
 .text--italic {
   font-variation-settings: "slnt" -10;
 }
