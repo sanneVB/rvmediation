@@ -22,14 +22,34 @@ export default {
   data() {
     return {
       reviewers: [
-        { name: "anoniem", residence: "woonplaats onbekend", date: "01-01-1970", reviewText:
-        "Rob is een vriendelijke en geduldige man. De samenwerking die ik met hem gehad heb, was heel fijn. Hij nam de tijd en energie om me nieuwe dingen te leren. Daarbij legde hij alles goed uit zodat ik het begreep. Zijn eerlijkheid en aanmoediging zijn de dingen die ik het meest heb gewaardeerd. Hij geeft je de energie die je nodig hebt en ziet wanneer de rust van toepassing is."},
-        { name: "Jeroen",  residence: "Eindhoven", date: "01-01-1970", reviewText:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, turpis vel vestibulum vestibulum, purus justo dictum massa, in euismod massa ante ac ante. Donec sed facilisis lectus. Pellentesque malesuada elit nec tincidunt dignissim. Nunc velit tortor, placerat nec ultrices sed, hendrerit sit amet sapien. Vivamus a ligula nisi. Vestibulum."},
-        { name: "Danielle", residence: "Amsterdam", date: "", reviewText:
-        "Lorem ipsum dolor sit amet." },
-        { name: "Sjors", residence: "woonplaats onbekend", date: "01-01-1970", reviewText:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed elit nulla. Curabitur aliquet, ipsum sed porttitor vulputate, urna risus facilisis augue, vel tempus libero neque non libero. Mauris ultricies." },
+        {
+          name: "anoniem",
+          residence: "",
+          date: "01-01-1970",
+          reviewText:
+          "Rob is een vriendelijke en geduldige man. De samenwerking die ik met hem gehad heb, was heel fijn. Hij nam de tijd en energie om me nieuwe dingen te leren. Daarbij legde hij alles goed uit zodat ik het begreep. Zijn eerlijkheid en aanmoediging zijn de dingen die ik het meest heb gewaardeerd. Hij geeft je de energie die je nodig hebt en ziet wanneer de rust van toepassing is."
+        },
+        {
+          name: "Danielle",
+          residence: "Amsterdam",
+          date: "01-01-1970",
+          reviewText:
+          '<span style="color: red">Lorem ipsum dolor sit amet.</span>'
+        },
+        {
+          name: "Sjors",
+          residence: "",
+          date: "01-01-1970",
+          reviewText:
+          '<span style="color: red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed elit nulla. Curabitur aliquet, ipsum sed porttitor vulputate, urna risus facilisis augue, vel tempus libero neque non libero. Mauris ultricies.</span>'
+        },
+        { 
+          name: "",
+          residence: "",
+          date: "01-01-1970",
+          reviewText:
+          '<span style="color: red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, turpis vel vestibulum vestibulum, purus justo dictum massa, in euismod massa ante ac ante. Donec sed facilisis lectus. Pellentesque malesuada elit nec tincidunt dignissim. Nunc velit tortor, placerat nec ultrices sed, hendrerit sit amet sapien. Vivamus a ligula nisi. Vestibulum.</span>'
+        },
       ]
     }
   }

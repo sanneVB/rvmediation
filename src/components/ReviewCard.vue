@@ -8,10 +8,25 @@
             src="../assets/rv-mediation-logo-small.svg"
             alt="Klein logo van RV Mediation"
         />
-        <p class="card-content__review text--italic">
-            {{ reviewers.reviewText }}
+        <!-- Opm.: Als alle reviewkaartjes met echte teksten bevatten,
+         verwijder de volgende regels code... -->
+        <p class="card-content__review text--italic text--light"
+        v-html="reviewers.reviewText">
         </p>
-        <p class="text__align-right">
+        <!--  ...vervang het met de code hieronder! -->
+        <!-- <p class="card-content__review text--italic text--light">
+            {{ reviewers.reviewText }}
+        </p> -->
+        <p class="text__align-right"
+        v-if="Object.keys(reviewers.name).length===0">        
+            anoniem
+        </p>
+        <p class="text__align-right"
+        v-else-if="Object.keys(reviewers.residence).length===0">        
+            {{ reviewers.name }}
+        </p>
+        <p class="text__align-right"
+        v-else>
             {{ reviewers.name }}, {{ reviewers.residence }}
         </p>
     </div>
