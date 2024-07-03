@@ -2,35 +2,37 @@
   <div class="wrapper">
     <HeaderContent></HeaderContent>
     <div class="page-container page__minus-header-footer wrapper__content">
-      <h1>Wat doet een mediator?</h1>
-      <div class="page-container__content">
-        <div class="page-container__image">
-          <img
-            class="page-image"
-            src="../assets/rvmediation-mediator-handshake.jpg"
-            alt="Foto van twee mensen die handen schudden"
-          />
-        </div>
-        <div>
-          <p>
-            Mediation is een vorm van conflictbemiddeling. De mediator begeleidt
-            gesprekken, zodat u weer met elkaar in gesprek komt. Door mediation
-            wordt u geholpen door een professionele en onafhankelijke mediator.
-            De mediator zal er voor zorgen dat u op uw gemakt gesteld word en
-            zorgt dat de communicatie weer op gang komt. Ook word het conflict
-            in een breder perspectief geplaatst, zo werkt u naar een
-            aanvaardbare oplossing voor beide partijen.
-          </p>
-          <p>
-            Tijdens de mediation denkt en werkt u zelf mee aan een aanvaardbare
-            oplossing. Hierdoor kunt u uiteindelijk zelf een overwogen
-            beslissing nemen. Dit bespaart u een hoop negativiteit, maar ook
-            voorkomt u hiermee een juridisch proces. Dit betekent minder hoge
-            (juridische) kosten en er blijft veel tijd bespaart.
-          </p>
+      <div class="wrapper__content--information">
+        <h1>Wat doet een mediator?</h1>
+        <div class="page-container__content">
+          <div class="page-container__image">
+            <img
+              class="page-image"
+              src="../assets/rvmediation-mediator-handshake.jpg"
+              alt="Foto van twee mensen die handen schudden"
+            />
+          </div>
+          <div>
+            <p>
+              Mediation is een vorm van conflictbemiddeling. De mediator
+              begeleidt gesprekken, zodat u weer met elkaar in gesprek komt.
+              Door mediation wordt u geholpen door een professionele en
+              onafhankelijke mediator. De mediator zal er voor zorgen dat u op
+              uw gemakt gesteld word en zorgt dat de communicatie weer op gang
+              komt. Ook word het conflict in een breder perspectief geplaatst,
+              zo werkt u naar een aanvaardbare oplossing voor beide partijen.
+            </p>
+            <p>
+              Tijdens de mediation denkt en werkt u zelf mee aan een
+              aanvaardbare oplossing. Hierdoor kunt u uiteindelijk zelf een
+              overwogen beslissing nemen. Dit bespaart u een hoop negativiteit,
+              maar ook voorkomt u hiermee een juridisch proces. Dit betekent
+              minder hoge (juridische) kosten en er blijft veel tijd bespaart.
+            </p>
+          </div>
         </div>
       </div>
-      <ContactBox></ContactBox>
+      <ContactBox class="contact-box"></ContactBox>
     </div>
     <FooterContent></FooterContent>
   </div>
@@ -66,9 +68,12 @@ export default {
   width: 360px;
 }
 
-/* .page__minus-header-footer {
-  min-height: calc(100dvh - 356px);
-} */
+/* Necessary for contact box to stick above foooter instead of directly below text */
+.wrapper__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
 /* scroll snap will be activated for tables and smartphones */
 @media screen and (max-width: 768px) {
