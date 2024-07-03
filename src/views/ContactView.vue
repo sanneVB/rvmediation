@@ -49,12 +49,6 @@ export default {
   margin: 40px auto 0 auto;
   display: flex;
   flex-direction: row-reverse;
-  /* width: 75vw; 
-  max-width: 950px; */
-}
-
-.page__minus-header-footer {
-  min-height: calc(100vh - 160px);
 }
 
 .seperator {
@@ -137,7 +131,6 @@ export default {
 
   .page-container__content {
     font-size: 0.9375rem;
-
     margin-left: 8px;
     margin-right: 8px;
   }

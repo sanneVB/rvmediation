@@ -30,8 +30,8 @@
           </p>
         </div>
       </div>
+      <ContactBox></ContactBox>
     </div>
-    <ContactBox></ContactBox>
     <FooterContent></FooterContent>
   </div>
 </template>
@@ -66,9 +66,9 @@ export default {
   width: 360px;
 }
 
-.page__minus-header-footer {
+/* .page__minus-header-footer {
   min-height: calc(100dvh - 356px);
-}
+} */
 
 /* scroll snap will be activated for tables and smartphones */
 @media screen and (max-width: 768px) {
