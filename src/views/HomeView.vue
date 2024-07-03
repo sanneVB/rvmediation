@@ -34,9 +34,9 @@
         id="testimonials"
       >
         <testimonials-page />
+        <footer-content />
       </section>
     </div>
-    <footer-content />
   </div>
 </template>
 
