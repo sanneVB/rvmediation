@@ -92,19 +92,14 @@ ul {
   padding-bottom: 16px;
   line-height: 1.6;
 }
-/* \/ See if below code is unnecesarry \/  */
 
-/* .page-container {
+.page-container {
   min-height: calc(100dvh - 272px);
 }
 
 .page__minus-header {
   min-height: calc(100dvh - 80px);
 }
-
-.page__minus-header-footer {
-  min-height: calc(100dvh - 160px);
-} */
 
 /* Setting different backgrounds */
 /* Same as #00AEB8 with 5% opacity! */
@@ -266,12 +261,6 @@ ul {
     scroll-behavior: smooth;
     scroll-snap-align: start;
   }
-
-  /* \/ See if below code is unnecesarry \/  */
-
-  /* .page__minus-header-footer {
-    min-height: calc(100vh - 402px);
-  } */
 }
 
 @media screen and (max-width: 428px) {
