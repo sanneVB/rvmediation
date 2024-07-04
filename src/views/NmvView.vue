@@ -11,7 +11,7 @@
           >
             <img
               class="grid-container__image--nmv"
-              src="../assets/rv-mediation-nmv-logo.png"
+              src="../assets/rvmediation-nmv-logo.png"
               alt="logo van de nmv"
             />
           </a>
