@@ -84,7 +84,7 @@ html {
 section {
   scroll-margin-top: 80px;
   /* Added padding which is a workaround to get a bottom margin at contact box */
-  padding-bottom: 1px;
+  /* padding-bottom: 1px; */
 }
 
 p,
