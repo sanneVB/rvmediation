@@ -5,7 +5,7 @@
         <img
             class="card-content__thumbnail"
             type="image/svg"
-            src="../assets/rv-mediation-logo-small.svg"
+            src="../assets/rvmediation-logo-small.svg"
             alt="Klein logo van RV Mediation"
         />
         <!-- Opm.: Als alle reviewkaartjes met echte teksten bevatten,
