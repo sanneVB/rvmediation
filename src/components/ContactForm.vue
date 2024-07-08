@@ -99,11 +99,11 @@ input,
 textarea {
   border: 1px solid #0000006b;
   border-radius: 3px;
+  padding: 0 4px;
 }
 
 input {
   flex-grow: 1;
-
   height: 32px;
 }
 
