@@ -245,7 +245,7 @@ ul {
   }
 
   .section-container__image {
-    height: initial;
+    height: none;
   }
 
   .text-box__white-right,
@@ -290,7 +290,7 @@ ul {
   }
 
   .section-container__image {
-    height: initial;
+    height: none;
   }
 }
 
@@ -307,7 +307,7 @@ ul {
   }
 
   .section-container__image {
-    height: initial;
+    height: none;
   }
 }
 </style>
