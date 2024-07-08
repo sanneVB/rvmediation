@@ -233,6 +233,11 @@ ul {
   .section-container__column-right {
     flex-direction: column-reverse;
   }
+
+  .section-container__image {
+    height: 240px;
+  }
+
 }
 
 @media screen and (max-width: 669px) {
