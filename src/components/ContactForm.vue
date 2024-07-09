@@ -102,6 +102,11 @@ textarea {
   padding: 0 4px;
 }
 
+input:focus,
+textarea:focus {
+  outline-color: #00aeb8;
+}
+
 input {
   flex-grow: 1;
   height: 32px;
@@ -143,9 +148,6 @@ textarea {
   font-size: 1rem;
   padding: 6px 16px;
   text-align: center;
-}
-
-.form__button--text {
   color: #ffffff;
 }
 
