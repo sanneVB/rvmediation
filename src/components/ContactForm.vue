@@ -104,7 +104,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  outline-color: #00aeb8;
+  outline-color: #fb8c00;
 }
 
 input {

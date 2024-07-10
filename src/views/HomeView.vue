@@ -77,7 +77,7 @@ export default {
 <style>
 html {
   overflow-x: hidden;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   overflow-y: scroll;
 }
 
