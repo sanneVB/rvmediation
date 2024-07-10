@@ -99,11 +99,16 @@ input,
 textarea {
   border: 1px solid #0000006b;
   border-radius: 3px;
+  padding: 0 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: #fb8c00;
 }
 
 input {
   flex-grow: 1;
-
   height: 32px;
 }
 
@@ -143,9 +148,6 @@ textarea {
   font-size: 1rem;
   padding: 6px 16px;
   text-align: center;
-}
-
-.form__button--text {
   color: #ffffff;
 }
 
