@@ -68,7 +68,6 @@ h6 {
 
 .box-container {
   margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .text--bold {
