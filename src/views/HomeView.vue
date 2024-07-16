@@ -112,6 +112,15 @@ ul {
   background-color: #fdfdfd;
 }
 
+.section__blue,
+.section__white {
+  padding-bottom: 32px;
+}
+
+.page__minus-header-footer {
+  padding-bottom: 0;
+}
+
 .section__landing {
   background-image: linear-gradient(
       180deg,

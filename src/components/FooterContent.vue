@@ -14,7 +14,11 @@
       <div class="footer__content-right">
         <a class="link__page-nmv" href="./nmv">
           <p class="text__align-right text--semibold text--italic">Lid van</p>
-          <img src="../assets/rvmediation-nmv-logo.png" alt="logo van NMv" height="32px" />
+          <img
+            src="../assets/rvmediation-nmv-logo.png"
+            alt="logo van NMv"
+            height="32px"
+          />
         </a>
       </div>
     </div>
@@ -37,6 +41,7 @@ footer {
   height: 80px;
   font-size: 0.875rem;
   background-color: #00aeb8;
+  margin-top: 32px;
 }
 
 p {
