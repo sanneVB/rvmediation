@@ -5,7 +5,7 @@
       <h1>Privacy statement</h1>
       <div class="page-container__content">
         <div>
-          <h2>bla bla bla</h2>
+          <h2>Lorem ipsum</h2>
           <p>
             Accumsan felis velit, tempus dui, vestibulum praesent torquent vitae
             arcu primis. Suscipit faucibus varius, erat inceptos, vulputate
@@ -16,7 +16,7 @@
             himenaeos, class ad vulputate platea scelerisque nisl. Cubilia
             nulla, blandit elementum aenean nec.
           </p>
-          <h2>bla bla bla</h2>
+          <h2>Lorem ipsum</h2>
           <p>
             Sodales integer, neque rhoncus nulla. Commodo semper vulputate
             tincidunt, ipsum mauris aenean, per tempus aptent habitant duis
@@ -28,7 +28,7 @@
           </p>
         </div>
         <div>
-          <h2>bla bla bla</h2>
+          <h2>Lorem ipsum</h2>
           <p>
             Sodales integer, neque rhoncus nulla. Commodo semper vulputate
             tincidunt, ipsum mauris aenean, per tempus aptent habitant duis
@@ -39,7 +39,7 @@
             varius. Urna lacinia morbi, et auctor, nullam ornare dictumst lacus
             netus egestas turpis.
           </p>
-          <h2>bla bla bla</h2>
+          <h2>Lorem ipsum</h2>
           <p>
             Sodales integer, neque rhoncus nulla. Commodo semper vulputate
             tincidunt, ipsum mauris aenean, per tempus aptent habitant duis

@@ -30,11 +30,11 @@ export default {
           "Rob is een vriendelijke en geduldige man. De samenwerking die ik met hem gehad heb, was heel fijn. Hij nam de tijd en energie om me nieuwe dingen te leren. Daarbij legde hij alles goed uit zodat ik het begreep. Zijn eerlijkheid en aanmoediging zijn de dingen die ik het meest heb gewaardeerd. Hij geeft je de energie die je nodig hebt en ziet wanneer de rust van toepassing is."
         },
         {
-          name: "Danielle",
-          residence: "Amsterdam",
+          name: "anoniem",
+          residence: "",
           date: "01-01-1970",
           reviewText:
-          '<span style="color: red">Lorem ipsum dolor sit amet.</span>'
+          'Het samenwerken met Rob was zeer prettig en ongedwongen, eerlijk en respectvol naar elkaar toe. Hij is heel doel- en oplossingsgericht.'
         },
         {
           name: "Sjors",
