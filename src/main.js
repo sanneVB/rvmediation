@@ -1,17 +1,43 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import "vuetify/styles";
+import { createVuetify } from "vuetify";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
+import VueGtag from "vue-gtag";
 
 const vuetify = createVuetify({
   components,
   directives,
-})
+});
 
-createApp(App)
-  .use(router) // Voeg hier je router toe
-  .use(vuetify) // Voeg hier Vuetify toe
-  .mount('#app')
+const app = createApp(App);
+
+app.use(router);
+
+app.use(vuetify);
+
+app.use(
+  VueGtag,
+  {
+    appName: "app",
+    pageTrackerScreenviewEnabled: true,
+    disableScriptLoad: true,
+    config: {
+      id: "G-YRCW9XWNM9", // Test ID
+    },
+    // config: { id: "G-2VJC9BC0L8" }, // Production ID
+  },
+  router,
+);
+
+app.mount("#app");
+
+// createApp(App)
+//   .use(router) // Voeg hier je router toe
+//   .use(vuetify) // Voeg hier Vuetify toe
+//   .use(VueGtag, {
+//     config: { id: "G-2VJC9BC0L8" },
+//   })
+//   .mount("#app");
