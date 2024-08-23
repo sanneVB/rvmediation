@@ -1,10 +1,8 @@
 const { defineConfig } = require("@vue/cli-service");
-(module.exports = {
+module.exports = defineConfig({
+  ublicPath: "https://sannevb.github.io/rvmediation/",
+  transpileDependencies: true,
   configureWebpack: {
     devtool: "source-map",
-    publicPath: "/rvmediation/",
   },
-}),
-  defineConfig({
-    transpileDependencies: true,
-  });
+});
