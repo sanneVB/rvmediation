@@ -23,7 +23,7 @@ app.use(
   {
     appName: "app",
     pageTrackerScreenviewEnabled: true,
-    disableScriptLoad: true,
+    // disableScriptLoad: true,
     config: {
       id: "G-YRCW9XWNM9", // Test ID
     },
