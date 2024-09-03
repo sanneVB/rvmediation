@@ -1,5 +1,31 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import "vuetify/styles";
+import { createVuetify } from "vuetify";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
+import VueGtag from "vue-gtag";
 
-createApp(App).use(router).mount('#app')
+const vuetify = createVuetify({
+  components,
+  directives,
+});
+
+const app = createApp(App);
+
+app.use(router);
+
+app.use(vuetify);
+
+app.use(
+  VueGtag,
+  {
+    appName: "app",
+    pageTrackerScreenviewEnabled: true,
+    config: { id: "G-2VJC9BC0L8" },
+  },
+  router,
+);
+
+app.mount("#app");
