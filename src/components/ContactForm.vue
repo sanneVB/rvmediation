@@ -53,9 +53,9 @@ export default {
   methods: {
     sendEmail() {
       Email.send({
-        SecureToken: "", //Als rob's hosting het toelaat hebben we een secure token nodig. Zoniet opzetten via https://smtpjs.com/
-        To: "", // Rob's email adress moet hier worden ingevuld
-        From: "", // Kan hetzelde zijn als to, maar kan ook specifiek from email voor worden aangemaakt
+        SecureToken: "cd324757-6f6d-438c-bcaf-5c0fdd712828", //Als rob's hosting het toelaat hebben we een secure token nodig. Zoniet opzetten via https://smtpjs.com/
+        To: "info@rvmediation.nl", // Rob's email adress moet hier worden ingevuld
+        From: "contact_form@rvmediation.nl", // Kan hetzelde zijn als to, maar kan ook specifiek from email voor worden aangemaakt
         name: this.name,
         Subject: this.subject,
         Body: `Name: ${this.name}\nEmail: ${this.email}\nMessage: ${this.message}`,
