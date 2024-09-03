@@ -23,10 +23,7 @@ app.use(
   {
     appName: "app",
     pageTrackerScreenviewEnabled: true,
-    config: {
-      id: "G-YRCW9XWNM9", // Test ID
-    },
-    // config: { id: "G-2VJC9BC0L8" }, // Production ID
+    config: { id: "G-2VJC9BC0L8" },
   },
   router,
 );
