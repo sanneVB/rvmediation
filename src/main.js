@@ -23,7 +23,6 @@ app.use(
   {
     appName: "app",
     pageTrackerScreenviewEnabled: true,
-    // disableScriptLoad: true,
     config: {
       id: "G-YRCW9XWNM9", // Test ID
     },
@@ -33,11 +32,3 @@ app.use(
 );
 
 app.mount("#app");
-
-// createApp(App)
-//   .use(router) // Voeg hier je router toe
-//   .use(vuetify) // Voeg hier Vuetify toe
-//   .use(VueGtag, {
-//     config: { id: "G-2VJC9BC0L8" },
-//   })
-//   .mount("#app");
