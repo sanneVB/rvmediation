@@ -36,20 +36,20 @@ export default {
           reviewText:
           'Het samenwerken met Rob was zeer prettig en ongedwongen, eerlijk en respectvol naar elkaar toe. Hij is heel doel- en oplossingsgericht.'
         },
-        {
-          name: "Sjors",
-          residence: "",
-          date: "01-01-1970",
-          reviewText:
-          '<span style="color: red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed elit nulla. Curabitur aliquet, ipsum sed porttitor vulputate, urna risus facilisis augue, vel tempus libero neque non libero. Mauris ultricies.</span>'
-        },
-        { 
-          name: "",
-          residence: "",
-          date: "01-01-1970",
-          reviewText:
-          '<span style="color: red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, turpis vel vestibulum vestibulum, purus justo dictum massa, in euismod massa ante ac ante. Donec sed facilisis lectus. Pellentesque malesuada elit nec tincidunt dignissim. Nunc velit tortor, placerat nec ultrices sed, hendrerit sit amet sapien. Vivamus a ligula nisi. Vestibulum.</span>'
-        },
+        // {
+        //   name: "Sjors",
+        //   residence: "",
+        //   date: "01-01-1970",
+        //   reviewText:
+        //   '<span style="color: red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed elit nulla. Curabitur aliquet, ipsum sed porttitor vulputate, urna risus facilisis augue, vel tempus libero neque non libero. Mauris ultricies.</span>'
+        // },
+        // { 
+        //   name: "",
+        //   residence: "",
+        //   date: "01-01-1970",
+        //   reviewText:
+        //   '<span style="color: red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, turpis vel vestibulum vestibulum, purus justo dictum massa, in euismod massa ante ac ante. Donec sed facilisis lectus. Pellentesque malesuada elit nec tincidunt dignissim. Nunc velit tortor, placerat nec ultrices sed, hendrerit sit amet sapien. Vivamus a ligula nisi. Vestibulum.</span>'
+        // },
       ]
     }
   }

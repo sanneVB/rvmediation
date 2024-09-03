@@ -17,8 +17,8 @@
     </div>
     <div class="section-container__column-right">
       <div class="section-container__illustration-right">
-        <!-- TODO: Replace red text with new unique text -->
-        <p class="text-box__white-left"><span style="color: red">"Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</span></p>
+        <!-- TODO: Replace placeholder text (orange) with new unique text and remove style="color: #fb8c00"-->
+        <p class="text-box__white-left"><span style="color: #fb8c00">"Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</span></p>
         <img
           class="section-container__image"
           src="../assets/rvmediation-employer-truck-black.jpg"
