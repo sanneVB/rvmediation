@@ -122,7 +122,7 @@ p {
 
 .text__main-title-L2 {
   font-size: 2.375rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.27rem;
 }
 
 .grid-container__image--rv {
@@ -151,7 +151,7 @@ p {
 
   .text__main-title-L2 {
     font-size: 1.875rem;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.22rem;
   }
 
   .grid-container__image {
@@ -182,7 +182,7 @@ p {
 
   .text__main-title-L2 {
     font-size: 1.375rem;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.19rem;
   }
 
   .grid-container__grid-text-image {
