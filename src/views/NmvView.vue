@@ -58,7 +58,7 @@ export default {
 <style scoped>
 
 * {
-  background-color: "#FDFDFD";
+  background-color: #FDFDFD;
 }
 
 img {
