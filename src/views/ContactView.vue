@@ -41,6 +41,11 @@ export default {
 };
 </script>
 <style>
+
+* {
+  background-color: "#FDFDFD";
+}
+
 .contact-message {
   text-align: center;
 }

@@ -52,6 +52,11 @@ export default {
 };
 </script>
 <style scoped>
+
+* {
+  background-color: "#FDFDFD";
+}
+
 .page-container__content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
