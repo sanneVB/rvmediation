@@ -16,14 +16,14 @@
     </div>
     <div class="grid-container__grid-item background-overlay__bottom">
       <carrousel-content class="grid-container__p" />
-      <a class="grid-container__grid-text-image" href="/nmv">
+      <router-link class="grid-container__grid-text-image" to="/nmv">
         <p class="grid-container__text text--italic text--semibold">Lid van</p>
         <img
           class="grid-container__image--nmv"
           src="../assets/rvmediation-nmv-logo.png"
           alt="logo van de nmv"
         />
-      </a>
+      </router-link>
     </div>
   </div>
 </template>

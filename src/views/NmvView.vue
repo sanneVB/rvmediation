@@ -56,6 +56,11 @@ export default {
 };
 </script>
 <style scoped>
+
+* {
+  background-color: "#FDFDFD";
+}
+
 img {
   width: 256px;
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="box-container">
     <p class="text--bold">Benieuwd geworden? Neem contact met mij op.</p>
-    <a href="./contact" class="button__contact">Neem contact op</a>
+    <router-link to="/contact" class="button__contact">Neem contact op</router-link>
   </div>
 </template>
 <script></script>
