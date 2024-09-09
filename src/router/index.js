@@ -40,7 +40,6 @@ const routes = [
     path: '/:pathMatch(.*)*',
     name: "notfound",
     component: HomeView
-    // component: () => import("@/views/NotFound.vue")
   },
 ];
 
