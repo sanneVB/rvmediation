@@ -36,10 +36,17 @@ const routes = [
     name: "algemenevoorwaarden",
     component: () => import("@/views/TermsAndConditionsView.vue"),
   },
+  {
+    path: '/:pathMatch(.*)*',
+    name: "notfound",
+    component: HomeView
+    // component: () => import("@/views/NotFound.vue")
+  },
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  // history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 
