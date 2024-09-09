@@ -43,7 +43,7 @@ export default {
 <style>
 
 * {
-  background-color: "#FDFDFD";
+  background-color: #FDFDFD;
 }
 
 .contact-message {
