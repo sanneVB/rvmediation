@@ -149,6 +149,7 @@ ul {
   flex-direction: column;
   gap: 48px;
   justify-self: center;
+  max-width: 480px;
 }
 
 .section-container__image {
