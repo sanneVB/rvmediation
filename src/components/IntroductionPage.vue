@@ -17,7 +17,7 @@
           </P>
           <p>
             Door mijn persoonlijke kwaliteiten om te zetten in kennis als
-            <a href="./mediator">mediator</a> en gedragsdeskundige kan ik het
+            <router-link to="/mediator">mediator</router-link> en gedragsdeskundige kan ik het
             volgende voor uw bedrijf betekenen:
           </p>
           <ul>

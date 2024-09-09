@@ -35,7 +35,7 @@
         </a>
       </ul>
       <div class="button__contact-position">
-        <a href="./contact" class="button__contact">Neem contact op</a>
+      <router-link to="/contact" class="button__contact">Neem contact op</router-link>
       </div>
     </div>
   </nav>
