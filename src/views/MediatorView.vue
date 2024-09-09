@@ -54,7 +54,7 @@ export default {
 <style scoped>
 
 * {
-  background-color: "#FDFDFD";
+  background-color: #FDFDFD;
 }
 
 .page-container__content {
