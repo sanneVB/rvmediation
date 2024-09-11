@@ -13,25 +13,30 @@ export default {
 </script>
 
 <style>
-* {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-}
-
-ul {
-  padding-left: 16px;
-}
-
+a,
+button,
 p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+input,
+label,
+li,
+section,
+textarea
+ {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
   color: rgb(33, 33, 33);
+}
+
+ul {
+  padding-left: 16px;
 }
 
 .header-container,
