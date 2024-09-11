@@ -13,13 +13,21 @@ export default {
 </script>
 
 <style>
+a,
+button,
 p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+input,
+label,
+li,
+section,
+textarea
+ {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
