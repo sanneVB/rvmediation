@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <header-content />
-    <div class="page-container page__minus-header-footer wrapper__content">
+    <div class="page-container wrapper__content">
       <h1 class="contact-message__text">Contact</h1>
       <div class="page-container__content">
         <section class="contact-message">
@@ -63,17 +63,16 @@ export default {
   height: auto;
 }
 
-@media screen and (min-width: 1024px) {
-  .flex-container__flex-item--contact-information {
-    width: 40vw;
-  }
-
+@media screen and (min-width: 1074px) {
+  
+  .flex-container__flex-item--contact-information,
   .flex-container__flex-item--form {
-    width: 60vw;
+    width: 66vw;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1074px) {
+
   .flex-container {
     display: flex;
     flex-direction: column;
@@ -82,8 +81,14 @@ export default {
     margin-top: 0;
   }
 
+  .flex-container__flex-item--contact-information {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-container__flex-item--contact-information,
   .flex-container__flex-item--form {
-    width: 66vw;
+    width: 70vw;
   }
 
   .seperator {
@@ -98,13 +103,14 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+
   .seperator {
     margin: 30px 0;
     flex-grow: 0;
     border-left: none;
     border-top: 1px solid #0000006b;
     height: 0;
-    width: 85vw;
+    width: 80vw;
   }
 
   .flex-container {
@@ -113,35 +119,38 @@ export default {
     align-items: center;
   }
 
-  .flex-container__flex-item--contact-information {
-    width: 66vw;
+  .flex-container__flex-item--contact-information,
+  .flex-container__flex-item--form {
+    width: 75vw;
   }
 
   h1 {
     font-size: 1.5rem;
-    padding: 32px 32px 16px 32px;
-  }
-
-  .page__minus-header-footer {
-    min-height: calc(100vh - 208px);
+    padding: 32px 0px 16px 0px;
   }
 }
 
 @media screen and (max-width: 375px) {
+
+  h1 {
+    font-size: 1.375rem;
+    padding: 32px 0px 16px 0px;
+  }
+
   .page-container__content,
   .section-container,
-  .box-container {
-    width: auto;
+  .box-container,
+  .seperator {
+    width: 85vw;
+  }
+
+  .flex-container__flex-item--contact-information,
+  .flex-container__flex-item--form {
+    width: 80vw;
   }
 
   .page-container__content {
     font-size: 0.9375rem;
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-
-  .seperator {
-    width: 90vw;
   }
 }
 </style>

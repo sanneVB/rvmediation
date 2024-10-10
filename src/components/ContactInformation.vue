@@ -73,10 +73,11 @@ iframe {
   border-radius: 8px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1074px) {
   .contact-information {
     display: flex;
-    width: 60vw;
+    align-content: center;
+    width: 70vw;
     margin-top: auto;
     margin-bottom: auto;
   }

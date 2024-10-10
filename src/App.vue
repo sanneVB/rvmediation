@@ -41,7 +41,8 @@ ul {
 
 .header-container,
 .footer-container,
-.page-container {
+.page-container,
+.grid-container {
   margin-inline: auto;
   max-width: 1216px;
 }
@@ -60,8 +61,7 @@ ul {
 .section-container,
 .box-container {
   margin-inline: auto;
-  max-width: 950px;
-  width: 70vw;
+  max-width: 952px;
   justify-items: center;
 }
 
@@ -113,6 +113,7 @@ ul {
 *::after {
   box-sizing: border-box;
 }
+
 /* Remove default margin and padding */
 * {
   margin: 0;
@@ -152,7 +153,7 @@ h6 {
 h1 {
   text-align: center;
   font-size: 1.5rem;
-  padding: 32px 32px 32px 32px;
+  padding: 32px 0px 32px 0px;
 }
 
 h2 {
@@ -169,6 +170,6 @@ a:visited {
 }
 
 p {
-  hyphens: auto;
+  hyphens: none;
 }
 </style>

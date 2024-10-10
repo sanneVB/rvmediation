@@ -8,7 +8,7 @@
       </div>
       <div class="section-container__illustration-left">
         <img
-          class="section-container__image"
+          class="section-container__image-left"
           src="../assets/rvmediation-employer-truck-white.jpg"
           alt="picture of a truck on the road"
         />
@@ -20,7 +20,7 @@
         <!-- TODO: Replace placeholder text (orange) with new unique text and remove style="color: #fb8c00"-->
         <p class="text-box__white-left"><span style="color: #fb8c00">"Door Rob zijn grondige werk is het bedrijf weer goed gaan draaien, zoals iedereen het graag ziet.”</span></p>
         <img
-          class="section-container__image"
+          class="section-container__image-right"
           src="../assets/rvmediation-employer-truck-black.jpg"
           alt="picture of a truck in the city at twilight"
         />

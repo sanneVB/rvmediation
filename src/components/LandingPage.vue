@@ -1,5 +1,5 @@
 <template>
-  <div class="page-container grid-container">
+  <div class="grid-container">
     <div class="grid-container__grid-item">
       <h1>
         <span class="text__main-title-L1">ROB<br /></span>
