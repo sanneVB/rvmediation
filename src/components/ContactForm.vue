@@ -151,7 +151,7 @@ textarea {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1074px) {
+@media screen and (min-width: 768px) and (max-width: 1072px) {
   textarea {
     min-height: 128px;
   }

@@ -63,7 +63,7 @@ export default {
   height: auto;
 }
 
-@media screen and (min-width: 1074px) {
+@media screen and (min-width: 1072px) {
   
   .flex-container__flex-item--contact-information,
   .flex-container__flex-item--form {
@@ -71,7 +71,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1074px) {
+@media screen and (min-width: 768px) and (max-width: 1072px) {
 
   .flex-container {
     display: flex;

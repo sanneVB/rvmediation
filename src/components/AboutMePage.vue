@@ -42,7 +42,7 @@ export default {
   max-width: 432px;
 }
 
-@media screen and (max-width: 1074px) {
+@media screen and (max-width: 1072px) {
 
   .section-container__columns {
     max-width: 65vw;

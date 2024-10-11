@@ -85,7 +85,7 @@ export default {
   width: 70vw;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1074px) {
+@media screen and (min-width: 769px) and (max-width: 1072px) {
 
   .page-container__content {
     gap: 64px;

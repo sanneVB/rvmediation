@@ -67,7 +67,7 @@ iframe {
   border-radius: 8px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1074px) {
+@media screen and (min-width: 768px) and (max-width: 1072px) {
   .contact-information {
     display: flex;
     align-content: center;

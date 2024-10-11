@@ -253,7 +253,7 @@ ul {
 }
 }
 
-@media screen and (max-width: 1074px) {
+@media screen and (max-width: 1072px) {
 
   .page-container,
   .section-container__column-left,
@@ -297,14 +297,14 @@ ul {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1074px) {
+@media screen and (min-width: 769px) and (max-width: 1072px) {
 
   .section-container {
     gap: 64px;
   }
 }
 
-@media screen and (min-width: 590px) and (max-width: 1074px) {
+@media screen and (min-width: 590px) and (max-width: 1072px) {
 
   .section-container__column-left,
   .section-container__column-right {
