@@ -6,11 +6,9 @@
         Lierop, Noord-Brabant <br />
         <br />
         <span class="text__contact-information--bold">Telefoon: </span>
-        <u>06 481 889 92</u> <br />
+          <a href="tel:0648188992">0648188992</a> <br />
         <span class="text__contact-information--bold">E-mail: </span>
-        <a href="mailto:info@rvmediation.nl" class="link">
-          info@rvmediation.nl
-        </a>
+        <a href="mailto:info@rvmediation.nl">info@rvmediation.nl</a>
         <br />
         <span class="text__contact-information--bold">KVK: </span>758.267.04
         <br />
@@ -43,10 +41,6 @@ export default {
 
 h3 {
   color: #00aeb8;
-}
-
-.link:link {
-  color: black;
 }
 
 .text__contact-information {

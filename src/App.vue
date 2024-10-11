@@ -32,7 +32,6 @@ textarea
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "slnt" 0;
-  color: rgb(33, 33, 33);
 }
 
 ul {
