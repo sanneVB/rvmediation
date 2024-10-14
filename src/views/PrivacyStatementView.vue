@@ -85,7 +85,7 @@ P {
   gap: 80px;
 }
 
-/* scroll snap will be activated for tables and smartphones */
+
 @media screen and (max-width: 768px) {
   
   h1 {
