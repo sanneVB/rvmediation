@@ -1,8 +1,8 @@
 <template>
   <div class="page-container">
     <h1>
-      <span class="text--italic">Uw</span> bemiddelaar voor de logistieke sector
-    </h1>
+        <span class="text--italic">Uw</span> bemiddelaar voor de logistieke sector
+      </h1>
     <div class="section-container">
       <div class="section-container__column-left">
         <div>
@@ -42,7 +42,7 @@
         </div>
         <div class="section-container__illustration-left">
           <img
-            class="section-container__image"
+            class="section-container__image-left"
             src="../assets/rvmediation-intro-truck-road.jpg"
             alt="picture of a truck on the road"
           />
@@ -58,7 +58,7 @@
             aangeeft dat dit tot stand komt door een vervelende werksfeer?
           </p>
           <img
-            class="section-container__image"
+            class="section-container__image-right"
             src="../assets/rvmediation-intro-truck-city.jpg"
             alt="picture of a truck in the city at twilight"
           />
