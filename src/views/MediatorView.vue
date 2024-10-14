@@ -92,7 +92,6 @@ export default {
   }
 }
 
-/* scroll snap will be activated for tables and smartphones */
 @media screen and (max-width: 768px) {
 
   .page-container__content,

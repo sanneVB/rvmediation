@@ -2,35 +2,35 @@
   <div class="wrapper">
     <header-content :isVisible="isVisible" />
     <div class="wrapper__content">
-      <section class="container__snapPoint section__landing" id="landing">
+      <section class="section__landing" id="landing">
         <landing-page @changeVisibility="handleVisibilityChange" />
       </section>
       <section
-        class="container__snapPoint section__blue page__minus-header"
+        class="section__blue page__minus-header"
         id="introduction"
       >
         <introduction-page />
       </section>
       <section
-        class="container__snapPoint section__white page__minus-header"
+        class="section__white page__minus-header"
         id="employee"
       >
         <employee-page />
       </section>
       <section
-        class="container__snapPoint section__blue page__minus-header"
+        class="section__blue page__minus-header"
         id="employer"
       >
         <employer-page />
       </section>
       <section
-        class="container__snapPoint section__white page__minus-header"
+        class="section__white page__minus-header"
         id="about-me"
       >
         <about-me-page />
       </section>
       <section
-        class="container__snapPoint section__blue page__minus-header-footer"
+        class="section__blue page__minus-header-footer"
         id="testimonials"
       >
         <testimonials-page />
@@ -77,7 +77,6 @@ export default {
 <style>
 html {
   overflow-x: hidden;
-  /* scroll-snap-type: y mandatory; */
   overflow-y: scroll;
 }
 
@@ -418,12 +417,4 @@ ul {
   }
 }
 
-/* scroll snap will be activated for tablets and smartphones */
-@media screen and (max-width: 768px) {
-
-  .container__snapPoint {
-    scroll-behavior: smooth;
-    scroll-snap-align: start;
-  }
-}
 </style>
