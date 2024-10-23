@@ -85,40 +85,38 @@ P {
   gap: 80px;
 }
 
-/* scroll snap will be activated for tables and smartphones */
+
 @media screen and (max-width: 768px) {
+  
   h1 {
     font-size: 1.5rem;
-    padding: 32px 32px 16px 32px;
+    padding: 32px 0px 16px 0px;
   }
 }
 
 @media screen and (max-width: 428px) {
-  h1 {
-    font-size: 1.375rem;
-  }
 
+  .page-container__content,
+  .box-container {
+    width: 85vw;
+  }
+  
   .page-container__content {
     grid-template-columns: auto;
     gap: 40px;
-
-    margin-left: 24px;
-    margin-right: 24px;
-
-    width: 80vw;
   }
 }
 
 @media screen and (max-width: 375px) {
+
   h1 {
-    font-size: 1.25rem;
-    padding: 32px 24px 16px 24px;
+    font-size: 1.375rem;
+    padding: 32px 0px 16px 0px;
   }
 
   .page-container__content {
     font-size: 0.9375rem;
     gap: 24px;
-    width: auto;
   }
 }
 </style>

@@ -59,8 +59,8 @@ a.button__contact:active {
   }
 
   .box-container {
-    margin-left: 16px;
-    margin-right: 16px;
+    /* margin-left: 16px;
+    margin-right: 16px; */
     width: auto;
   }
 }

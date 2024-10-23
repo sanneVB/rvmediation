@@ -8,7 +8,7 @@
       </div>
       <div class="section-container__illustration-left">
         <img
-          class="section-container__image"
+          class="section-container__image-left"
           src="../assets/rvmediation-employee-driver-stepin.jpg"
           alt="picture of a truck on the road"
         />
@@ -19,7 +19,7 @@
       <div class="section-container__illustration-right">
         <p class="text-box__blue-left">“Door Rob zijn goede inlevingsvermogen en coaching ben ik weer op de goede weg.”</p>
         <img
-          class="section-container__image"
+          class="section-container__image-right"
           src="../assets/rvmediation-employee-driver-cabin.jpg"
           alt="picture of a truck in the city at twilight"
         />

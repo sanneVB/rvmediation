@@ -13,7 +13,21 @@ export default {
 </script>
 
 <style>
-* {
+a,
+button,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+label,
+li,
+section,
+textarea
+ {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -24,19 +38,10 @@ ul {
   padding-left: 16px;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: rgb(33, 33, 33);
-}
-
 .header-container,
 .footer-container,
-.page-container {
+.page-container,
+.grid-container {
   margin-inline: auto;
   max-width: 1216px;
 }
@@ -55,8 +60,7 @@ h6 {
 .section-container,
 .box-container {
   margin-inline: auto;
-  max-width: 950px;
-  width: 70vw;
+  max-width: 952px;
   justify-items: center;
 }
 
@@ -108,6 +112,7 @@ h6 {
 *::after {
   box-sizing: border-box;
 }
+
 /* Remove default margin and padding */
 * {
   margin: 0;
@@ -147,7 +152,7 @@ h6 {
 h1 {
   text-align: center;
   font-size: 1.5rem;
-  padding: 32px 32px 32px 32px;
+  padding: 32px 0px 32px 0px;
 }
 
 h2 {
@@ -164,6 +169,6 @@ a:visited {
 }
 
 p {
-  hyphens: auto;
+  hyphens: none;
 }
 </style>

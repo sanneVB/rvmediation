@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <HeaderContent></HeaderContent>
-    <div class="page-container page__minus-header-footer wrapper__content">
+    <div class="page-container wrapper__content">
       <h1>RVmediation is lid van NMv</h1>
       <div class="page-container__content">
         <div class="page-container__image">
@@ -79,38 +79,46 @@ p {
   justify-self: center;
 }
 
-/* scroll snap will be activated for tables and smartphones */
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 1.5rem;
-    padding: 32px 32px 16px 32px;
-  }
-}
-
-@media screen and (max-width: 428px) {
-  h1 {
-    font-size: 1.375rem;
+    padding: 32px 0px 32px 0px;
   }
 
   .page-container__content {
     grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 428px) {
+
+  img {
+    width: 224px;
+  }
+
+  .page-container__content,
+  .box-container {
+    width: 85vw;
+  }
+  
+  .page-container__content {
     gap: 40px;
-    margin-left: 24px;
-    margin-right: 24px;
-    width: 80vw;
   }
 }
 
 @media screen and (max-width: 375px) {
   h1 {
-    font-size: 1.25rem;
-    padding: 32px 24px 16px 24px;
+    font-size: 1.375rem;
+    padding: 32px 0px 24px 0px;
+  }
+
+  img {
+    width: 200px;
   }
 
   .page-container__content {
     font-size: 0.9375rem;
-    gap: 24px;
-    width: auto;
   }
 }
 </style>

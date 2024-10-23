@@ -33,11 +33,34 @@ export default {
 };
 </script>
 <style scoped>
+.section-container__columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 80px;
+  max-width: 432px;
+}
+
+@media screen and (max-width: 1072px) {
+
   .section-container__columns {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 80px;
+    max-width: 65vw;
   }
+}
+
+@media screen and (max-width: 768px) {
+
+  .section-container__columns {
+    max-width: 75vw;
+  }
+}
+
+@media screen and (max-width: 428px) {
+
+  .section-container__columns {
+    max-width: 85vw;
+  }
+}
+
 </style>

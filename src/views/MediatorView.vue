@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <HeaderContent></HeaderContent>
-    <div class="page-container page__minus-header-footer wrapper__content">
+    <div class="page-container wrapper__content">
       <div class="wrapper__content--information">
         <h1>Wat doet een mediator?</h1>
         <div class="page-container__content">
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-      <ContactBox class="contact-box"></ContactBox>
+      <ContactBox></ContactBox>
     </div>
     <FooterContent></FooterContent>
   </div>
@@ -80,44 +80,55 @@ export default {
   flex-direction: column;
 }
 
-/* scroll snap will be activated for tables and smartphones */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-    padding: 32px 32px 16px 32px;
-  }
+.page-container__content,
+.box-container {
+  width: 70vw;
+}
 
-  .page__minus-header-footer {
-    min-height: calc(100vh - 402px);
+@media screen and (min-width: 769px) and (max-width: 1072px) {
+
+  .page-container__content {
+    gap: 64px;
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 768px) {
+
+  .page-container__content,
+  .box-container {
+    width: 75vw;
+  }
+
   h1 {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
+    padding: 32px 0px 16px 0px;
   }
 
   .page-container__content {
     grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 428px) {
+
+  .page-container__content,
+  .box-container {
+    width: 85vw;
+  }
+  
+  .page-container__content {
     gap: 40px;
-
-    margin-left: 24px;
-    margin-right: 24px;
-
-    width: 80vw;
   }
 }
 
 @media screen and (max-width: 375px) {
   h1 {
-    font-size: 1.25rem;
-    padding: 32px 24px 16px 24px;
+    font-size: 1.375rem;
+    padding: 32px 0px 16px 0px;
   }
 
   .page-container__content {
     font-size: 0.9375rem;
-    gap: 24px;
-    width: auto;
   }
 }
 </style>

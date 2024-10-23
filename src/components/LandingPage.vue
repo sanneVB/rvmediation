@@ -1,5 +1,5 @@
 <template>
-  <div class="page-container grid-container">
+  <div class="grid-container">
     <div class="grid-container__grid-item">
       <h1>
         <span class="text__main-title-L1">ROB<br /></span>
@@ -122,7 +122,7 @@ p {
 
 .text__main-title-L2 {
   font-size: 2.375rem;
-  letter-spacing: 0.27rem;
+  letter-spacing: 0.18rem;
 }
 
 .grid-container__image--rv {
@@ -151,7 +151,7 @@ p {
 
   .text__main-title-L2 {
     font-size: 1.875rem;
-    letter-spacing: 0.22rem;
+    letter-spacing: 0.16rem;
   }
 
   .grid-container__image {
@@ -182,7 +182,7 @@ p {
 
   .text__main-title-L2 {
     font-size: 1.375rem;
-    letter-spacing: 0.19rem;
+    letter-spacing: 0.14rem;
   }
 
   .grid-container__grid-text-image {
