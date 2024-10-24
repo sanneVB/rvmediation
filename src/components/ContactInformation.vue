@@ -6,7 +6,7 @@
         Lierop, Noord-Brabant <br />
         <br />
         <span class="text__contact-information--bold">Telefoon: </span>
-          <a href="tel:0648188992">0648188992</a> <br />
+          <a href="tel:+31648188992">+31-(0)6-481&nbsp;889&nbsp;92</a> <br />
         <span class="text__contact-information--bold">E-mail: </span>
         <a href="mailto:info@rvmediation.nl">info@rvmediation.nl</a>
         <br />
