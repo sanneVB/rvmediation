@@ -71,19 +71,19 @@ export default {
     handleVisibilityChange(currentVisibility) {
       this.isVisible = currentVisibility;
     },
-  },
+  },  
 };
 </script>
 <style>
+/*
 html {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+*/
 
 section {
   scroll-margin-top: 80px;
-  /* Added padding which is a workaround to get a bottom margin at contact box */
-  /* padding-bottom: 1px; */
 }
 
 p,
