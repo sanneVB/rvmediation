@@ -13,26 +13,24 @@
     </div>
     <div v-if="showNav" class="nav__list">
       <ul class="nav__ul">
-        <a href="./#landing">
-          <li @click="closeNav" class="nav__item">Home</li>
-        </a>
-        <a href="./#introduction">
-          <li @click="closeNav" class="nav__item">
-            Bemiddelaar voor de logistieke sector
-          </li>
-        </a>
-        <a href="./#employee">
-          <li @click="closeNav" class="nav__item">Voor werknemers</li>
-        </a>
-        <a href="./#employer">
-          <li @click="closeNav" class="nav__item">Voor werkgevers</li>
-        </a>
-        <a href="./#about-me">
-          <li @click="closeNav" class="nav__item">Wie ben ik?</li>
-        </a>
-        <a href="./#testimonials">
-          <li @click="closeNav" class="nav__item">Wat zeggen anderen?</li>
-        </a>
+        <router-link :to="{path: '/', hash: '#landing'}" @click="closeNav">
+          <li class="nav__item">Home</li>
+        </router-link>
+        <router-link :to="{path: '/', hash: '#introduction'}" @click="closeNav">
+          <li class="nav__item">Bemiddelaar voor de logistieke sector</li>
+        </router-link>
+        <router-link :to="{path: '/', hash: '#employee'}" @click="closeNav">
+          <li class="nav__item">Voor werknemers</li>
+        </router-link>
+        <router-link :to="{path: '/', hash: '#employer'}" @click="closeNav">
+          <li class="nav__item">Voor werkgevers</li>
+        </router-link>
+        <router-link :to="{path: '/', hash: '#about-me'}" @click="closeNav">
+          <li class="nav__item">Wie ben ik?</li>
+        </router-link>
+        <router-link :to="{path: '/', hash: '#testimonials'}" @click="closeNav">
+          <li class="nav__item">Wat zeggen anderen?</li>
+        </router-link>
       </ul>
       <div class="button__contact-position">
       <router-link to="/contact" class="button__contact">Neem contact op</router-link>
