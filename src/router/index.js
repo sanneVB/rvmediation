@@ -72,10 +72,14 @@ const router = createRouter({
         // Has no negative impact on synchronous routes.
         resolve({ left: 0, top: 0 });
       });
-    } else if (to.hash !== from.hash) {
+    }
+    
+    if (to.hash !== from.hash) {
       return { el: to.hash, top: 80 };
     }
-  } 
+    
+    return { el: to.hash, top: 0 };
+  }
 });
 
 export default router;
