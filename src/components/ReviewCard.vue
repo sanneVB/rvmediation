@@ -37,7 +37,7 @@ export default {
     name: 'ReviewCard',
     props: {
         'reviewers': {
-            type: Array,
+            type: Object,
         },
     },
 }
