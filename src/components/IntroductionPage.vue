@@ -6,15 +6,15 @@
     <div class="section-container">
       <div class="section-container__column-left">
         <div>
-          <P
-            >De specialisatie van
+          <p>
+            De specialisatie van
             <span class="text__blue-bold">RVmediation</span> ligt in de
             logistieke sector. Door mijn jarenlange ervaring in deze sector zijn
             mij diverse dingen opgevallen. Er worden hoge verwachtingen aan de
             werknemers gesteld. Er is sprake van onderliggende conflicten die de
             sfeer bepalen op de werkvloer, waardoor er veel sprake is van
             verzuim. Dit komt voort uit een gebrek aan open communicatie.
-          </P>
+          </p>
           <p>
             Door mijn persoonlijke kwaliteiten om te zetten in kennis als
             <router-link to="/mediator">mediator</router-link> en gedragsdeskundige kan ik het
@@ -68,12 +68,12 @@
             Merkt u op dat er veel verzuim en/of verloop van werknemers binnen
             uw bedrijf is?
           </h2>
-          <P
-            ><span class="text__blue-bold">RVmediation</span> kan u een passende
+          <p>
+            <span class="text__blue-bold">RVmediation</span> kan u een passende
             aanpak voor uw bedrijf opzetten. Door met elkaar in gesprek te gaan
             wordt er ruimte gecreëerd voor een passende oplossing. Dit biedt de
-            basis voor een stabiele en evenwichtige toekomst van uw bedrijf.</P
-          >
+            basis voor een stabiele en evenwichtige toekomst van uw bedrijf.
+          </p>
         </div>
       </div>
     </div>

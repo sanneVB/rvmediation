@@ -74,7 +74,7 @@ export default {
   color: #fff;
 }
 
-P {
+p {
   font-size: 0.875rem;
   color: red;
 }
