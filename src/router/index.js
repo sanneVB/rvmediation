@@ -78,7 +78,7 @@ const router = createRouter({
       return { el: to.hash, top: 80 };
     }
     
-    return { el: to.hash, top: 0 };
+    return { left: 0, top: 0 };
   }
 });
 
