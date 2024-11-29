@@ -4,7 +4,7 @@
   <div class="section-container">
     <div class="section-container__column-left">
       <div>
-        <P>Voor de werknemers is het vooral van belang dat zij in een prettige omgeving kunnen werken. Maar dit is niet altijd het geval waardoor men zich soms niet gewaardeerd en begrepen voelt. Dit kan een conflict tot gevolg hebben.</p>
+        <p>Voor de werknemers is het vooral van belang dat zij in een prettige omgeving kunnen werken. Maar dit is niet altijd het geval waardoor men zich soms niet gewaardeerd en begrepen voelt. Dit kan een conflict tot gevolg hebben.</p>
       </div>
       <div class="section-container__illustration-left">
         <img
@@ -25,7 +25,7 @@
         />
       </div>
       <div>
-        <P>Door mijn jarenlange ervaring in de logistieke sector ben ik zeer bekend met de cultuur die daar is, en daardoor kan ik ook mijzelf goed inleven in de mensen die daar actief zijn. Door mijn openheid en transparantie kan ik daardoor mensen makkelijk helpen in de situatie waar zij in zitten.</p>
+        <p>Door mijn jarenlange ervaring in de logistieke sector ben ik zeer bekend met de cultuur die daar is, en daardoor kan ik ook mijzelf goed inleven in de mensen die daar actief zijn. Door mijn openheid en transparantie kan ik daardoor mensen makkelijk helpen in de situatie waar zij in zitten.</p>
       </div>
     </div>
   </div>
