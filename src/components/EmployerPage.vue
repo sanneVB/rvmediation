@@ -4,7 +4,7 @@
   <div class="section-container">
     <div class="section-container__column-left">
       <div>
-        <P>Mediation is bedoeld om conflicten tussen werkgever en werknemer op te lossen of tussen twee werknemers. Er kan gekozen worden voor een onafhankelijk bemiddelaar die dit traject begeleidt. Maar beter nog is het voorkomen van een conflict. Dit is een van mijn specialiteiten.</p>
+        <p>Mediation is bedoeld om conflicten tussen werkgever en werknemer op te lossen of tussen twee werknemers. Er kan gekozen worden voor een onafhankelijk bemiddelaar die dit traject begeleidt. Maar beter nog is het voorkomen van een conflict. Dit is een van mijn specialiteiten.</p>
       </div>
       <div class="section-container__illustration-left">
         <img
@@ -26,7 +26,7 @@
         />
       </div>
       <div>
-        <P>Ik ga door middel van een 'conflictanalyse' kijken waar er in de organisatie potentiële conflicten liggen. Ik ga daarmee deze conflicten vroegtijdig naar een passende oplossing zoeken, waardoor het veel werkbaarder wordt en dat de onderlinge frictie verdwijnt.</p>
+        <p>Ik ga door middel van een 'conflictanalyse' kijken waar er in de organisatie potentiële conflicten liggen. Ik ga daarmee deze conflicten vroegtijdig naar een passende oplossing zoeken, waardoor het veel werkbaarder wordt en dat de onderlinge frictie verdwijnt.</p>
       </div>
     </div>
   </div>
